@@ -1,0 +1,5 @@
+
+{"timestamp": "2025-05-12 16:39:41", "punteggio": "0/1", "sbagliate": [58]}
+{"timestamp": "2025-05-12 16:39:50", "punteggio": "1/1", "sbagliate": []}
+{"timestamp": "2025-05-12 16:47:59", "punteggio": "1/2", "sbagliate": [57]}
+{"timestamp": "2025-05-12 16:51:38", "punteggio": "0/1", "sbagliate": [57]}

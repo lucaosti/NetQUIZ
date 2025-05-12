@@ -1,0 +1,133 @@
+[
+    {
+        "domanda": "Cos'è l'UE in LTE?",
+        "risposte": ["User Equipment", "Universal Encoder", "Unified Entity"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la funzione principale del protocollo TCP?",
+        "risposte": ["Controllo della congestione", "Controllo degli errori", "Controllo della connessione"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa NAT?",
+        "risposte": ["Network Address Translation", "Network Access Translation", "Network Application Translation"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la differenza principale tra TCP e UDP?",
+        "risposte": ["TCP è orientato alla connessione, UDP no", "UDP è più lento di TCP", "TCP non supporta il controllo degli errori"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa rappresenta l'indirizzo IP?",
+        "risposte": ["Identificatore unico per un dispositivo in rete", "Protocollo di trasmissione dati", "Tipo di cavo di rete"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },  
+    {
+        "domanda": "Qual è la funzione principale di un router?",
+        "risposte": ["Instradare i pacchetti tra reti", "Fornire accesso a Internet", "Memorizzare dati"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa DHCP?",
+        "risposte": ["Dynamic Host Configuration Protocol", "Dynamic Hypertext Configuration Protocol", "Dynamic Hardware Configuration Protocol"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+
+]
+[
+    {
+        "domanda": "Quale protocollo viene utilizzato per la trasmissione sicura dei dati su Internet?",
+        "risposte": ["HTTPS", "HTTP", "FTP"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa VPN?",
+        "risposte": ["Virtual Private Network", "Virtual Public Network", "Virtual Protected Network"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la funzione principale di un firewall?",
+        "risposte": ["Controllare il traffico di rete", "Memorizzare dati", "Fornire accesso a Internet"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa SSL?",
+        "risposte": ["Secure Sockets Layer", "Secure Software Layer", "Secure System Layer"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la differenza tra IPv4 e IPv6?",
+        "risposte": ["IPv4 ha 32 bit, IPv6 ha 128 bit", "IPv4 è più sicuro di IPv6", "IPv4 è più veloce di IPv6"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa DNS?",
+        "risposte": ["Domain Name System", "Dynamic Network System", "Data Network System"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]       
+[
+    {
+        "domanda": "Qual è la funzione principale di un modem?",
+        "risposte": ["Convertire segnali digitali in analogici", "Memorizzare dati", "Fornire accesso a Internet"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa LAN?",
+        "risposte": ["Local Area Network", "Large Area Network", "Long Area Network"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la funzione principale di un switch?",
+        "risposte": ["Collegare dispositivi in una rete locale", "Fornire accesso a Internet", "Memorizzare dati"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa WAN?",
+        "risposte": ["Wide Area Network", "Wireless Area Network", "Web Area Network"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la funzione principale di un access point?",
+        "risposte": ["Fornire connettività wireless", "Memorizzare dati", "Collegare reti cablate"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa VoIP?",
+        "risposte": ["Voice over Internet Protocol", "Video over Internet Protocol", "Virtual over Internet Protocol"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]       

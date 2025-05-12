@@ -1,0 +1,22 @@
+[
+    {
+        "domanda": "Cos'è l'UE in LTE?",
+        "risposte": ["User Equipment", "Universal Encoder", "Unified Entity"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
+[
+    {
+        "domanda": "Qual è la funzione principale del protocollo TCP?",
+        "risposte": ["Controllo della congestione", "Controllo degli errori", "Controllo della connessione"],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "domanda": "Cosa significa NAT?",
+        "risposte": ["Network Address Translation", "Network Access Translation", "Network Application Translation"],
+        "corretta": 0,
+        "categoria": "Reti"
+    }
+]
