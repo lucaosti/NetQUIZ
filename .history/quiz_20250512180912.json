@@ -952,7 +952,7 @@
         "categoria": "IPv6"
     },
     {
-        "id": 85,
+        "id": 1105,
         "domanda": "Qual è il prefisso degli indirizzi IPv6 link-local?",
         "risposte": [
             "2000::/3",
@@ -964,7 +964,7 @@
         "categoria": "IPv6"
     },
     {
-        "id": 86,
+        "id": 1106,
         "domanda": "Qual è il significato di SLAAC in IPv6?",
         "risposte": [
             "Un protocollo di sicurezza",
@@ -976,7 +976,7 @@
         "categoria": "IPv6"
     },
     {
-        "id": 87,
+        "id": 1107,
         "domanda": "Che tipo di indirizzo IPv6 è ::?",
         "risposte": [
             "Loopback",
@@ -988,111 +988,15 @@
         "categoria": "IPv6"
     },
     {
-        "id": 88,
+        "id": 1108,
         "domanda": "Cosa indica il flag 'M' nei messaggi Router Advertisement in IPv6?",
         "risposte": [
             "Indica se usare l'indirizzo multicast",
+            "Indica se usare DHCPv6 per ottenere l'indirizzo IP",
             "Indica se usare un gateway esterno",
-            "Indica se l'indirizzo è temporaneo",
-            "Indica se usare DHCPv6 per ottenere l'indirizzo IP"
+            "Indica se l'indirizzo è temporaneo"
         ],
-        "corretta": 3,
+        "corretta": 1,
         "categoria": "IPv6"
-    },
-    {
-        "id": 89,
-        "domanda": "Qual è la lunghezza di un indirizzo IPv4?",
-        "risposte": [
-            "16 bit",
-            "32 bit",
-            "64 bit",
-            "128 bit"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 90,
-        "domanda": "Cosa rappresenta l'indirizzo 127.0.0.1 in IPv4?",
-        "risposte": [
-            "Indirizzo broadcast",
-            "Indirizzo di loopback",
-            "Indirizzo di rete",
-            "Indirizzo multicast"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 91,
-        "domanda": "Cosa indica il prefisso /24 in un indirizzo IP con notazione CIDR?",
-        "risposte": [
-            "24 bit per l'host",
-            "Indirizzo IP privato",
-            "24 bit per la parte di rete",
-            "Maschera 255.255.255.255"
-        ],
-        "corretta": 2,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 92,
-        "domanda": "Qual è il numero massimo di host utilizzabili in una rete /26?",
-        "risposte": [
-            "62",
-            "64",
-            "30",
-            "254"
-        ],
-        "corretta": 0,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 93,
-        "domanda": "Qual è la funzione del protocollo ARP?",
-        "risposte": [
-            "Risolvere indirizzi IP in nomi a dominio",
-            "Rilevare dispositivi attivi su una rete",
-            "Eseguire test di connettività tra host",
-            "Associare indirizzi IP a indirizzi MAC"
-        ],
-        "corretta": 3,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 94,
-        "domanda": "Qual è la route di default in una tabella di routing IPv4?",
-        "risposte": [
-            "255.255.255.255/32",
-            "0.0.0.0/0",
-            "127.0.0.1/8",
-            "192.168.0.0/16"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 95,
-        "domanda": "Cosa succede se un IP di destinazione non è nella stessa subnet dell'host?",
-        "risposte": [
-            "Il pacchetto viene scartato",
-            "Il pacchetto viene trasmesso in broadcast",
-            "Il pacchetto viene inoltrato al default gateway",
-            "Il pacchetto viene inviato in multicast"
-        ],
-        "corretta": 2,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 96,
-        "domanda": "Quale criterio usa un router per scegliere la rotta migliore?",
-        "risposte": [
-            "Indirizzo IP più basso",
-            "Rotta con maschera più lunga (più specifica)",
-            "Rotta con più hop",
-            "Ordine di inserimento nella tabella"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
     }
 ]

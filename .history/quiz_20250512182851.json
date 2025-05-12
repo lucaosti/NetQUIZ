@@ -996,11 +996,11 @@
             "Indica se l'indirizzo è temporaneo",
             "Indica se usare DHCPv6 per ottenere l'indirizzo IP"
         ],
-        "corretta": 3,
+        "corretta": ,
         "categoria": "IPv6"
     },
     {
-        "id": 89,
+        "id": 1200,
         "domanda": "Qual è la lunghezza di un indirizzo IPv4?",
         "risposte": [
             "16 bit",
@@ -1012,7 +1012,7 @@
         "categoria": "IPv4"
     },
     {
-        "id": 90,
+        "id": 1201,
         "domanda": "Cosa rappresenta l'indirizzo 127.0.0.1 in IPv4?",
         "risposte": [
             "Indirizzo broadcast",
@@ -1024,7 +1024,7 @@
         "categoria": "IPv4"
     },
     {
-        "id": 91,
+        "id": 1202,
         "domanda": "Cosa indica il prefisso /24 in un indirizzo IP con notazione CIDR?",
         "risposte": [
             "24 bit per l'host",
@@ -1036,7 +1036,7 @@
         "categoria": "IPv4"
     },
     {
-        "id": 92,
+        "id": 1203,
         "domanda": "Qual è il numero massimo di host utilizzabili in una rete /26?",
         "risposte": [
             "62",
@@ -1048,31 +1048,31 @@
         "categoria": "IPv4"
     },
     {
-        "id": 93,
+        "id": 1204,
         "domanda": "Qual è la funzione del protocollo ARP?",
         "risposte": [
             "Risolvere indirizzi IP in nomi a dominio",
             "Rilevare dispositivi attivi su una rete",
-            "Eseguire test di connettività tra host",
-            "Associare indirizzi IP a indirizzi MAC"
+            "Associare indirizzi IP a indirizzi MAC",
+            "Eseguire test di connettività tra host"
         ],
-        "corretta": 3,
+        "corretta": 2,
         "categoria": "IPv4"
     },
     {
-        "id": 94,
+        "id": 1205,
         "domanda": "Qual è la route di default in una tabella di routing IPv4?",
         "risposte": [
-            "255.255.255.255/32",
             "0.0.0.0/0",
+            "255.255.255.255/32",
             "127.0.0.1/8",
             "192.168.0.0/16"
         ],
-        "corretta": 1,
+        "corretta": 0,
         "categoria": "IPv4"
     },
     {
-        "id": 95,
+        "id": 1206,
         "domanda": "Cosa succede se un IP di destinazione non è nella stessa subnet dell'host?",
         "risposte": [
             "Il pacchetto viene scartato",
@@ -1084,7 +1084,7 @@
         "categoria": "IPv4"
     },
     {
-        "id": 96,
+        "id": 1207,
         "domanda": "Quale criterio usa un router per scegliere la rotta migliore?",
         "risposte": [
             "Indirizzo IP più basso",

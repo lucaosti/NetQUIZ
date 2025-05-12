@@ -1064,11 +1064,10 @@
         "domanda": "Qual è la route di default in una tabella di routing IPv4?",
         "risposte": [
             "255.255.255.255/32",
-            "0.0.0.0/0",
             "127.0.0.1/8",
             "192.168.0.0/16"
         ],
-        "corretta": 1,
+        "corretta": 0,
         "categoria": "IPv4"
     },
     {

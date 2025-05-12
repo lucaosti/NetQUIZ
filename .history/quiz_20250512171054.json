@@ -236,11 +236,11 @@
         "id": 22,
         "domanda": "Cosa significa VoIP?",
         "risposte": [
+            "Voice over Internet Protocol",
             "Video over Internet Protocol",
-            "Virtual over Internet Protocol",
-            "Voice over Internet Protocol"
+            "Virtual over Internet Protocol"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
@@ -537,11 +537,11 @@
         "id": 49,
         "domanda": "Qual \u00e8 la funzione principale del protocollo RRC in LTE?",
         "risposte": [
+            "Gestire le risorse radio",
             "Controllare la connessione",
-            "Fornire accesso a Internet",
-            "Gestire le risorse radio"
+            "Fornire accesso a Internet"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Mobile Networks"
     },
     {
@@ -570,44 +570,44 @@
         "id": 52,
         "domanda": "Cosa significa EPC in LTE?",
         "risposte": [
-            "Enhanced Packet Core",
             "Evolved Packet Core",
+            "Enhanced Packet Core",
             "Extended Packet Core"
         ],
-        "corretta": 1,
+        "corretta": 0,
         "categoria": "Mobile Networks"
     },
     {
         "id": 53,
         "domanda": "Qual \u00e8 la funzione principale del protocollo PDCP in LTE?",
         "risposte": [
+            "Gestire la crittografia dei dati",
             "Controllare la connessione",
-            "Fornire accesso a Internet",
-            "Gestire la crittografia dei dati"
+            "Fornire accesso a Internet"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Mobile Networks"
     },
     {
         "id": 54,
         "domanda": "Cosa significa HSPA in LTE?",
         "risposte": [
+            "High Speed Packet Access",
             "High Speed Packet Application",
-            "High Speed Packet Architecture",
-            "High Speed Packet Access"
+            "High Speed Packet Architecture"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Mobile Networks"
     },
     {
         "id": 55,
         "domanda": "Qual \u00e8 la funzione principale del protocollo RLC in LTE?",
         "risposte": [
-            "Controllare la connessione",
             "Gestire la trasmissione dei dati",
+            "Controllare la connessione",
             "Fornire accesso a Internet"
         ],
-        "corretta": 1,
+        "corretta": 0,
         "categoria": "Mobile Networks"
     },
     {
@@ -727,372 +727,5 @@
         ],
         "corretta": 3,
         "categoria": "Reti"
-    },
-    {
-        "id": 66,
-        "domanda": "Qual è la principale differenza tra Control Plane e Data Plane in LTE?",
-        "risposte": [
-            "Il Control Plane gestisce i dati utente, mentre il Data Plane gestisce la segnalazione",
-            "Il Data Plane trasporta dati utente, mentre il Control Plane gestisce connessioni e mobilità",
-            "Entrambi trasportano dati utente ma su percorsi diversi",
-            "Il Data Plane è usato solo durante la fase di attivazione della rete"
-        ],
-        "corretta": 1,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 67,
-        "domanda": "Qual è la funzione dell'interfaccia S1 nel sistema LTE?",
-        "risposte": [
-            "Collegare i terminali mobili tra loro",
-            "Trasportare la voce nei canali dedicati",
-            "Collegare l'eNodeB al core network per dati e segnalazione",
-            "Sincronizzare i clock delle celle LTE"
-        ],
-        "corretta": 2,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 68,
-        "domanda": "Qual è la funzione dell'interfaccia S1 nel sistema LTE?",
-        "risposte": [
-            "Collegare i terminali mobili tra loro",
-            "Trasportare la voce nei canali dedicati",
-            "Sincronizzare i clock delle celle LTE",
-            "Collegare l'eNodeB al core network per dati e segnalazione"
-        ],
-        "corretta": 3,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 69,
-        "domanda": "Qual è la funzione principale del core network (EPC) in LTE?",
-        "risposte": [
-            "Gestire la comunicazione radio",
-            "Fornire connettività tra terminali nella stessa cella",
-            "Gestire mobilità, autenticazione e instradamento dei dati",
-            "Convertire segnali analogici in digitali"
-        ],
-        "corretta": 2,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 70,
-        "domanda": "Qual è il ruolo dell'eNodeB nella rete LTE?",
-        "risposte": [
-            "Autenticare gli utenti",
-            "Gestire la comunicazione radio con il terminale",
-            "Memorizzare i dati degli utenti",
-            "Gestire la numerazione IP"
-        ],
-        "corretta": 1,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 71,
-        "domanda": "Cosa avviene nel topology-based control driven label binding in MPLS?",
-        "risposte": [
-            "Router MPLS devono usare il protocollo BGP",
-            "Tabelle di forwarding del router MPLS sono configurate automaticamente",
-            "Ogni router crea diversi LSP in base alla topologia",
-            "Ogni router può utilizzare diversi LSP per traffici distinti"
-        ],
-        "corretta": 2,
-        "categoria": "MPLS"
-    },
-    {
-        "id": 72,
-        "domanda": "Cosa trasporta un regular burst in GSM?",
-        "risposte": [
-            "Solo informazioni di traffico dati",
-            "Informazioni di traffico (voce) e di segnalazione",
-            "Solo informazioni di segnalazione"
-        ],
-        "corretta": 1,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 73,
-        "domanda": "Come funziona l'FDMA nelle reti cellulari?",
-        "risposte": [
-            "Mantengo la stessa frequenza su tutte le celle",
-            "Celle adiacenti hanno frequenze diverse, ma possono ripetersi se abbastanza lontane",
-            "Ogni utente cambia frequenza continuamente"
-        ],
-        "corretta": 1,
-        "categoria": "Reti Cellulari"
-    },
-    {
-        "id": 74,
-        "domanda": "Quando è possibile inviare una richiesta ARP da x.x.x.x/24 a x.x.x.y?",
-        "risposte": [
-            "Sempre possibile",
-            "Possibile se c'è uno switch in mezzo",
-            "Mai possibile",
-            "Solo se entrambi sono nella stessa subnet"
-        ],
-        "corretta": 3,
-        "categoria": "Reti"
-    },
-    {
-        "id": 75,
-        "domanda": "Cosa rappresenta il problema del 'count to infinity' nei protocolli di routing?",
-        "risposte": [
-            "Nessuna delle precedenti",
-            "È un passaggio del Link State",
-            "Serve per dire che una stazione non è raggiungibile",
-            "È uno stato temporaneo del Distance Vector"
-        ],
-        "corretta": 3,
-        "categoria": "Routing"
-    },
-    {
-        "id": 76,
-        "domanda": "Perché OSPF-TE e ISIS-TE sono preferibili a IP per il traffic engineering?",
-        "risposte": [
-            "Permettono routing basato su vincoli (constraint-based)",
-            "Sono più veloci dei protocolli IP standard",
-            "Supportano NAT e firewall nativamente",
-            "Usano il livello fisico per gestire il traffico"
-        ],
-        "corretta": 0,
-        "categoria": "Routing"
-    },
-    {
-        "id": 77,
-        "domanda": "Quale tipo di protocollo è RIP?",
-        "risposte": [
-            "Lavora con link state",
-            "Lavora con distance vector",
-            "È un protocollo di switching"
-        ],
-        "corretta": 1,
-        "categoria": "Routing"
-    },
-    {
-        "id": 78,
-        "domanda": "Quale di queste affermazioni è falsa sulle VPN SSL?",
-        "risposte": [
-            "Suscettibili a DoS",
-            "Creano un tunnel su TCP o UDP",
-            "Non esistono soluzioni standard"
-        ],
-        "corretta": 2,
-        "categoria": "VPN"
-    },
-    {
-        "id": 79,
-        "domanda": "Cosa comporta l'accesso centralizzato in una VPN?",
-        "risposte": [
-            "Per essere mandato su internet posso non prendere la strada più ideale",
-            "Non posso usare firewall",
-            "Genera maggiore carico dovuto al traffico che viene da Internet"
-        ],
-        "corretta": 0,
-        "categoria": "VPN"
-    },
-    {
-        "id": 80,
-        "domanda": "Qual è la lunghezza di un indirizzo IPv6?",
-        "risposte": [
-            "32 bit",
-            "64 bit",
-            "128 bit",
-            "256 bit"
-        ],
-        "corretta": 2,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 81,
-        "domanda": "Cosa rappresenta l'indirizzo IPv6 ::1?",
-        "risposte": [
-            "Indirizzo broadcast",
-            "Indirizzo di loopback",
-            "Indirizzo link-local",
-            "Indirizzo multicast"
-        ],
-        "corretta": 1,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 82,
-        "domanda": "Quale tipo di indirizzo IPv6 è utilizzato per la comunicazione tra dispositivi sulla stessa rete fisica?",
-        "risposte": [
-            "Global Unicast",
-            "Link-local",
-            "Anycast",
-            "Multicast"
-        ],
-        "corretta": 1,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 83,
-        "domanda": "Quale meccanismo sostituisce ARP in IPv6?",
-        "risposte": [
-            "DHCPv6",
-            "ICMPv6 Neighbor Discovery",
-            "Solicited Node Address",
-            "Routing Advertisement"
-        ],
-        "corretta": 1,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 84,
-        "domanda": "A cosa serve il messaggio ICMPv6 di tipo 135 (Neighbor Solicitation)?",
-        "risposte": [
-            "Diagnosticare la connettività Internet",
-            "Scoprire i router vicini",
-            "Ottenere l'indirizzo MAC associato a un indirizzo IPv6",
-            "Verificare l'unicità dell'indirizzo assegnato"
-        ],
-        "corretta": 2,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 85,
-        "domanda": "Qual è il prefisso degli indirizzi IPv6 link-local?",
-        "risposte": [
-            "2000::/3",
-            "FD00::/8",
-            "FE80::/64",
-            "FF00::/8"
-        ],
-        "corretta": 2,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 86,
-        "domanda": "Qual è il significato di SLAAC in IPv6?",
-        "risposte": [
-            "Un protocollo di sicurezza",
-            "Un metodo per il routing statico",
-            "Una tecnica di configurazione automatica dell'indirizzo",
-            "Un'estensione del DNS"
-        ],
-        "corretta": 2,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 87,
-        "domanda": "Che tipo di indirizzo IPv6 è ::?",
-        "risposte": [
-            "Loopback",
-            "Unspecified",
-            "Anycast",
-            "Multicast"
-        ],
-        "corretta": 1,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 88,
-        "domanda": "Cosa indica il flag 'M' nei messaggi Router Advertisement in IPv6?",
-        "risposte": [
-            "Indica se usare l'indirizzo multicast",
-            "Indica se usare un gateway esterno",
-            "Indica se l'indirizzo è temporaneo",
-            "Indica se usare DHCPv6 per ottenere l'indirizzo IP"
-        ],
-        "corretta": 3,
-        "categoria": "IPv6"
-    },
-    {
-        "id": 89,
-        "domanda": "Qual è la lunghezza di un indirizzo IPv4?",
-        "risposte": [
-            "16 bit",
-            "32 bit",
-            "64 bit",
-            "128 bit"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 90,
-        "domanda": "Cosa rappresenta l'indirizzo 127.0.0.1 in IPv4?",
-        "risposte": [
-            "Indirizzo broadcast",
-            "Indirizzo di loopback",
-            "Indirizzo di rete",
-            "Indirizzo multicast"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 91,
-        "domanda": "Cosa indica il prefisso /24 in un indirizzo IP con notazione CIDR?",
-        "risposte": [
-            "24 bit per l'host",
-            "Indirizzo IP privato",
-            "24 bit per la parte di rete",
-            "Maschera 255.255.255.255"
-        ],
-        "corretta": 2,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 92,
-        "domanda": "Qual è il numero massimo di host utilizzabili in una rete /26?",
-        "risposte": [
-            "62",
-            "64",
-            "30",
-            "254"
-        ],
-        "corretta": 0,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 93,
-        "domanda": "Qual è la funzione del protocollo ARP?",
-        "risposte": [
-            "Risolvere indirizzi IP in nomi a dominio",
-            "Rilevare dispositivi attivi su una rete",
-            "Eseguire test di connettività tra host",
-            "Associare indirizzi IP a indirizzi MAC"
-        ],
-        "corretta": 3,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 94,
-        "domanda": "Qual è la route di default in una tabella di routing IPv4?",
-        "risposte": [
-            "255.255.255.255/32",
-            "0.0.0.0/0",
-            "127.0.0.1/8",
-            "192.168.0.0/16"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 95,
-        "domanda": "Cosa succede se un IP di destinazione non è nella stessa subnet dell'host?",
-        "risposte": [
-            "Il pacchetto viene scartato",
-            "Il pacchetto viene trasmesso in broadcast",
-            "Il pacchetto viene inoltrato al default gateway",
-            "Il pacchetto viene inviato in multicast"
-        ],
-        "corretta": 2,
-        "categoria": "IPv4"
-    },
-    {
-        "id": 96,
-        "domanda": "Quale criterio usa un router per scegliere la rotta migliore?",
-        "risposte": [
-            "Indirizzo IP più basso",
-            "Rotta con maschera più lunga (più specifica)",
-            "Rotta con più hop",
-            "Ordine di inserimento nella tabella"
-        ],
-        "corretta": 1,
-        "categoria": "IPv4"
     }
 ]
