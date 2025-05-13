@@ -399,57 +399,57 @@
     },
     {
         "id": 37,
-        "domanda": "Qual è la funzione principale di un server LDAP in un'infrastruttura IT?",
+        "domanda": "Qual \u00e8 la funzione principale di un server LDAP?",
         "risposte": [
-            "Gestire un archivio centralizzato di utenti, gruppi e risorse per l'autenticazione e l'autorizzazione",
-            "Monitorare il traffico di rete e generare log di sicurezza",
-            "Sincronizzare l'orario dei dispositivi con un server centrale"
+            "Gestire directory e informazioni di rete",
+            "Memorizzare dati",
+            "Fornire accesso a Internet"
         ],
         "corretta": 0,
         "categoria": "Reti"
     },
     {
         "id": 38,
-        "domanda": "A cosa servono le VPN (Virtual Private Network)?",
+        "domanda": "Cosa significa RDP?",
         "risposte": [
-            "Partizionare una rete privata (es. quella di una casa madre con filiali) in più reti virtualmente separate",
-            "Trasportare traffico privato attraverso un'infrastruttura condivisa simulando le condizioni di una rete privata",
-            "Dividere una rete locale aziendale in sottoreti per diverse funzioni aziendali (es. vendite, acquisti, ingegneria, marketing)"
+            "Remote Desktop Protocol",
+            "Remote Data Protocol",
+            "Remote Device Protocol"
         ],
-        "corretta": 1,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
         "id": 39,
         "domanda": "Qual \u00e8 la funzione principale di un server Telnet?",
         "risposte": [
+            "Fornire accesso remoto a un computer",
             "Memorizzare dati",
-            "Fornire accesso a Internet",
-            "Fornire accesso remoto a un computer"
+            "Fornire accesso a Internet"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
-    "id": 40,
-    "domanda": "Qual è il ruolo del protocollo TLS in una connessione HTTPS?",
-    "risposte": [
-        "Velocizzare la trasmissione dei dati HTTP tramite compressione",
-        "Fornire la crittografia e la sicurezza alla comunicazione HTTP",
-        "Tradurre richieste HTTP in formato comprensibile ai server DNS"
-    ],
-    "corretta": 1,
-    "categoria": "Sicurezza"
+        "id": 40,
+        "domanda": "Cosa significa SSH?",
+        "risposte": [
+            "Secure Shell",
+            "Secure Socket Host",
+            "Secure System Host"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
     },
     {
         "id": 41,
         "domanda": "Qual \u00e8 la funzione principale di un server SFTP?",
         "risposte": [
+            "Trasferire file in modo sicuro",
             "Memorizzare dati",
-            "Fornire accesso a Internet",
-            "Trasferire file in modo sicuro"
+            "Fornire accesso a Internet"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
@@ -466,35 +466,35 @@
     },
     {
         "id": 43,
-        "domanda": "Durante una connessione HTTPS, quale parte del protocollo TLS è responsabile della negoziazione delle chiavi di cifratura?",
+        "domanda": "Cosa significa TLS?",
         "risposte": [
-            "Record Layer",
-            "Session Layer",
-            "Handshake TLS"
+            "Transport Layer Security",
+            "Transport Layer System",
+            "Transport Layer Socket"
         ],
-        "corretta": 2,
-        "categoria": "Sicurezza"
+        "corretta": 0,
+        "categoria": "Reti"
     },
     {
         "id": 44,
         "domanda": "Qual \u00e8 la funzione principale di un server TFTP?",
         "risposte": [
+            "Trasferire file in modo semplice",
             "Memorizzare dati",
-            "Fornire accesso a Internet",
-            "Trasferire file in modo semplice"
+            "Fornire accesso a Internet"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
         "id": 45,
-        "domanda": "In cosa si differenzia SNTP rispetto a NTP nella sincronizzazione dell'orario?",
+        "domanda": "Cosa significa SNTP?",
         "risposte": [
-            "SNTP utilizza TCP mentre NTP utilizza UDP",
-            "SNTP permette una sincronizzazione più accurata tramite algoritmi di correzione complessi",
-            "SNTP offre una sincronizzazione meno precisa e non compensa le variazioni di latenza di rete"
+            "Simple Network Time Protocol",
+            "Secure Network Time Protocol",
+            "Standard Network Time Protocol"
         ],
-        "corretta": 2,
+        "corretta": 0,
         "categoria": "Reti"
     },
     {
@@ -1141,147 +1141,15 @@
         "categoria": "Reti"
     },
     {
-        "id": 101,
-        "domanda": "In che modo l'attributo Local Preference influisce sulla selezione delle rotte BGP?",
-        "risposte": [
-            "BGP sceglie la rotta con il valore di Local Preference più basso",
-            "BGP sceglie la rotta con il valore di Local Preference più alto",
-            "Local Preference viene ignorato nei percorsi interni all'AS"
-        ],
-        "corretta": 1,
-        "categoria": "Routing"
-    },
-    {
-        "id": 102,
-        "domanda": "Qual è una limitazione principale del protocollo Telnet rispetto a SSH?",
-        "risposte": [
-            "Telnet trasmette i dati in chiaro senza crittografia",
-            "Telnet non consente l'accesso remoto ai dispositivi",
-            "Telnet funziona solo su reti wireless"
-        ],
-        "corretta": 0,
-        "categoria": "Reti"
-    },
-    {
-        "id": 103,
-        "domanda": "Quale protocollo di trasporto utilizza TFTP e quale limite comporta?",
-        "risposte": [
-            "TCP, che introduce overhead eccessivo",
-            "UDP, che non garantisce l'affidabilità del trasferimento",
-            "ICMP, che limita il supporto ai soli messaggi di errore"
-        ],
-        "corretta": 0,
-        "categoria": "Reti"
-    },
-    {
-        "id": 104,
-        "domanda": "Qual è una caratteristica distintiva del protocollo IMAP rispetto a POP3?",
-        "risposte": [
-            "IMAP scarica e rimuove automaticamente le email dal server dopo la lettura",
-            "IMAP utilizza solo connessioni non cifrate per motivi di compatibilità",
-             "IMAP consente la gestione delle email direttamente sul server mantenendo la sincronizzazione tra più dispositivi"
-        ],
-        "corretta": 2,
-        "categoria": "Email"
-    },
-    {
-        "id": 105,
-        "domanda": "Perché la rete LTE utilizza esclusivamente la commutazione a pacchetto, anche per i servizi voce?",
-        "risposte": [
-          "Perché la commutazione a circuito è obbligatoria solo nelle reti 2G e 3G",
-          "Per garantire una gestione efficiente e unificata del traffico dati e voce tramite protocolli IP",
-          "Perché la commutazione a pacchetto consente l'uso esclusivo di frequenze non licenziate"
-        ],
-        "corretta": 1,
-        "categoria": "LTE"
-    },
-    {
-        "id": 106,
-        "domanda": "Quale protocollo di routing è più adatto per reti di grandi dimensioni e complesse?",
-        "risposte": [
-            "RIP",
-            "OSPF",
-            "BGP"
-        ],
-        "corretta": 2,
-        "categoria": "Routing"
-    },
-    {
-        "id": 107,
-        "domanda": "Quale tra i seguenti non è un protocollo di routing dinamico?",
-        "risposte": [
-            "RIP",
-            "OSPF",
-            "EIGRP",
-            "Static Routing"
-        ],
-        "corretta": 3,
-        "categoria": "Routing"
-    },
-    {
-        "id": 108,
-        "domanda": "Quale tra i seguenti protocolli è utilizzato per la gestione della rete?",
-        "risposte": [
-            "SNMP",
-            "HTTP",
-            "FTP"
-        ],
-        "corretta": 0,
-        "categoria": "Reti"
-    },
-    {
-        "id": 109,
-        "domanda": "Quale tra i seguenti protocolli è utilizzato per la sincronizzazione dell'orario?",
-        "risposte": [
-            "NTP",
-            "SMTP",
-            "DHCP"
-        ],
-        "corretta": 0,
-        "categoria": "Reti"
-    },
-    {
-        "id": 110,
-        "domanda": "Qual è il ruolo del PDN Gateway (PGW) nella rete core LTE?",
-        "risposte": [
-          "Gestire l’allocazione delle risorse radio",
-          "Monitorare lo stato della connessione fisica tra eNodeB e UE",
-          "Fornire l'accesso dell'utente alla rete IP esterna e gestire le politiche di traffico"
-        ],
-        "corretta": 2,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 111,
-        "domanda": "In quale scenario il Serving Gateway (SGW) è coinvolto direttamente?",
-        "risposte": [
-          "Durante il trasferimento di pacchetti tra eNodeB e PGW",
-          "Durante la gestione dell'identità dell'utente",
-          "Durante la cifratura end-to-end della sessione dati"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 112,
-        "domanda": "Quale delle seguenti funzioni è svolta direttamente dall'eNodeB in una rete LTE?",
-        "risposte": [
-          "Gestione della connessione radio e scheduling delle risorse",
-          "Assegnazione dell'indirizzo IP all'utente",
-          "Smistamento del traffico verso la rete Internet pubblica"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 113,
-        "domanda": "Qual è la funzione principale del protocollo GTP nella rete LTE?",
-        "risposte": [
-          "Creare tunnel per il trasporto dei dati utente tra eNodeB, SGW e PGW",
-          "Effettuare la modulazione del segnale radio tra UE e eNodeB",
-          "Gestire la cifratura dei pacchetti IP a livello applicativo"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
+    "id": 101,
+    "domanda": "In che modo l'attributo Local Preference influisce sulla selezione delle rotte BGP?",
+    "risposte": [
+        "BGP sceglie la rotta con il valore di Local Preference più basso",
+        "BGP sceglie la rotta con il valore di Local Preference più alto",
+        "Local Preference viene ignorato nei percorsi interni all'AS"
+    ],
+    "corretta": 1,
+    "categoria": "Routing"
     }
+
 ]

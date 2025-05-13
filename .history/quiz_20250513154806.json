@@ -1249,39 +1249,29 @@
           "Fornire l'accesso dell'utente alla rete IP esterna e gestire le politiche di traffico"
         ],
         "corretta": 2,
-        "categoria": "Mobile Networks"
+        "categoria": "LTE"
     },
     {
-        "id": 111,
-        "domanda": "In quale scenario il Serving Gateway (SGW) è coinvolto direttamente?",
-        "risposte": [
-          "Durante il trasferimento di pacchetti tra eNodeB e PGW",
-          "Durante la gestione dell'identità dell'utente",
-          "Durante la cifratura end-to-end della sessione dati"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 112,
-        "domanda": "Quale delle seguenti funzioni è svolta direttamente dall'eNodeB in una rete LTE?",
-        "risposte": [
-          "Gestione della connessione radio e scheduling delle risorse",
-          "Assegnazione dell'indirizzo IP all'utente",
-          "Smistamento del traffico verso la rete Internet pubblica"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    },
-    {
-        "id": 113,
-        "domanda": "Qual è la funzione principale del protocollo GTP nella rete LTE?",
-        "risposte": [
-          "Creare tunnel per il trasporto dei dati utente tra eNodeB, SGW e PGW",
-          "Effettuare la modulazione del segnale radio tra UE e eNodeB",
-          "Gestire la cifratura dei pacchetti IP a livello applicativo"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    }
+  "id": 49,
+  "domanda": "In quale scenario il Serving Gateway (SGW) è coinvolto direttamente?",
+  "risposte": [
+    "Durante il trasferimento di pacchetti tra eNodeB e PGW",
+    "Durante la gestione dell'identità dell'utente",
+    "Durante la cifratura end-to-end della sessione dati"
+  ],
+  "corretta": 0,
+  "categoria": "LTE"
+},
+{
+  "id": 48,
+  "domanda": "Quale delle seguenti funzioni è svolta direttamente dall'eNodeB in una rete LTE?",
+  "risposte": [
+    "Gestione della connessione radio e scheduling delle risorse",
+    "Assegnazione dell'indirizzo IP all'utente",
+    "Smistamento del traffico verso la rete Internet pubblica"
+  ],
+  "corretta": 0,
+  "categoria": "LTE"
+},
+
 ]

@@ -1272,16 +1272,16 @@
         ],
         "corretta": 0,
         "categoria": "Mobile Networks"
-    },
-    {
-        "id": 113,
-        "domanda": "Qual è la funzione principale del protocollo GTP nella rete LTE?",
-        "risposte": [
-          "Creare tunnel per il trasporto dei dati utente tra eNodeB, SGW e PGW",
-          "Effettuare la modulazione del segnale radio tra UE e eNodeB",
-          "Gestire la cifratura dei pacchetti IP a livello applicativo"
-        ],
-        "corretta": 0,
-        "categoria": "Mobile Networks"
-    }
+},
+{
+  "id": 113,
+  "domanda": "Qual è la funzione principale del protocollo GTP nella rete LTE?",
+  "risposte": [
+    "Creare tunnel per il trasporto dei dati utente tra eNodeB, SGW e PGW",
+    "Effettuare la modulazione del segnale radio tra UE e eNodeB",
+    "Gestire la cifratura dei pacchetti IP a livello applicativo"
+  ],
+  "corretta": 0,
+  "categoria": "Mobile Networks"
+}
 ]
