@@ -1726,107 +1726,62 @@
   },
   {
     "id": 160,
-    "domanda": "Qual è la principale limitazione dell'approccio Dual Stack nella fase avanzata della transizione IPv6?",
+    "domanda": "Cosa accade quando uno switch riceve un frame con un indirizzo MAC di destinazione sconosciuto nella sua Filtering Database?",
     "risposte": [
-      "Richiede il supporto DNSSEC",
-      "Non permette tunneling attraverso reti IPv4",
-      "Non consente comunicazioni dirette tra host IPv6-only e IPv4-only",
-      "Blocca l'accesso a server IPv6-only"
+      "Scarta il frame per motivi di sicurezza",
+      "Effettua un broadcast su tutte le porte",
+      "Effettua un flooding su tutte le porte eccetto quella di ingresso",
+      "Invia una richiesta ARP al destinatario"
     ],
     "corretta": 2,
-    "categoria": "Transizione IPv6"
+    "categoria": "LAN"
   },
   {
     "id": 161,
-    "domanda": "Qual è la funzione principale dell'AFTR in un'architettura DS-Lite?",
+    "domanda": "Quale principio consente a uno switch di aggiornare automaticamente la sua Filtering Database quando riceve nuovi frame?",
     "risposte": [
-      "Assegnare porte statiche ai client",
-      "Tradurre DNS IPv6 in DNS IPv4",
-      "Allocare indirizzi IPv6 ai client",
-      "Fungere da NAT44 centralizzato e terminatore del tunnel IPv6"
+      "Forwarding controllato",
+      "Backward learning",
+      "Routing dinamico",
+      "Bridge spanning"
     ],
-    "corretta": 3,
-    "categoria": "DS-Lite"
+    "corretta": 1,
+    "categoria": "LAN"
   },
   {
     "id": 162,
-    "domanda": "Nel meccanismo A+P, chi è responsabile della gestione del NAT?",
+    "domanda": "Perché si dice che gli switch Ethernet sono 'trasparenti' per gli host finali?",
     "risposte": [
-      "Il router centrale dell’ISP",
-      "Il client, che gestisce range di porte assegnate",
-      "Il server DNS64",
-      "Il relay 6to4"
+      "Perché cifrano il traffico di rete senza che gli host se ne accorgano",
+      "Perché funzionano in modalità broadcast",
+      "Perché non richiedono configurazione sugli host e si comportano come se non esistessero",
+      "Perché ogni pacchetto viene inoltrato a tutti i dispositivi collegati"
     ],
-    "corretta": 1,
-    "categoria": "A+P"
+    "corretta": 2,
+    "categoria": "LAN"
   },
   {
     "id": 163,
-    "domanda": "Perché NAT64 + DNS64 non funziona con indirizzi IP letterali?",
+    "domanda": "Cosa rappresenta una voce nella Filtering Database di uno switch?",
     "risposte": [
-      "Perché il NAT64 blocca ICMP",
-      "Perché l'indirizzo IP non passa dal DNS, quindi DNS64 non può sintetizzare il record AAAA",
-      "Perché il prefisso 64:ff9b::/96 non è compatibile con IP pubblici",
-      "Perché NAT64 supporta solo UDP"
+      "Un'associazione tra indirizzo IP e porta fisica",
+      "Un'associazione tra indirizzo MAC e porta fisica",
+      "Un timer che indica il traffico sulla porta",
+      "Una tabella di instradamento IP"
     ],
     "corretta": 1,
-    "categoria": "NAT64"
+    "categoria": "LAN"
   },
   {
-    "id": 164,
-    "domanda": "Quale meccanismo di transizione permette IPv4 ↔ IPv4 su backbone IPv6-only?",
-    "risposte": ["Teredo", "6to4",  "NAT64", "DS-Lite"],
-    "corretta": 3,
-    "categoria": "Transizione IPv6"
-  },
-  {
-    "id": 165,
-    "domanda": "Qual è il principale svantaggio dell’uso di NAT a cascata (NAT dentro NAT) nella transizione IPv6?",
+    "id": 14,
+    "domanda": "Cosa accade se un host cambia porta fisica su uno switch Ethernet?",
     "risposte": [
-      "Compromette la sicurezza del prefisso IPv6",
-      "Richiede supporto NAT66 nei router domestici",
-      "Complica il port forwarding e rende difficile il tracciamento",
-      "Invalida i pacchetti ICMPv6"
+      "Lo switch blocca il traffico finché non viene aggiornato manualmente",
+      "Lo switch esegue un ARP per localizzare il nuovo indirizzo",
+      "La Filtering Database viene aggiornata automaticamente quando l'host invia un nuovo frame",
+      "Non è possibile spostare un host senza riconfigurare lo switch"
     ],
     "corretta": 2,
-    "categoria": "Criticità NAT"
-  },
-  {
-    "id": 166,
-    "domanda": "Quale delle seguenti tecnologie richiede il supporto del Port Control Protocol (PCP) per richiedere porte aggiuntive?",
-    "risposte": ["NAT64", "Teredo", "A+P", "Dual Stack"],
-    "corretta": 2,
-    "categoria": "A+P"
-  },
-  {
-    "id": 167,
-    "domanda": "Qual è l'obiettivo della fase finale della transizione IPv6 secondo l’approccio a isole?",
-    "risposte": [
-      "Rendere l'intera Internet IPv4-only",
-      "Estendere IPv6 solo nei datacenter",
-      "Consentire la convivenza temporanea tra IPv4 e IPv6",
-      "Permettere che IPv6 prenda completamente il sopravvento su IPv4"
-    ],
-    "corretta": 3,
-    "categoria": "Fasi transizione"
-  },
-  {
-    "id": 168,
-    "domanda": "Qual è il ruolo dei router in una rete IPv6 durante la transizione?",
-    "risposte": [
-      "Supportano solo IPv6 statico",
-      "Richiedono traduzione DNS per ogni pacchetto",
-      "Supportano IPv6, ma con maturità inferiore rispetto a IPv4",
-      "Gestiscono la conversione tra MAC e IPv6"
-    ],
-    "corretta": 2,
-    "categoria": "Supporto IPv6"
-  },
-  {
-    "id": 169,
-    "domanda": "Quale tecnologia permette la creazione automatica di indirizzi IPv6 usando il prefisso 2002::/16?",
-    "risposte": ["ISATAP", "6to4", "Tunnel Broker", "DS-Lite"],
-    "corretta": 1,
-    "categoria": "Tunneling"
+    "categoria": "LAN"
   }
 ]

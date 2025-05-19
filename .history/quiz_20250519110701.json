@@ -1775,8 +1775,8 @@
   {
     "id": 164,
     "domanda": "Quale meccanismo di transizione permette IPv4 ↔ IPv4 su backbone IPv6-only?",
-    "risposte": ["Teredo", "6to4",  "NAT64", "DS-Lite"],
-    "corretta": 3,
+    "risposte": ["Teredo", "6to4",  "NAT64"],
+    "corretta": 2,
     "categoria": "Transizione IPv6"
   },
   {

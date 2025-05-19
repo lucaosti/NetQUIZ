@@ -1730,10 +1730,9 @@
     "risposte": [
       "Richiede il supporto DNSSEC",
       "Non permette tunneling attraverso reti IPv4",
-      "Non consente comunicazioni dirette tra host IPv6-only e IPv4-only",
       "Blocca l'accesso a server IPv6-only"
     ],
-    "corretta": 2,
+    "corretta": 1,
     "categoria": "Transizione IPv6"
   },
   {
@@ -1775,8 +1774,8 @@
   {
     "id": 164,
     "domanda": "Quale meccanismo di transizione permette IPv4 ↔ IPv4 su backbone IPv6-only?",
-    "risposte": ["Teredo", "6to4",  "NAT64", "DS-Lite"],
-    "corretta": 3,
+    "risposte": ["Teredo", "6to4", "DS-Lite", "NAT64"],
+    "corretta": 2,
     "categoria": "Transizione IPv6"
   },
   {

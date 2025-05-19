@@ -1729,27 +1729,27 @@
     "domanda": "Qual è la principale limitazione dell'approccio Dual Stack nella fase avanzata della transizione IPv6?",
     "risposte": [
       "Richiede il supporto DNSSEC",
-      "Non permette tunneling attraverso reti IPv4",
       "Non consente comunicazioni dirette tra host IPv6-only e IPv4-only",
+      "Non permette tunneling attraverso reti IPv4",
       "Blocca l'accesso a server IPv6-only"
     ],
-    "corretta": 2,
+    "corretta": 1,
     "categoria": "Transizione IPv6"
   },
   {
-    "id": 161,
+    "id": 202,
     "domanda": "Qual è la funzione principale dell'AFTR in un'architettura DS-Lite?",
     "risposte": [
       "Assegnare porte statiche ai client",
+      "Fungere da NAT44 centralizzato e terminatore del tunnel IPv6",
       "Tradurre DNS IPv6 in DNS IPv4",
-      "Allocare indirizzi IPv6 ai client",
-      "Fungere da NAT44 centralizzato e terminatore del tunnel IPv6"
+      "Allocare indirizzi IPv6 ai client"
     ],
-    "corretta": 3,
+    "corretta": 1,
     "categoria": "DS-Lite"
   },
   {
-    "id": 162,
+    "id": 203,
     "domanda": "Nel meccanismo A+P, chi è responsabile della gestione del NAT?",
     "risposte": [
       "Il router centrale dell’ISP",
@@ -1761,7 +1761,7 @@
     "categoria": "A+P"
   },
   {
-    "id": 163,
+    "id": 204,
     "domanda": "Perché NAT64 + DNS64 non funziona con indirizzi IP letterali?",
     "risposte": [
       "Perché il NAT64 blocca ICMP",
@@ -1773,14 +1773,14 @@
     "categoria": "NAT64"
   },
   {
-    "id": 164,
+    "id": 205,
     "domanda": "Quale meccanismo di transizione permette IPv4 ↔ IPv4 su backbone IPv6-only?",
-    "risposte": ["Teredo", "6to4",  "NAT64", "DS-Lite"],
-    "corretta": 3,
+    "risposte": ["Teredo", "6to4", "DS-Lite", "NAT64"],
+    "corretta": 2,
     "categoria": "Transizione IPv6"
   },
   {
-    "id": 165,
+    "id": 206,
     "domanda": "Qual è il principale svantaggio dell’uso di NAT a cascata (NAT dentro NAT) nella transizione IPv6?",
     "risposte": [
       "Compromette la sicurezza del prefisso IPv6",
@@ -1792,14 +1792,14 @@
     "categoria": "Criticità NAT"
   },
   {
-    "id": 166,
+    "id": 207,
     "domanda": "Quale delle seguenti tecnologie richiede il supporto del Port Control Protocol (PCP) per richiedere porte aggiuntive?",
     "risposte": ["NAT64", "Teredo", "A+P", "Dual Stack"],
     "corretta": 2,
     "categoria": "A+P"
   },
   {
-    "id": 167,
+    "id": 208,
     "domanda": "Qual è l'obiettivo della fase finale della transizione IPv6 secondo l’approccio a isole?",
     "risposte": [
       "Rendere l'intera Internet IPv4-only",
@@ -1811,7 +1811,7 @@
     "categoria": "Fasi transizione"
   },
   {
-    "id": 168,
+    "id": 209,
     "domanda": "Qual è il ruolo dei router in una rete IPv6 durante la transizione?",
     "risposte": [
       "Supportano solo IPv6 statico",
@@ -1823,7 +1823,7 @@
     "categoria": "Supporto IPv6"
   },
   {
-    "id": 169,
+    "id": 210,
     "domanda": "Quale tecnologia permette la creazione automatica di indirizzi IPv6 usando il prefisso 2002::/16?",
     "risposte": ["ISATAP", "6to4", "Tunnel Broker", "DS-Lite"],
     "corretta": 1,
