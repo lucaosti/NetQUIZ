@@ -1775,7 +1775,7 @@
   {
     "id": 164,
     "domanda": "Quale meccanismo di transizione permette IPv4 ↔ IPv4 su backbone IPv6-only?",
-    "risposte": ["Teredo", "6to4",  "NAT64", "DS-Lite"],
+    "risposte": ["Teredo", "6to4", "NAT64", "DS-Lite"],
     "corretta": 3,
     "categoria": "Transizione IPv6"
   },
@@ -1828,5 +1828,120 @@
     "risposte": ["ISATAP", "6to4", "Tunnel Broker", "DS-Lite"],
     "corretta": 1,
     "categoria": "Tunneling"
+  },
+  {
+    "id": 170,
+    "domanda": "Qual è la differenza principale tra un repeater e un hub in una LAN?",
+    "risposte": [
+      "Il repeater filtra i frame mentre l’hub li inoltra su tutte le porte",
+      "L’hub è un repeater multiporta e copia ogni frame su tutte le porte",
+      "Il repeater opera a livello 3, l’hub a livello 2",
+      "Il repeater aumenta la lunghezza minima del frame, l’hub no"
+    ],
+    "corretta": 1,
+    "categoria": "Dispositivi di accesso"
+  },
+  {
+    "id": 171,
+    "domanda": "In una rete Ethernet, cosa definisce un collision domain?",
+    "risposte": [
+      "L’insieme di switch che condividono la stessa VLAN",
+      "L’insieme di porte di router separate da un bridge",
+      "L’insieme di nodi che possono generare collisioni tra loro",
+      "L’insieme di frame broadcast propagati in tutta la LAN"
+    ],
+    "corretta": 2,
+    "categoria": "Domini di rete"
+  },
+  {
+    "id": 172,
+    "domanda": "Quale modalità di trasmissione elimina completamente le collisioni in uno switch moderno?",
+    "risposte": [
+      "Half-duplex",
+      "Broadcast-duplex",
+      "Full-duplex",
+      "Multicast-duplex"
+    ],
+    "corretta": 2,
+    "categoria": "Duplex"
+  },
+  {
+    "id": 173,
+    "domanda": "Perché uno switch è detto \"trasparente\" per gli host finali?",
+    "risposte": [
+      "Perché modifica gli indirizzi MAC dei frame",
+      "Perché non richiede alcuna configurazione sugli host",
+      "Perché trasmette solo frame unicast",
+      "Perché blocca il traffico broadcast"
+    ],
+    "corretta": 1,
+    "categoria": "Switching"
+  },
+  {
+    "id": 174,
+    "domanda": "Quale componente interno permette a uno switch di sapere su quale porta inoltrare un frame?",
+    "risposte": [
+      "Routing Table",
+      "ARP Cache",
+      "Filtering Database (FDB)",
+      "Spanning Tree Table"
+    ],
+    "corretta": 2,
+    "categoria": "Forwarding"
+  },
+  {
+    "id": 175,
+    "domanda": "Cosa avviene quando uno switch riceve un frame verso un MAC di destinazione sconosciuto?",
+    "risposte": [
+      "Lo scarta immediatamente",
+      "Esegue flooding su tutte le porte tranne quella di ingresso",
+      "Lo inoltra solo sulla porta 1",
+      "Lo manda al router più vicino"
+    ],
+    "corretta": 1,
+    "categoria": "Transient Forwarding"
+  },
+  {
+    "id": 176,
+    "domanda": "In un attacco di MAC flooding, quale comportamento assume lo switch quando la FDB è piena?",
+    "risposte": [
+      "Blocca tutti i nuovi frame",
+      "Inizia a fare flooding sulla maggior parte dei frame",
+      "Elimina i frame con indirizzi sconosciuti",
+      "Riduce la velocità di forwarding"
+    ],
+    "corretta": 1,
+    "categoria": "Sicurezza L2"
+  },
+  {
+    "id": 177,
+    "domanda": "Qual è lo scopo del Spanning Tree Protocol (STP) in una rete di switch?",
+    "risposte": [
+      "Aumentare il numero di path ridondanti",
+      "Creare loop multipli per bilanciare il carico",
+      "Disabilitare i loop fisici per formare una topologia ad albero",
+      "Ridurre il traffico unicast"
+    ],
+    "corretta": 2,
+    "categoria": "Loop Prevention"
+  },
+  {
+    "id": 178,
+    "domanda": "Cosa aggiunge un link tagged secondo lo standard IEEE 802.1Q?",
+    "risposte": [
+      "4 byte di VLAN tag tra MAC e tipo/length",
+      "Un header IP aggiuntivo",
+      "8 byte di checksum extra",
+      "Un prefisso MPLS"
+    ],
+    "corretta": 0,
+    "categoria": "VLAN"
+  },
+  {
+    "id": 179,
+    "domanda": "Quale tipo di porta switch trasmette frame non taggati e viene usata per collegare host finali?",
+    "risposte": ["Trunk port", "Hybrid port", "Access port", "Mirror port"],
+    "corretta": 2,
+    "categoria": "VLAN"
   }
 ]

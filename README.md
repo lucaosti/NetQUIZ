@@ -1,26 +1,29 @@
 # RetiQUIZ v0.3
-Questo è un progetto di quiz a terminale realizzato da **Luca Visconti**, pensato per aiutare nello studio del corso universitario di **Tecnologie e Servizi di Rete**.
 
-## ✏️ Contenuti personalizzabili
-Centinaia di domande, con le relative risposte, sono contenute nel file `quiz.json`.  
-Puoi **modificare, aggiungere o rimuovere** le domande direttamente da lì.
+This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete**.
 
-## 🖥️ Utilizzo
-Attualmente, il quiz funziona **solo tramite terminale**.  
-Puoi:
-- Avviare una sessione di quiz casuale
-- Selezionare domande per argomento
-- Recuperare le domande sbagliate
-- Aggiungere nuove domande da linea di comando
+## ✏️ Customizable Content  
+Hundreds of questions with answers are stored in the `quiz.json` file.  
+You can **edit, add, or remove** questions directly in that file.
 
-## 🚧 Sviluppi futuri
-Sono previsti:
-- Interfaccia grafica
-- Statistiche avanzate
-- Motivazioni delle risposte
+## 🖥️ Usage  
+The quiz runs **only via terminal**.  
+Features include:  
+- Start a random quiz session  
+- Select questions by category  
+- Recover both wrong and skipped questions from the last quiz  
+- Add new questions from the command line  
+- Skip questions during the quiz (0 points, tracked separately)  
+- Scoring system: +1 point for correct, -0.33 for wrong or invalid answers, 0 points for skipped questions  
 
-## 🤝 Contribuisci
-Se hai idee o vuoi migliorare il progetto, **sentiti libero di aprire una Pull Request**.  
-Se il tuo contributo viene accettato, **sarai citato qui nel README!**
+## 🚧 Future Developments  
+Planned features:  
+- Graphical user interface  
+- Advanced statistics  
+- Explanation for answers  
 
-Grazie per il supporto e buono studio!
+## 🤝 Contribute  
+If you have ideas or want to improve the project, **feel free to open a Pull Request**.  
+Accepted contributions will be **credited here in the README!**
+
+Thanks for your support and happy studying!
