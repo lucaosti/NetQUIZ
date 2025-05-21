@@ -1,0 +1,1384 @@
+[
+    {
+        "id": 1,
+        "domanda": "Cos'\u00e8 l'UE in LTE?",
+        "risposte": [
+            "Universal Encoder",
+            "User Equipment",
+            "Unified Entity"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 2,
+        "domanda": "Qual \u00e8 la funzione principale del protocollo TCP?",
+        "risposte": [
+            "Controllo della congestione",
+            "Controllo degli errori",
+            "Controllo della connessione"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 3,
+        "domanda": "Cosa significa NAT?",
+        "risposte": [
+            "Network Access Translation",
+            "Network Application Translation",
+            "Network Address Translation"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 4,
+        "domanda": "Qual \u00e8 la differenza principale tra TCP e UDP?",
+        "risposte": [
+            "UDP \u00e8 pi\u00f9 lento di TCP",
+            "TCP non supporta il controllo degli errori",
+            "TCP \u00e8 orientato alla connessione, UDP no"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 5,
+        "domanda": "Cosa rappresenta l'indirizzo IP?",
+        "risposte": [
+            "Protocollo di trasmissione dati",
+            "Tipo di cavo di rete",
+            "Identificatore unico per un dispositivo in rete"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 6,
+        "domanda": "Qual \u00e8 la funzione principale di un router?",
+        "risposte": [
+            "Fornire accesso a Internet",
+            "Instradare i pacchetti tra reti",
+            "Memorizzare dati"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 7,
+        "domanda": "Cosa significa DHCP?",
+        "risposte": [
+            "Dynamic Host Configuration Protocol",
+            "Dynamic Hypertext Configuration Protocol",
+            "Dynamic Hardware Configuration Protocol"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 8,
+        "domanda": "Quale protocollo viene utilizzato per la trasmissione sicura dei dati su Internet?",
+        "risposte": [
+            "HTTP",
+            "FTP",
+            "HTTPS"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 9,
+        "domanda": "Cosa significa VPN?",
+        "risposte": [
+            "Virtual Private Network",
+            "Virtual Public Network",
+            "Virtual Protected Network"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 10,
+        "domanda": "Qual \u00e8 la funzione principale di un firewall?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Controllare il traffico di rete"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 11,
+        "domanda": "Cosa significa SSL?",
+        "risposte": [
+            "Secure Software Layer",
+            "Secure System Layer",
+            "Secure Sockets Layer"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 12,
+        "domanda": "Qual \u00e8 la differenza tra IPv4 e IPv6?",
+        "risposte": [
+            "IPv4 \u00e8 pi\u00f9 sicuro di IPv6",
+            "IPv4 ha 32 bit, IPv6 ha 128 bit",
+            "IPv4 \u00e8 pi\u00f9 veloce di IPv6"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 13,
+        "domanda": "Cosa significa DNS?",
+        "risposte": [
+            "Dynamic Network System",
+            "Data Network System",
+            "Domain Name System"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 14,
+        "domanda": "Qual \u00e8 la funzione principale di un modem?",
+        "risposte": [
+            "Memorizzare dati",
+            "Convertire segnali digitali in analogici",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 15,
+        "domanda": "Cosa significa LAN?",
+        "risposte": [
+            "Large Area Network",
+            "Long Area Network",
+            "Local Area Network"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 16,
+        "domanda": "Qual \u00e8 la funzione principale di uno switch?",
+        "risposte": [
+            "Fornire accesso a Internet",
+            "Collegare dispositivi in una rete locale",
+            "Memorizzare dati"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 17,
+        "domanda": "Cosa contiene un pacchetto (frame) Ethernet?",
+        "risposte": [
+            "Solo indirizzi IP e dati",
+            "Indirizzi MAC, tipo di protocollo, dati e controllo errori",
+            "Solo dati utente",
+            "Un indirizzo IP, un indirizzo MAC e il gateway"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 18,
+        "domanda": "Qual \u00e8 la funzione principale di un bridge?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Collegare reti diverse"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 19,
+        "domanda": "Perché un bridge riduce le collisioni in una rete Ethernet rispetto a un hub?",
+        "risposte": [
+            "Perché aumenta la potenza del segnale",
+            "Perché mette tutti i dispositivi nello stesso dominio di collisione",
+            "Perché separa i segmenti in domini di collisione distinti",
+            "Perché lavora al livello 3 del modello OSI"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },    
+    {
+        "id": 20,
+        "domanda": "Cosa significa WAN?",
+        "risposte": [
+            "Wide Area Network",
+            "Wireless Area Network",
+            "Web Area Network"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 21,
+        "domanda": "Qual \u00e8 la funzione principale di un access point?",
+        "risposte": [
+            "Fornire connettivit\u00e0 wireless",
+            "Memorizzare dati",
+            "Collegare reti cablate"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 22,
+        "domanda": "Cosa significa VoIP?",
+        "risposte": [
+            "Video over Internet Protocol",
+            "Virtual over Internet Protocol",
+            "Voice over Internet Protocol"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 23,
+        "domanda": "Qual \u00e8 la funzione principale di un proxy server?",
+        "risposte": [
+            "Memorizzare dati",
+            "Agire come intermediario tra client e server",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 24,
+        "domanda": "Cosa significa FTP?",
+        "risposte": [
+            "File Transmission Protocol",
+            "File Transport Protocol",
+            "File Transfer Protocol"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 25,
+        "domanda": "Qual \u00e8 la funzione principale di un server DNS?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Tradurre nomi di dominio in indirizzi IP"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 26,
+        "domanda": "Cosa significa HTTP?",
+        "risposte": [
+            "Hypertext Transfer Protocol",
+            "Hypertext Transmission Protocol",
+            "Hypertext Transport Protocol"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 27,
+        "domanda": "Qual \u00e8 la funzione principale di un server web?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Ospitare siti web"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 28,
+        "domanda": "Qual \u00e8 la funzione principale di un server FTP?",
+        "risposte": [
+            "Memorizzare dati",
+            "Trasferire file tra computer",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 29,
+        "domanda": "Qual \u00e8 la funzione principale di un server SMTP?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Inviare email"
+        ],
+        "corretta": 0,
+        "categoria": "Email"
+    },
+    {
+        "id": 30,
+        "domanda": "Cosa significa IMAP?",
+        "risposte": [
+            "Internet Mail Access Protocol",
+            "Internet Mail Application Protocol",
+            "Internet Message Access Protocol"
+        ],
+        "corretta": 2,
+        "categoria": "Email"
+    },
+    {
+        "id": 31,
+        "domanda": "Qual \u00e8 la funzione principale di un server POP3?",
+        "risposte": [
+            "Ricevere email",
+            "Memorizzare dati",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 0,
+        "categoria": "Email"
+    },
+    {
+        "id": 32,
+        "domanda": "Cosa significa ICMP?",
+        "risposte": [
+            "Internet Communication Message Protocol",
+            "Internet Control Message Protocol",
+            "Internet Connection Message Protocol"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 33,
+        "domanda": "Qual \u00e8 la funzione principale di un server NTP?",
+        "risposte": [
+            "Memorizzare dati",
+            "Sincronizzare l'orario tra computer",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 34,
+        "domanda": "Cosa significa ARP?",
+        "risposte": [
+            "Address Routing Protocol",
+            "Address Registration Protocol",
+            "Address Resolution Protocol"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 35,
+        "domanda": "Quale funzione svolge un messaggio SNMP Trap rispetto a un messaggio SNMP Get?",
+        "risposte": [
+            "Il Trap è inviato dal dispositivo al server SNMP per segnalare eventi, mentre il Get è una richiesta del server al dispositivo",
+            "Entrambi sono richieste del server per leggere i dati del dispositivo",
+            "Il Trap viene usato per autenticare l'accesso SNMP, mentre il Get serve a scrivere nei MIB"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 36,
+        "domanda": "Qual è il primo criterio usato da BGP per selezionare il percorso migliore tra più route ricevute?",
+        "risposte": [
+            "Il path con l’ASN più basso",
+            "Il path con il numero di hop più corto",
+            "Il path con la più alta local preference"
+        ],
+        "corretta": 2,
+        "categoria": "Routing"
+    },
+    {
+        "id": 37,
+        "domanda": "Qual è la funzione principale di un server LDAP in un'infrastruttura IT?",
+        "risposte": [
+            "Gestire un archivio centralizzato di utenti, gruppi e risorse per l'autenticazione e l'autorizzazione",
+            "Monitorare il traffico di rete e generare log di sicurezza",
+            "Sincronizzare l'orario dei dispositivi con un server centrale"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 38,
+        "domanda": "A cosa servono le VPN (Virtual Private Network)?",
+        "risposte": [
+            "Partizionare una rete privata (es. quella di una casa madre con filiali) in più reti virtualmente separate",
+            "Trasportare traffico privato attraverso un'infrastruttura condivisa simulando le condizioni di una rete privata",
+            "Dividere una rete locale aziendale in sottoreti per diverse funzioni aziendali (es. vendite, acquisti, ingegneria, marketing)"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 39,
+        "domanda": "Qual \u00e8 la funzione principale di un server Telnet?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Fornire accesso remoto a un computer"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+    "id": 40,
+    "domanda": "Qual è il ruolo del protocollo TLS in una connessione HTTPS?",
+    "risposte": [
+        "Velocizzare la trasmissione dei dati HTTP tramite compressione",
+        "Fornire la crittografia e la sicurezza alla comunicazione HTTP",
+        "Tradurre richieste HTTP in formato comprensibile ai server DNS"
+    ],
+    "corretta": 1,
+    "categoria": "Sicurezza"
+    },
+    {
+        "id": 41,
+        "domanda": "Qual \u00e8 la funzione principale di un server SFTP?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Trasferire file in modo sicuro"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 42,
+        "domanda": "Cos'è una WAN (Wide Area Network)?",
+        "risposte": [
+            "Una rete che collega dispositivi solo all'interno di una stanza",
+            "Una rete locale con accesso limitato a un singolo switch",
+            "Una rete che collega LAN su lunghe distanze geografiche",
+            "Un protocollo di comunicazione per dispositivi mobili"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 43,
+        "domanda": "Durante una connessione HTTPS, quale parte del protocollo TLS è responsabile della negoziazione delle chiavi di cifratura?",
+        "risposte": [
+            "Record Layer",
+            "Session Layer",
+            "Handshake TLS"
+        ],
+        "corretta": 2,
+        "categoria": "Sicurezza"
+    },
+    {
+        "id": 44,
+        "domanda": "Qual \u00e8 la funzione principale di un server TFTP?",
+        "risposte": [
+            "Memorizzare dati",
+            "Fornire accesso a Internet",
+            "Trasferire file in modo semplice"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 45,
+        "domanda": "In cosa si differenzia SNTP rispetto a NTP nella sincronizzazione dell'orario?",
+        "risposte": [
+            "SNTP utilizza TCP mentre NTP utilizza UDP",
+            "SNTP permette una sincronizzazione più accurata tramite algoritmi di correzione complessi",
+            "SNTP offre una sincronizzazione meno precisa e non compensa le variazioni di latenza di rete"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 46,
+        "domanda": "Rispetto alle soluzioni precedenti, la tecnologia Long Term Evolution (LTE) si caratterizza per:",
+        "risposte": [
+            "La separazione tra canali fisici e canali logici.",
+            "L'utilizzo di una tecnica di commutazione a circuiti virtuali.",
+            "L'utilizzo di una tecnica di commutazione a circuito.",
+            "L'utilizzo di tunnel IP che connettono i terminali con opportuni elementi di rete."
+        ],
+        "corretta": 3,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 47,
+        "domanda": "Quale tra le seguenti affermazioni \u00e8 vera riguardo alla tecnologia LTE?",
+        "risposte": [
+            "Utilizza la commutazione a circuito.",
+            "Utilizza la commutazione a pacchetto.",
+            "Utilizza la commutazione a circuito virtuale.",
+            "Utilizza la commutazione a pacchetto e a circuito."
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 48,
+        "domanda": "Qual \u00e8 il protocollo di accesso radio utilizzato in LTE?",
+        "risposte": [
+            "GSM",
+            "WCDMA",
+            "OFDMA",
+            "CDMA"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 49,
+        "domanda": "Qual \u00e8 la funzione principale del protocollo RRC in LTE?",
+        "risposte": [
+            "Controllare la connessione",
+            "Fornire accesso a Internet",
+            "Gestire le risorse radio"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 50,
+        "domanda": "Cosa significa MIMO in LTE?",
+        "risposte": [
+            "Multiple Input Multiple Output",
+            "Multiple Input Multiple Operation",
+            "Multiple Input Multiple Optimization"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 51,
+        "domanda": "Qual \u00e8 la funzione principale del protocollo S1 in LTE?",
+        "risposte": [
+            "Collegare l'UE alla rete core",
+            "Collegare l'UE alla rete radio",
+            "Collegare l'UE alla rete di accesso"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 52,
+        "domanda": "Cosa significa EPC in LTE?",
+        "risposte": [
+            "Enhanced Packet Core",
+            "Evolved Packet Core",
+            "Extended Packet Core"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 53,
+        "domanda": "Qual \u00e8 la funzione principale del protocollo PDCP in LTE?",
+        "risposte": [
+            "Controllare la connessione",
+            "Fornire accesso a Internet",
+            "Gestire la crittografia dei dati"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 54,
+        "domanda": "Cosa significa HSPA in LTE?",
+        "risposte": [
+            "High Speed Packet Application",
+            "High Speed Packet Architecture",
+            "High Speed Packet Access"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 55,
+        "domanda": "Qual \u00e8 la funzione principale del protocollo RLC in LTE?",
+        "risposte": [
+            "Controllare la connessione",
+            "Gestire la trasmissione dei dati",
+            "Fornire accesso a Internet"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 56,
+        "domanda": "Cosa fa un commutatore ottico?",
+        "risposte": [
+            "Commuta da una fibra a un'altra fibra",
+            "Commuta da una fibra a tot altre fibre",
+            "Commuta un fascio di fibre con una frequenza a un altro fascio a un'altra frequenza",
+            "Commuta un fascio di fibre con una frequenza a un altro fascio alla stessa frequenza"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 57,
+        "domanda": "L'IP del destinatario in neighbor solicitation è:",
+        "risposte": [
+            "Nel payload di ARPv6",
+            "Nel payload di ICMPv6",
+            "L'IP sorgente di un pacchetto Neighbor Solicitation",
+            "L'IP destinazione di un pacchetto Neighbor Solicitation"
+        ],
+        "corretta": 3,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 58,
+        "domanda": "Handover nelle reti cellulari",
+        "risposte": [
+            "Permette a utente di mantenere un servizio attivo (es chiamata) quando cambia cella",
+            "Permette a utente di rimanere connesso quando cambia cella"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 59,
+        "domanda": "Cosa distingue 5G?",
+        "risposte": [
+            "Virtualizzazione sul terminale dell'utente",
+            "Emulazione di qualcosa",
+            "Network slicing",
+            "Circuit switching"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 60,
+        "domanda": "Quale tra i seguenti non \u00e8 un protocollo di routing?",
+        "risposte": [
+            "RIP",
+            "OSPF",
+            "BGP",
+            "HTTP"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 61,
+        "domanda": "Quale tra i seguenti non \u00e8 un protocollo di trasmissione dati?",
+        "risposte": [
+            "TCP",
+            "UDP",
+            "IP",
+            "HTTP"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 62,
+        "domanda": "A cosa serve un messaggio Neighbor Solicitation in IPv6?",
+        "risposte": [
+        "A verificare l'indirizzo IP del router predefinito",
+        "A risolvere l'indirizzo MAC di un nodo nella stessa rete",
+        "A configurare automaticamente l'indirizzo IPv6",
+        "A creare un tunnel tra due nodi IPv6"
+        ],
+        "corretta": 1,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 63,
+        "domanda": "A cosa serve il network slicing nel 5G?",
+        "risposte": [
+            "A condividere un unico indirizzo IP tra più dispositivi",
+            "A separare logicamente la rete 5G in più reti virtuali indipendenti",
+            "A potenziare il segnale delle antenne 5G",
+            "A aumentare la potenza trasmissiva del terminale mobile"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 64,
+        "domanda": "Quale tra i seguenti non \u00e8 un protocollo di sicurezza?",
+        "risposte": [
+            "SSL",
+            "TLS",
+            "IPSec",
+            "HTTP"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 65,
+        "domanda": "Quale tra i seguenti non \u00e8 un protocollo di comunicazione wireless?",
+        "risposte": [
+            "Wi-Fi",
+            "Bluetooth",
+            "Zigbee",
+            "Ethernet"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 66,
+        "domanda": "Qual è la principale differenza tra Control Plane e Data Plane in LTE?",
+        "risposte": [
+            "Il Control Plane gestisce i dati utente, mentre il Data Plane gestisce la segnalazione",
+            "Il Data Plane trasporta dati utente, mentre il Control Plane gestisce connessioni e mobilità",
+            "Entrambi trasportano dati utente ma su percorsi diversi",
+            "Il Data Plane è usato solo durante la fase di attivazione della rete"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 67,
+        "domanda": "Qual è la funzione dell'interfaccia S1 nel sistema LTE?",
+        "risposte": [
+            "Collegare i terminali mobili tra loro",
+            "Trasportare la voce nei canali dedicati",
+            "Collegare l'eNodeB al core network per dati e segnalazione",
+            "Sincronizzare i clock delle celle LTE"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 68,
+        "domanda": "Qual è la funzione dell'interfaccia S1 nel sistema LTE?",
+        "risposte": [
+            "Collegare i terminali mobili tra loro",
+            "Trasportare la voce nei canali dedicati",
+            "Sincronizzare i clock delle celle LTE",
+            "Collegare l'eNodeB al core network per dati e segnalazione"
+        ],
+        "corretta": 3,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 69,
+        "domanda": "Qual è la funzione principale del core network (EPC) in LTE?",
+        "risposte": [
+            "Gestire la comunicazione radio",
+            "Fornire connettività tra terminali nella stessa cella",
+            "Gestire mobilità, autenticazione e instradamento dei dati",
+            "Convertire segnali analogici in digitali"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 70,
+        "domanda": "Qual è il ruolo dell'eNodeB nella rete LTE?",
+        "risposte": [
+            "Autenticare gli utenti",
+            "Gestire la comunicazione radio con il terminale",
+            "Memorizzare i dati degli utenti",
+            "Gestire la numerazione IP"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 71,
+        "domanda": "Cosa avviene nel topology-based control driven label binding in MPLS?",
+        "risposte": [
+            "Router MPLS devono usare il protocollo BGP",
+            "Tabelle di forwarding del router MPLS sono configurate automaticamente",
+            "Ogni router crea diversi LSP in base alla topologia",
+            "Ogni router può utilizzare diversi LSP per traffici distinti"
+        ],
+        "corretta": 2,
+        "categoria": "MPLS"
+    },
+    {
+        "id": 72,
+        "domanda": "Cosa trasporta un regular burst in GSM?",
+        "risposte": [
+            "Solo informazioni di traffico dati",
+            "Informazioni di traffico (voce) e di segnalazione",
+            "Solo informazioni di segnalazione"
+        ],
+        "corretta": 1,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 73,
+        "domanda": "Come funziona l'FDMA nelle reti cellulari?",
+        "risposte": [
+            "Mantengo la stessa frequenza su tutte le celle",
+            "Celle adiacenti hanno frequenze diverse, ma possono ripetersi se abbastanza lontane",
+            "Ogni utente cambia frequenza continuamente"
+        ],
+        "corretta": 1,
+        "categoria": "Reti Cellulari"
+    },
+    {
+        "id": 74,
+        "domanda": "Quando è possibile inviare una richiesta ARP da x.x.x.x/24 a x.x.x.y?",
+        "risposte": [
+            "Sempre possibile",
+            "Possibile se c'è uno switch in mezzo",
+            "Mai possibile",
+            "Solo se entrambi sono nella stessa subnet"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 75,
+        "domanda": "Cosa rappresenta il problema del 'count to infinity' nei protocolli di routing?",
+        "risposte": [
+            "Nessuna delle precedenti",
+            "È un passaggio del Link State",
+            "Serve per dire che una stazione non è raggiungibile",
+            "È uno stato temporaneo del Distance Vector"
+        ],
+        "corretta": 3,
+        "categoria": "Routing"
+    },
+    {
+        "id": 76,
+        "domanda": "Perché OSPF-TE e ISIS-TE sono preferibili a IP per il traffic engineering?",
+        "risposte": [
+            "Permettono routing basato su vincoli (constraint-based)",
+            "Sono più veloci dei protocolli IP standard",
+            "Supportano NAT e firewall nativamente",
+            "Usano il livello fisico per gestire il traffico"
+        ],
+        "corretta": 0,
+        "categoria": "Routing"
+    },
+    {
+        "id": 77,
+        "domanda": "Quale tipo di protocollo è RIP?",
+        "risposte": [
+            "Lavora con link state",
+            "Lavora con distance vector",
+            "È un protocollo di switching"
+        ],
+        "corretta": 1,
+        "categoria": "Routing"
+    },
+    {
+        "id": 78,
+        "domanda": "Quale di queste affermazioni è falsa sulle VPN SSL?",
+        "risposte": [
+            "Suscettibili a DoS",
+            "Creano un tunnel su TCP o UDP",
+            "Non esistono soluzioni standard"
+        ],
+        "corretta": 2,
+        "categoria": "VPN"
+    },
+    {
+        "id": 79,
+        "domanda": "Cosa comporta l'accesso centralizzato in una VPN?",
+        "risposte": [
+            "Per essere mandato su internet posso non prendere la strada più ideale",
+            "Non posso usare firewall",
+            "Genera maggiore carico dovuto al traffico che viene da Internet"
+        ],
+        "corretta": 0,
+        "categoria": "VPN"
+    },
+    {
+        "id": 80,
+        "domanda": "Qual è la lunghezza di un indirizzo IPv6?",
+        "risposte": [
+            "32 bit",
+            "64 bit",
+            "128 bit",
+            "256 bit"
+        ],
+        "corretta": 2,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 81,
+        "domanda": "Cosa rappresenta l'indirizzo IPv6 ::1?",
+        "risposte": [
+            "Indirizzo broadcast",
+            "Indirizzo di loopback",
+            "Indirizzo link-local",
+            "Indirizzo multicast"
+        ],
+        "corretta": 1,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 82,
+        "domanda": "Quale tipo di indirizzo IPv6 è utilizzato per la comunicazione tra dispositivi sulla stessa rete fisica?",
+        "risposte": [
+            "Global Unicast",
+            "Link-local",
+            "Anycast",
+            "Multicast"
+        ],
+        "corretta": 1,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 83,
+        "domanda": "Quale meccanismo sostituisce ARP in IPv6?",
+        "risposte": [
+            "DHCPv6",
+            "ICMPv6 Neighbor Discovery",
+            "Solicited Node Address",
+            "Routing Advertisement"
+        ],
+        "corretta": 1,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 84,
+        "domanda": "A cosa serve il messaggio ICMPv6 di tipo 135 (Neighbor Solicitation)?",
+        "risposte": [
+            "Diagnosticare la connettività Internet",
+            "Scoprire i router vicini",
+            "Ottenere l'indirizzo MAC associato a un indirizzo IPv6",
+            "Verificare l'unicità dell'indirizzo assegnato"
+        ],
+        "corretta": 2,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 85,
+        "domanda": "Qual è il prefisso degli indirizzi IPv6 link-local?",
+        "risposte": [
+            "2000::/3",
+            "FD00::/8",
+            "FE80::/64",
+            "FF00::/8"
+        ],
+        "corretta": 2,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 86,
+        "domanda": "Qual è il significato di SLAAC in IPv6?",
+        "risposte": [
+            "Un protocollo di sicurezza",
+            "Un metodo per il routing statico",
+            "Una tecnica di configurazione automatica dell'indirizzo",
+            "Un'estensione del DNS"
+        ],
+        "corretta": 2,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 87,
+        "domanda": "Che tipo di indirizzo IPv6 è ::?",
+        "risposte": [
+            "Loopback",
+            "Unspecified",
+            "Anycast",
+            "Multicast"
+        ],
+        "corretta": 1,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 88,
+        "domanda": "Cosa indica il flag 'M' nei messaggi Router Advertisement in IPv6?",
+        "risposte": [
+            "Indica se usare l'indirizzo multicast",
+            "Indica se usare un gateway esterno",
+            "Indica se l'indirizzo è temporaneo",
+            "Indica se usare DHCPv6 per ottenere l'indirizzo IP"
+        ],
+        "corretta": 3,
+        "categoria": "IPv6"
+    },
+    {
+        "id": 89,
+        "domanda": "Qual è la lunghezza di un indirizzo IPv4?",
+        "risposte": [
+            "16 bit",
+            "32 bit",
+            "64 bit",
+            "128 bit"
+        ],
+        "corretta": 1,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 90,
+        "domanda": "Cosa rappresenta l'indirizzo 127.0.0.1 in IPv4?",
+        "risposte": [
+            "Indirizzo broadcast",
+            "Indirizzo di loopback",
+            "Indirizzo di rete",
+            "Indirizzo multicast"
+        ],
+        "corretta": 1,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 91,
+        "domanda": "Cosa indica il prefisso /24 in un indirizzo IP con notazione CIDR?",
+        "risposte": [
+            "24 bit per l'host",
+            "Indirizzo IP privato",
+            "24 bit per la parte di rete",
+            "Maschera 255.255.255.255"
+        ],
+        "corretta": 2,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 92,
+        "domanda": "Qual è il numero massimo di host utilizzabili in una rete /26?",
+        "risposte": [
+            "62",
+            "64",
+            "30",
+            "254"
+        ],
+        "corretta": 0,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 93,
+        "domanda": "Qual è la funzione del protocollo ARP?",
+        "risposte": [
+            "Risolvere indirizzi IP in nomi a dominio",
+            "Rilevare dispositivi attivi su una rete",
+            "Eseguire test di connettività tra host",
+            "Associare indirizzi IP a indirizzi MAC"
+        ],
+        "corretta": 3,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 94,
+        "domanda": "Qual è la route di default in una tabella di routing IPv4?",
+        "risposte": [
+            "255.255.255.255/32",
+            "0.0.0.0/0",
+            "127.0.0.1/8",
+            "192.168.0.0/16"
+        ],
+        "corretta": 1,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 95,
+        "domanda": "Cosa succede se un IP di destinazione non è nella stessa subnet dell'host?",
+        "risposte": [
+            "Il pacchetto viene scartato",
+            "Il pacchetto viene trasmesso in broadcast",
+            "Il pacchetto viene inoltrato al default gateway",
+            "Il pacchetto viene inviato in multicast"
+        ],
+        "corretta": 2,
+        "categoria": "IPv4"
+    },
+    {
+        "id": 96,
+        "domanda": "Quale criterio usa un router per scegliere la rotta migliore?",
+        "risposte": [
+            "Indirizzo IP più basso",
+            "Rotta con maschera più lunga (più specifica)",
+            "Rotta con più hop",
+            "Ordine di inserimento nella tabella"
+        ],
+        "corretta": 1,
+        "categoria": "IPv4"
+    },
+    {
+    "id": 97,
+    "domanda": "A cosa serve il protocollo IMAP?",
+    "risposte": [
+        "A leggere le email mantenendole sincronizzate su tutti i dispositivi",
+        "A inviare email attraverso il server SMTP",
+        "A scaricare e cancellare le email dal server"
+    ],
+    "corretta": 0,
+    "categoria": "Email"
+    },
+    {
+        "id": 98,
+        "domanda": "Quale tra i seguenti non è un protocollo di posta elettronica?",
+        "risposte": [
+            "SMTP",
+            "POP3",
+            "IMAP",
+            "HTTP"
+        ],
+        "corretta": 3,
+        "categoria": "Email"
+    },
+    {
+        "id": 99,
+        "domanda": "Cosa significa SMTP?",
+        "risposte": [
+            "Simple Mail Transfer Protocol",
+            "Secure Mail Transfer Protocol",
+            "Standard Mail Transfer Protocol"
+        ],
+        "corretta": 0,
+        "categoria": "Email"
+    },
+    {
+        "id": 100,
+        "domanda": "A cosa serve il protocollo ICMP?",
+        "risposte": [
+            "A crittografare le comunicazioni tra host",
+            "A trasferire file tra client e server",
+            "A diagnosticare e segnalare errori nella comunicazione di rete"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 101,
+        "domanda": "In che modo l'attributo Local Preference influisce sulla selezione delle rotte BGP?",
+        "risposte": [
+            "BGP sceglie la rotta con il valore di Local Preference più basso",
+            "BGP sceglie la rotta con il valore di Local Preference più alto",
+            "Local Preference viene ignorato nei percorsi interni all'AS"
+        ],
+        "corretta": 1,
+        "categoria": "Routing"
+    },
+    {
+        "id": 102,
+        "domanda": "Qual è una limitazione principale del protocollo Telnet rispetto a SSH?",
+        "risposte": [
+            "Telnet trasmette i dati in chiaro senza crittografia",
+            "Telnet non consente l'accesso remoto ai dispositivi",
+            "Telnet funziona solo su reti wireless"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 103,
+        "domanda": "Quale protocollo di trasporto utilizza TFTP e quale limite comporta?",
+        "risposte": [
+            "TCP, che introduce overhead eccessivo",
+            "UDP, che non garantisce l'affidabilità del trasferimento",
+            "ICMP, che limita il supporto ai soli messaggi di errore"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 104,
+        "domanda": "Qual è una caratteristica distintiva del protocollo IMAP rispetto a POP3?",
+        "risposte": [
+            "IMAP scarica e rimuove automaticamente le email dal server dopo la lettura",
+            "IMAP utilizza solo connessioni non cifrate per motivi di compatibilità",
+             "IMAP consente la gestione delle email direttamente sul server mantenendo la sincronizzazione tra più dispositivi"
+        ],
+        "corretta": 2,
+        "categoria": "Email"
+    },
+    {
+        "id": 105,
+        "domanda": "Perché la rete LTE utilizza esclusivamente la commutazione a pacchetto, anche per i servizi voce?",
+        "risposte": [
+          "Perché la commutazione a circuito è obbligatoria solo nelle reti 2G e 3G",
+          "Per garantire una gestione efficiente e unificata del traffico dati e voce tramite protocolli IP",
+          "Perché la commutazione a pacchetto consente l'uso esclusivo di frequenze non licenziate"
+        ],
+        "corretta": 1,
+        "categoria": "LTE"
+    },
+    {
+        "id": 106,
+        "domanda": "Quale protocollo di routing è più adatto per reti di grandi dimensioni e complesse?",
+        "risposte": [
+            "RIP",
+            "OSPF",
+            "BGP"
+        ],
+        "corretta": 2,
+        "categoria": "Routing"
+    },
+    {
+        "id": 107,
+        "domanda": "Quale tra i seguenti non è un protocollo di routing dinamico?",
+        "risposte": [
+            "RIP",
+            "OSPF",
+            "EIGRP",
+            "Static Routing"
+        ],
+        "corretta": 3,
+        "categoria": "Routing"
+    },
+    {
+        "id": 108,
+        "domanda": "Quale tra i seguenti protocolli è utilizzato per la gestione della rete?",
+        "risposte": [
+            "SNMP",
+            "HTTP",
+            "FTP"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 109,
+        "domanda": "Quale tra i seguenti protocolli è utilizzato per la sincronizzazione dell'orario?",
+        "risposte": [
+            "NTP",
+            "SMTP",
+            "DHCP"
+        ],
+        "corretta": 0,
+        "categoria": "Reti"
+    },
+    {
+        "id": 110,
+        "domanda": "Qual è il ruolo del PDN Gateway (PGW) nella rete core LTE?",
+        "risposte": [
+          "Gestire l’allocazione delle risorse radio",
+          "Monitorare lo stato della connessione fisica tra eNodeB e UE",
+          "Fornire l'accesso dell'utente alla rete IP esterna e gestire le politiche di traffico"
+        ],
+        "corretta": 2,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 111,
+        "domanda": "In quale scenario il Serving Gateway (SGW) è coinvolto direttamente?",
+        "risposte": [
+          "Durante il trasferimento di pacchetti tra eNodeB e PGW",
+          "Durante la gestione dell'identità dell'utente",
+          "Durante la cifratura end-to-end della sessione dati"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 112,
+        "domanda": "Quale delle seguenti funzioni è svolta direttamente dall'eNodeB in una rete LTE?",
+        "risposte": [
+          "Gestione della connessione radio e scheduling delle risorse",
+          "Assegnazione dell'indirizzo IP all'utente",
+          "Smistamento del traffico verso la rete Internet pubblica"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 113,
+        "domanda": "Qual è la funzione principale del protocollo GTP nella rete LTE?",
+        "risposte": [
+          "Creare tunnel per il trasporto dei dati utente tra eNodeB, SGW e PGW",
+          "Effettuare la modulazione del segnale radio tra UE e eNodeB",
+          "Gestire la cifratura dei pacchetti IP a livello applicativo"
+        ],
+        "corretta": 0,
+        "categoria": "Mobile Networks"
+    },
+    {
+        "id": 114,
+        "domanda": "Le soluzioni VPN di livello 3 basate su MPLS sono caratterizzate da:",
+        "risposte": [
+          "Una sicurezza particolarmente elevata grazie all’uso di tecniche crittografiche",
+          "Meccanismi di tunneling di livello 3, ovvero all’interno di pacchetti IP",
+          "Un buon livello di automazione e integrazione tra la backbone pubblica e le reti private",
+          "Una combinazione di meccanismi di tunneling di livello 2 e 3"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+        "id": 115,
+        "domanda": "Nel 'Tunnel Mode' di IPsec, cosa viene cifrato?",
+        "risposte": [
+          "L’intestazione IP, l’intestazione TCP/UDP e il payload del pacchetto interno",
+          "Solo l’intestazione TCP/UDP e il payload",
+          "Solo il payload del pacchetto interno",
+          "L’intero pacchetto esterno, intestazione inclusa"
+        ],
+        "corretta": 0,
+        "categoria": "Sicurezza"
+    },
+    {
+        "id": 116,
+        "domanda": "Due host A e B appartengono alla stessa rete fisica. A ha IP 130.192.1.1/25 e B ha IP 130.192.1.129/24. Qual è il comportamento della comunicazione?",
+        "risposte": [
+          "A comunica direttamente con B e viceversa",
+          "A comunica direttamente con B ma non viceversa",
+          "A può comunicare con B solo tramite un router",
+          "A non può comunicare con B"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 117,
+        "domanda": "In una VPN MPLS Layer 3, come viene garantita la separazione logica del traffico tra clienti diversi?",
+        "risposte": [
+          "Attraverso l’uso di VLAN su tutti i link di backbone",
+          "Cifrando il traffico con IPsec",
+          "Utilizzando indirizzi IP pubblici univoci",
+          "Tramite istanze VRF sui router PE"
+        ],
+        "corretta": 3,
+        "categoria": "Reti"
+    },
+    {
+        "id": 118,
+        "domanda": "Qual è una caratteristica delle VPN MPLS rispetto alle VPN IPsec?",
+        "risposte": [
+          "Le VPN MPLS cifrano i pacchetti con algoritmi simmetrici",
+          "Le VPN MPLS non usano crittografia, ma separazione logica",
+          "Le VPN MPLS richiedono certificati digitali",
+          "Le VPN MPLS usano esclusivamente UDP"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 119,
+        "domanda": "Qual è il ruolo dei router PE (Provider Edge) in una rete VPN MPLS Layer 3?",
+        "risposte": [
+          "Gestiscono la commutazione a livello 2 tra backbone e accesso",
+          "Separano il traffico dei clienti tramite istanze VRF e gestiscono l’incapsulamento MPLS",
+          "Monitorano il traffico IP per applicare firewalling perimetrale",
+          "Stabiliscono tunnel IPsec verso i CE dei clienti"
+        ],
+        "corretta": 1,
+        "categoria": "Reti"
+    },
+    {
+        "id": 120,
+        "domanda": "Nel contesto MPLS, qual è la funzione delle etichette MPLS nei pacchetti dati?",
+        "risposte": [
+          "Identificare l’utente remoto in una VPN IPsec",
+          "Gestire la cifratura punto-punto del traffico",
+          "Permettere ai router di instradare i pacchetti in base a etichette anziché a tabelle IP",
+          "Tradurre indirizzi IPv4 in IPv6 all’interno della VPN"
+        ],
+        "corretta": 2,
+        "categoria": "Reti"
+    },
+    {
+  "id": 63,
+  "domanda": "Nella soluzione DS-Lite per la transizione da IPv4 a IPv6:",
+  "risposte": [
+    "Si usano le voci del database di filtraggio di uno switch Ethernet",
+    "La funzionalità NAT non è disponibile",
+    "La funzionalità NAT è implementata per tutti gli utenti su dispositivi dedicati dell'ISP",
+    "La funzionalità NAT è implementata sia sul CPE che sui dispositivi dell'ISP"
+  ],
+  "corretta": 2,
+  "categoria": "IPv6"
+}
+    }
+]

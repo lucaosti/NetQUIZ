@@ -42,7 +42,7 @@ def add_question():
                 break
         except:
             pass
-        print("Indice non valido.")
+        print("Invalid index.")
     quiz.append({
         "id": new_id,
         "domanda": domanda,
@@ -51,10 +51,10 @@ def add_question():
         "categoria": categoria
     })
     save_quiz(quiz)
-    print("✅ Domanda aggiunta con ID", new_id)
+    print("✅ Question added with ID", new_id)
 
 
-# Extract last incorrect answers
+# Extract last incorrect and skipped question IDs
 def get_last_wrong_ids():
     if not os.path.exists(RESULTS_FILE):
         return []
@@ -65,18 +65,21 @@ def get_last_wrong_ids():
     last_line = lines[-1]
     try:
         data = json.loads(last_line)
-        return data.get("sbagliate", [])
+        wrong = data.get("sbagliate", [])
+        skipped = data.get("skippate", [])
+        return list(set(wrong + skipped))  # merge and remove duplicates
     except json.JSONDecodeError:
         return []
 
 
 # Save results to file
-def save_results(punteggio, totali, errori):
+def save_results(score, total, wrong, skipped):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     result = {
         "timestamp": timestamp,
-        "punteggio": f"{punteggio}/{totali}",
-        "sbagliate": errori
+        "punteggio": f"{score:.2f}/{total}",
+        "sbagliate": wrong,
+        "skippate": skipped
     }
     with open(RESULTS_FILE, 'a', encoding='utf-8') as f:
         f.write(json.dumps(result, ensure_ascii=False) + "\n")
@@ -87,11 +90,11 @@ def recovery_quiz():
     quiz = load_quiz()
     wrong_ids = get_last_wrong_ids()
     if not wrong_ids:
-        print("✅ Nessun argomento da recuperare ma continua ad esercitarti!")
+        print("✅ No topics to recover, keep practicing!")
         return
     recovery = [q for q in quiz if q["id"] in wrong_ids]
     if not recovery:
-        print("⚠️ Nessuna domanda trovata per il recupero.")
+        print("⚠️ No questions found for recovery.")
         return
     run_quiz(recovery)
 
@@ -100,128 +103,138 @@ def recovery_quiz():
 def run_quiz(subset=None):
     quiz = subset if subset else load_quiz()
     if not quiz:
-        print("⚠️ Nessuna domanda disponibile.")
+        print("⚠️ No questions available.")
         return
 
     n = len(quiz)
     if not subset:
         while True:
             try:
-                richiesta = int(input(f"Quante domande vuoi (1 - {min(33, n)})? "))
-                if 1 <= richiesta <= min(33, n):
-                    quiz = random.sample(quiz, richiesta)
+                requested = int(input(f"How many questions do you want (1 - {min(33, n)})? "))
+                if 1 <= requested <= min(33, n):
+                    quiz = random.sample(quiz, requested)
                     break
             except:
                 pass
-            print("Valore non valido.")
+            print("Invalid value.")
 
-    punteggio = 0
-    errori = []
+    score = 0
+    wrong = []
+    skipped = []
 
     for q in quiz:
         print(f"\n[{q['categoria']}] {q['domanda']}")
         for idx, r in enumerate(q['risposte']):
             print(f"{idx + 1}. {r}")
+        print("Press ENTER to skip the question (0 points).")
         try:
-            scelta = int(input("Risposta: ")) - 1
-            if scelta == q["corretta"]:
-                print("✔️ Corretto!")
-                punteggio += 1
+            choice = input("Answer: ").strip()
+            if choice == "":
+                print("⭕ Question skipped, 0 points.")
+                skipped.append(q["id"])
             else:
-                print(f"❌ Errato. Risposta giusta: {q['risposte'][q['corretta']]}")
-                errori.append(q["id"])
+                choice = int(choice) - 1
+                if choice == q["corretta"]:
+                    print("✔️ Correct!")
+                    score += 1
+                else:
+                    print(f"❌ Wrong. Correct answer: {q['risposte'][q['corretta']]}")
+                    score -= 0.33
+                    wrong.append(q["id"])
         except:
-            print("❌ Risposta non valida.")
-            errori.append(q["id"])
+            print("❌ Invalid answer.")
+            score -= 0.33
+            wrong.append(q["id"])
 
-    print(f"\n🎯 Risultato: {punteggio}/{len(quiz)}")
-    save_results(punteggio, len(quiz), errori)
-    
+    print(f"\n🎯 Result: {score:.2f}/{len(quiz)}")
+    save_results(score, len(quiz), wrong, skipped)
+
 
 # Function to display quiz by category
 def quiz_per_argomento():
     quiz = load_quiz()
     if not quiz:
-        print("⚠️ Nessuna domanda disponibile.")
+        print("⚠️ No questions available.")
         return
 
-    categorie = sorted(set(q["categoria"] for q in quiz))
-    print("\nCategorie disponibili:")
-    for i, cat in enumerate(categorie, start=1):
+    categories = sorted(set(q["categoria"] for q in quiz))
+    print("\nAvailable categories:")
+    for i, cat in enumerate(categories, start=1):
         print(f"{i}. {cat}")
     try:
-        scelta = int(input("Seleziona il numero della categoria: ")) - 1
-        if 0 <= scelta < len(categorie):
-            categoria_scelta = categorie[scelta]
-            domande_categoria = [q for q in quiz if q["categoria"] == categoria_scelta]
-            n_domande = len(domande_categoria)
-            if n_domande == 0:
-                print("⚠️ Nessuna domanda trovata per questa categoria.")
+        choice = int(input("Select the category number: ")) - 1
+        if 0 <= choice < len(categories):
+            selected_category = categories[choice]
+            category_questions = [q for q in quiz if q["categoria"] == selected_category]
+            n_questions = len(category_questions)
+            if n_questions == 0:
+                print("⚠️ No questions found for this category.")
                 return
             while True:
                 try:
-                    richiesta = int(input(f"Quante domande vuoi (1 - {n_domande})? "))
-                    if 1 <= richiesta <= n_domande:
-                        domande_scelte = random.sample(domande_categoria, richiesta)
+                    requested = int(input(f"How many questions do you want (1 - {n_questions})? "))
+                    if 1 <= requested <= n_questions:
+                        selected_questions = random.sample(category_questions, requested)
                         break
                     else:
-                        print("❌ Numero fuori intervallo.")
+                        print("❌ Number out of range.")
                 except ValueError:
-                    print("❌ Inserisci un numero valido.")
-            run_quiz(domande_scelte)
+                    print("❌ Enter a valid number.")
+            run_quiz(selected_questions)
         else:
-            print("❌ Scelta non valida.")
+            print("❌ Invalid choice.")
     except ValueError:
-        print("❌ Inserisci un numero valido.")
-        
-        
+        print("❌ Enter a valid number.")
+
+
 # Function to display the menu with category selection
 def menu_con_categoria():
     while True:
         print("\n=== QUIZ MENU ===")
-        print("1. Esegui quiz")
-        print("2. Aggiungi domanda")
-        print("3. Quiz di recupero")
-        print("4. Quiz per argomento")
-        print("5. Esci")
-        scelta = input("Scelta: ")
-        if scelta == "1":
+        print("1. Run quiz")
+        print("2. Add question")
+        print("3. Recovery quiz")
+        print("4. Quiz by category")
+        print("5. Exit")
+        choice = input("Choice: ")
+        if choice == "1":
             run_quiz()
-        elif scelta == "2":
+        elif choice == "2":
             add_question()
-        elif scelta == "3":
+        elif choice == "3":
             recovery_quiz()
-        elif scelta == "4":
+        elif choice == "4":
             quiz_per_argomento()
-        elif scelta == "5":
+        elif choice == "5":
             break
         else:
-            print("❌ Opzione non valida.")
-            
+            print("❌ Invalid option.")
+
+
 # Main menu
 def menu():
     while True:
         print("\n=== QUIZ MENU ===")
-        print("1. Esegui quiz")
-        print("2. Aggiungi domanda")
-        print("3. Quiz di recupero")
-        print("4. Quiz per argomento")
-        print("5. Esci")
-        scelta = input("Scelta: ")
-        if scelta == "1":
+        print("1. Run quiz")
+        print("2. Add question")
+        print("3. Recovery quiz")
+        print("4. Quiz by category")
+        print("5. Exit")
+        choice = input("Choice: ")
+        if choice == "1":
             run_quiz()
-        elif scelta == "2":
+        elif choice == "2":
             add_question()
-        elif scelta == "3":
+        elif choice == "3":
             recovery_quiz()
-        elif scelta == "4":
+        elif choice == "4":
             quiz_per_argomento()
-        elif scelta == "5":
+        elif choice == "5":
             break
         else:
-            print("❌ Opzione non valida.")
-            
-            
+            print("❌ Invalid option.")
+
+
 # Run the menu
 if __name__ == "__main__":
     if not os.path.exists(QUIZ_FILE):
@@ -229,5 +242,4 @@ if __name__ == "__main__":
     if not os.path.exists(RESULTS_FILE):
         with open(RESULTS_FILE, 'w', encoding='utf-8') as f:
             pass
-    # Start the menu
-menu()
+    menu()
