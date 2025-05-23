@@ -1,4 +1,4 @@
-# RetiQUIZ v0.3
+# RetiQUIZ v0.4
 
 This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete**.
 
@@ -15,6 +15,7 @@ Features include:
 - Add new questions from the command line  
 - Skip questions during the quiz (0 points, tracked separately)  
 - Scoring system: +1 point for correct, -0.33 for wrong or invalid answers, 0 points for skipped questions  
+- Study Theory mode: explore theoretical aspects of the course through concise definitions and in-depth explanations by selecting a topic
 
 ## 🚧 Future Developments  
 Planned features:  

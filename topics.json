@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "titolo": "Gestione di grandi web server",
+    "categoria": "CDN",
+    "contenuto": "Usare farm di server efficienti con bilanciatori di carico front-end che distribuiscono richieste su più server, tutti collegati allo stesso database backend."
+  },
+  {
+    "id": 2,
+    "titolo": "Cache Web (soluzione storica)",
+    "categoria": "CDN",
+    "contenuto": "Dispositivi che memorizzano copie locali di oggetti HTTP richiesti di recente per rispondere rapidamente come proxy."
+  },
+  {
+    "id": 3,
+    "titolo": "Benefici delle Cache Web",
+    "categoria": "CDN",
+    "contenuto": "Riduzione del traffico su link Internet costosi, miglioramento della latenza e throughput, e abilitazione di contenuti localizzati."
+  },
+  {
+    "id": 4,
+    "titolo": "Caching HTTP",
+    "categoria": "CDN",
+    "contenuto": "I client memorizzano documenti e verificano cambiamenti tramite header HTTP (Expires, Cache-Control, E-tag). Se il contenuto non è scaduto si usa la copia cache, altrimenti si verifica con il server (304 Not Modified o 200 OK)."
+  },
+  {
+    "id": 5,
+    "titolo": "Proxy Web",
+    "categoria": "CDN",
+    "contenuto": "Negli anni ’90 richiedevano configurazione manuale. Oggi proxy trasparenti sono comuni, ma SSL impedisce l'ispezione dati, obbligando accordi tra provider di contenuti e ISP per cache nei backbone."
+  },
+  {
+    "id": 6,
+    "titolo": "Problemi di cache e farm di server",
+    "categoria": "CDN",
+    "contenuto": "Non risolvono congestione o latenza di rete. Cache servono solo i loro utenti, non tutta Internet. Provider non possono fidarsi della cache. Problemi di conteggio accessi e molti oggetti HTTP non sono cacheabili."
+  },
+  {
+    "id": 7,
+    "titolo": "Content Delivery Networks (CDN)",
+    "categoria": "CDN",
+    "contenuto": "Rete sovrapposta di cache/server distribuiti vicini agli utenti che migliorano performance, RTT, disponibilità, bilanciamento carico e costi. Utilizzate per hosting distribuito, video on demand, streaming live, contenuti dinamici e pubblicità."
+  },
+  {
+    "id": 8,
+    "titolo": "CDN vs Caching Proxy",
+    "categoria": "CDN",
+    "contenuto": "Cache riducono banda per ISP, CDN migliorano QoS per provider e utenti. Cache sono reattive, CDN sono proattive. CDN danno controllo ai provider, proxy no."
+  },
+  {
+    "id": 9,
+    "titolo": "Replica contenuti in CDN",
+    "categoria": "CDN",
+    "contenuto": "CDN installa server in data center o vicino agli utenti e replica contenuti dei provider. Quando il provider aggiorna, la CDN aggiorna i server. Sfide: come, dove replicare, come trovare e scegliere replica, come indirizzare utenti."
+  },
+  {
+    "id": 10,
+    "titolo": "Selezione del server",
+    "categoria": "CDN",
+    "contenuto": "Criteri: minor carico, migliore performance, tolleranza a guasti, posizione geografica, RTT, throughput. Modi per indirizzare client: routing (anycast, bilanciamento cluster), applicazione (HTTP redirect), naming (DNS)."
+  },
+  {
+    "id": 11,
+    "titolo": "Metodi di selezione server",
+    "categoria": "CDN",
+    "contenuto": "IP anycast: trasparente ma con poco controllo e complessità di scalabilità. HTTP redirect: controllo preciso ma aumenta carico e latenza. DNS: adatto al caching, riduce RTT, ma la richiesta è dal resolver, non dal client, e la granularità è per hostname, non URL."
+  },
+  {
+    "id": 12,
+    "titolo": "CDN basate su DNS",
+    "categoria": "CDN",
+    "contenuto": "Il DNS agisce come 'content router' selezionando la replica migliore in base a metriche (RTT, carico server). Limiti: granularità solo a livello hostname, difficile separare contenuti statici e dinamici."
+  },
+  {
+    "id": 13,
+    "titolo": "Akamai",
+    "categoria": "CDN",
+    "contenuto": "Usa domini specifici per ogni cliente e suddivide contenuti in gruppi con nomi multipli. Le URL sono modificate per puntare ai domini Akamai, permettendo instradamenti differenziati per paesi o gruppi."
+  },
+  {
+    "id": 14,
+    "titolo": "Estensioni e limiti delle CDN",
+    "categoria": "CDN",
+    "contenuto": "Per maggiore granularità si usa HTTP redirect, che raddoppia le richieste e aumenta latenza. Le URL-based CDN usano URL completi ma richiedono terminazione TCP, costosa e con ritardi."
+  },
+  {
+    "id": 15,
+    "titolo": "Conclusioni sulle CDN",
+    "categoria": "CDN",
+    "contenuto": "CDN basate su DNS sono ampiamente usate per web e streaming. Le repliche possono contenere contenuti leggermente diversi (es. pubblicità locale). Content peering resta un problema aperto. Esempi noti: Akamai, Amazon CloudFront, Cloudflare, Limelight Networks."
+  },
+  {
+    "id": 16,
+    "titolo": "VPN IPsec",
+    "categoria": "VPN",
+    "contenuto": "Scopo: garantire comunicazioni sicure su reti pubbliche (es. Internet).\n\nFunzioni principali: cifratura, autenticazione, integrità dei dati, protezione contro replay.\n\nComponenti chiave:\n- AH (Authentication Header): autenticazione e integrità, senza cifratura.\n- ESP (Encapsulating Security Payload): cifratura + autenticazione + integrità.\n\nModalità:\n- Transport mode: protegge solo il payload IP.\n- Tunnel mode: incapsula l’intero pacchetto IP in un nuovo pacchetto IP.\n\nProtocollo di scambio chiavi: IKE (Internet Key Exchange).\n\nTipi di VPN: site-to-site (tra reti), remote access (client singoli).\n\nVantaggi: alta sicurezza, standard consolidato, interoperabilità.\n\nLimiti: configurazione complessa, overhead computazionale, possibile incompatibilità NAT senza NAT-T."
+  }
+]
