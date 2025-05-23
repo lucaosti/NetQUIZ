@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "titolo": "Gestione di grandi web server",
+    "categoria": "CDN",
+    "contenuto": "Usare farm di server efficienti con bilanciatori di carico front-end che distribuiscono richieste su più server, tutti collegati allo stesso database backend."
+  },
+  {
+    "id": 2,
+    "titolo": "Cache Web (soluzione storica)",
+    "categoria": "CDN",
+    "contenuto": "Dispositivi che memorizzano copie locali di oggetti HTTP richiesti di recente per rispondere rapidamente come proxy."
+  },
+  {
+    "id": 3,
+    "titolo": "Benefici delle Cache Web",
+    "categoria": "CDN",
+    "contenuto": "Riduzione del traffico su link Internet costosi, miglioramento della latenza e throughput, e abilitazione di contenuti localizzati."
+  },
+  {
+    "id": 4,
+    "titolo": "Caching HTTP",
+    "categoria": "CDN",
+    "contenuto": "I client memorizzano documenti e verificano cambiamenti tramite header HTTP (Expires, Cache-Control, E-tag). Se il contenuto non è scaduto si usa la copia cache, altrimenti si verifica con il server (304 Not Modified o 200 OK)."
+  },
+  {
+    "id": 5,
+    "titolo": "Proxy Web",
+    "categoria": "CDN",
+    "contenuto": "Negli anni ’90 richiedevano configurazione manuale. Oggi proxy trasparenti sono comuni, ma SSL impedisce l'ispezione dati, obbligando accordi tra provider di contenuti e ISP per cache nei backbone."
+  },
+  {
+    "id": 6,
+    "titolo": "Problemi di cache e farm di server",
+    "categoria": "CDN",
+    "contenuto": "Non risolvono congestione o latenza di rete. Cache servono solo i loro utenti, non tutta Internet. Provider non possono fidarsi della cache. Problemi di conteggio accessi e molti oggetti HTTP non sono cacheabili."
+  },
+  {
+    "id": 7,
+    "titolo": "Content Delivery Networks (CDN)",
+    "categoria": "CDN",
+    "contenuto": "Rete sovrapposta di cache/server distribuiti vicini agli utenti che migliorano performance, RTT, disponibilità, bilanciamento carico e costi. Utilizzate per hosting distribuito, video on demand, streaming live, contenuti dinamici e pubblicità."
+  },
+  {
+    "id": 8,
+    "titolo": "CDN vs Caching Proxy",
+    "categoria": "CDN",
+    "contenuto": "Cache riducono banda per ISP, CDN migliorano QoS per provider e utenti. Cache sono reattive, CDN sono proattive. CDN danno controllo ai provider, proxy no."
+  },
+  {
+    "id": 9,
+    "titolo": "Replica contenuti in CDN",
+    "categoria": "CDN",
+    "contenuto": "CDN installa server in data center o vicino agli utenti e replica contenuti dei provider. Quando il provider aggiorna, la CDN aggiorna i server. Sfide: come, dove replicare, come trovare e scegliere replica, come indirizzare utenti."
+  },
+  {
+    "id": 10,
+    "titolo": "Selezione del server",
+    "categoria": "CDN",
+    "contenuto": "Criteri: minor carico, migliore performance, tolleranza a guasti, posizione geografica, RTT, throughput. Modi per indirizzare client: routing (anycast, bilanciamento cluster), applicazione (HTTP redirect), naming (DNS)."
+  },
+  {
+    "id": 11,
+    "titolo": "Metodi di selezione server",
+    "categoria": "CDN",
+    "contenuto": "IP anycast: trasparente ma con poco controllo e complessità di scalabilità. HTTP redirect: controllo preciso ma aumenta carico e latenza. DNS: adatto al caching, riduce RTT, ma la richiesta è dal resolver, non dal client, e la granularità è per hostname, non URL."
+  },
+  {
+    "id": 12,
+    "titolo": "CDN basate su DNS",
+    "categoria": "CDN",
+    "contenuto": "Il DNS agisce come 'content router' selezionando la replica migliore in base a metriche (RTT, carico server). Limiti: granularità solo a livello hostname, difficile separare contenuti statici e dinamici."
+  },
+  {
+    "id": 13,
+    "titolo": "Akamai",
+    "categoria": "CDN",
+    "contenuto": "Usa domini specifici per ogni cliente e suddivide contenuti in gruppi con nomi multipli. Le URL sono modificate per puntare ai domini Akamai, permettendo instradamenti differenziati per paesi o gruppi."
+  },
+  {
+    "id": 14,
+    "titolo": "Estensioni e limiti delle CDN",
+    "categoria": "CDN",
+    "contenuto": "Per maggiore granularità si usa HTTP redirect, che raddoppia le richieste e aumenta latenza. Le URL-based CDN usano URL completi ma richiedono terminazione TCP, costosa e con ritardi."
+  },
+  {
+    "id": 15,
+    "titolo": "Conclusioni sulle CDN",
+    "categoria": "CDN",
+    "contenuto": "CDN basate su DNS sono ampiamente usate per web e streaming. Le repliche possono contenere contenuti leggermente diversi (es. pubblicità locale). Content peering resta un problema aperto. Esempi noti: Akamai, Amazon CloudFront, Cloudflare, Limelight Networks."
+  },
+  {
+    "id": 16,
+    "titolo": "VPN IPsec",
+    "categoria": "VPN",
+    "contenuto": "Scopo: garantire comunicazioni sicure su reti pubbliche (es. Internet).\n\nFunzioni principali: cifratura, autenticazione, integrità dei dati, protezione contro replay.\n\nComponenti chiave:\n- AH (Authentication Header): autenticazione e integrità, senza cifratura.\n- ESP (Encapsulating Security Payload): cifratura + autenticazione + integrità.\n\nModalità:\n- Transport mode: protegge solo il payload IP.\n- Tunnel mode: incapsula l’intero pacchetto IP in un nuovo pacchetto IP.\n\nProtocollo di scambio chiavi: IKE (Internet Key Exchange).\n\nTipi di VPN: site-to-site (tra reti), remote access (client singoli).\n\nVantaggi: alta sicurezza, standard consolidato, interoperabilità.\n\nLimiti: configurazione complessa, overhead computazionale, possibile incompatibilità NAT senza NAT-T."
+  },
+  {
+    "id": 17,
+    "titolo": "Output Queuing nei Router",
+    "categoria": "QoS",
+    "contenuto": "L'output queuing serve a gestire il traffico in uscita nei router, evitando congestioni e perdita di pacchetti, e garantendo un'adeguata trasmissione dei pacchetti in ordine e senza sovraccaricare l'interfaccia di rete. Tuttavia, se non bilanciato correttamente, può limitare la scalabilità e le prestazioni del router."
+  },
+  {
+    "id": 18,
+    "titolo": "VRF nei router MPLS",
+    "categoria": "MPLS VPN",
+    "contenuto": "Le VRF (Virtual Routing and Forwarding) sono tabelle di routing separate gestite dai router PE (Provider Edge) in un'architettura MPLS VPN. Ogni cliente ha una propria VRF, che isola il traffico e mantiene la separazione logica delle reti. I router P (core) non gestiscono VRF e si occupano solo della commutazione dei pacchetti MPLS tramite le label."
+  },
+  {
+    "id": 19,
+    "titolo": "MPLS VPN",
+    "categoria": "MPLS VPN",
+    "contenuto": "Le MPLS VPN (Multiprotocol Label Switching Virtual Private Network) sono reti private virtuali che utilizzano la tecnologia MPLS per instradare pacchetti attraverso una rete condivisa. Offrono isolamento del traffico, sicurezza e scalabilità, consentendo a più clienti di condividere la stessa infrastruttura fisica senza compromettere la privacy dei dati."
+  },
+  {
+    "id": 20,
+    "titolo": "QoS nei router",
+    "categoria": "QoS",
+    "contenuto": "La QoS (Quality of Service) nei router è un insieme di tecniche e meccanismi progettati per garantire prestazioni affidabili e prevedibili per applicazioni e servizi di rete. Include la gestione della larghezza di banda, la priorizzazione del traffico, il controllo della congestione e l'allocazione delle risorse per ottimizzare l'esperienza utente."
+  },
+  {
+    "id": 21,
+    "titolo": "Congestione nei router",
+    "categoria": "QoS",
+    "contenuto": "La congestione nei router si verifica quando il traffico in ingresso supera la capacità di elaborazione del router, causando ritardi, perdita di pacchetti e degrado delle prestazioni. Le tecniche di gestione della congestione includono il buffering, la coda prioritaria e l'implementazione di algoritmi di controllo della congestione."
+  },
+  {
+    "id": 22,
+    "titolo": "Buffering nei router",
+    "categoria": "QoS",
+    "contenuto": "Il buffering nei router è una tecnica utilizzata per gestire i picchi di traffico e prevenire la perdita di pacchetti. I pacchetti in eccesso vengono memorizzati temporaneamente in una memoria tampone (buffer) fino a quando non possono essere elaborati. Tuttavia, un buffering eccessivo può introdurre latenza e ritardi nella trasmissione dei dati."
+  },
+  {
+    "id": 23,
+    "titolo": "Coda prioritaria nei router",
+    "categoria": "QoS",
+    "contenuto": "La coda prioritaria nei router è una tecnica di gestione del traffico che assegna priorità a determinati tipi di pacchetti, garantendo che i pacchetti critici vengano elaborati prima di quelli meno importanti. Questo approccio migliora le prestazioni delle applicazioni sensibili alla latenza, come VoIP e video in streaming."
+  },
+  {
+    "id": 24,
+    "titolo": "QoS e MPLS",
+    "categoria": "QoS",
+    "contenuto": "La QoS in un contesto MPLS (Multiprotocol Label Switching) è fondamentale per garantire prestazioni affidabili e prevedibili per applicazioni e servizi. MPLS consente di implementare politiche QoS attraverso la classificazione, la marcatura e la gestione del traffico, migliorando l'efficienza della rete."
+  },
+  {
+    "id": 25,
+    "titolo": "Congestione e QoS",
+    "categoria": "QoS",
+    "contenuto": "La congestione e la QoS sono strettamente correlate, poiché una gestione efficace della QoS può prevenire la congestione nella rete. Implementando politiche QoS, i router possono garantire che il traffico critico riceva le risorse necessarie, riducendo il rischio di congestione e migliorando le prestazioni complessive della rete."
+  },
+  {
+    "id": 26,
+    "titolo": "Caching HTTP",
+    "categoria": "HTTP",
+    "contenuto": "Il caching HTTP consiste nel memorizzare temporaneamente risposte HTTP per evitare richieste ripetute al server. Può avvenire nel browser, nei proxy o in CDN. È controllato tramite intestazioni come Cache-Control, Expires, ETag e Last-Modified. Migliora le prestazioni, riduce la latenza e alleggerisce il carico sui server."
+  },
+  {
+    "id": 27,
+    "titolo": "Proxy trasparenti e HTTPS",
+    "categoria": "Sicurezza Reti",
+    "contenuto": "I proxy trasparenti intercettano il traffico senza configurazioni lato client. Tuttavia, con HTTPS, non possono ispezionare i dati perché tutto è cifrato. Per farlo, usano tecniche di SSL interception: si installa un certificato CA sul client e il proxy decifra e ricifra il traffico. Questo approccio permette il filtraggio ma comporta rischi di sicurezza, violazioni della privacy e incompatibilità con tecnologie moderne come TLS 1.3 con ESNI."
+  },
+  {
+    "id": 303,
+    "titolo": "CDN URL-Based Routing",
+    "categoria": "CDN",
+    "contenuto": "L'URL-based routing nelle CDN è una tecnica che permette di instradare il traffico in base a parti specifiche dell'URL, come path, estensione o query string. In base all'analisi dell'URL, la CDN può decidere quale cache usare, se inoltrare la richiesta all'origine, o applicare politiche differenti per contenuti statici e dinamici. Questo approccio consente ottimizzazione delle prestazioni, controllo granulare e personalizzazione della distribuzione dei contenuti."
+  }
+]

@@ -1943,5 +1943,1624 @@
     "risposte": ["Trunk port", "Hybrid port", "Access port", "Mirror port"],
     "corretta": 2,
     "categoria": "VLAN"
+  },
+  {
+    "id": 180,
+    "domanda": "Qual è la differenza principale tra il piano di controllo (control plane) e il piano dati (data plane) nel routing?",
+    "risposte": [
+      "Il piano di controllo inoltra i pacchetti, il piano dati decide i percorsi",
+      "Entrambi i piani eseguono decisioni di routing",
+      "Il piano di controllo decide i percorsi, il piano dati inoltra i pacchetti",
+      "Il piano dati gestisce le tabelle di routing"
+    ],
+    "corretta": 2,
+    "categoria": "Concetti di Routing"
+  },
+  {
+    "id": 181,
+    "domanda": "Come funziona tipicamente l'inoltro per indirizzo di rete nei router?",
+    "risposte": [
+      "Il router seleziona il percorso casualmente",
+      "Il router usa un'etichetta per inoltrare i pacchetti",
+      "Il router consulta la FIB per determinare il next hop e la porta",
+      "Il router invia i pacchetti a tutte le porte tranne quella di ingresso"
+    ],
+    "corretta": 2,
+    "categoria": "Forwarding"
+  },
+  {
+    "id": 182,
+    "domanda": "In MPLS, cosa comporta il label swapping?",
+    "risposte": [
+      "Il router rimuove tutte le etichette prima dell'inoltro",
+      "Il router ignora le etichette e inoltra in base all'indirizzo IP",
+      "Il router aggiunge etichette extra per le politiche di routing",
+      "Il router sostituisce l'etichetta del pacchetto con una nuova per decidere il next hop"
+    ],
+    "corretta": 4,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 183,
+    "domanda": "Perché il routing statico non è adatto a reti grandi o dinamiche?",
+    "risposte": [
+      "Richiede configurazione manuale e non si adatta ai cambiamenti",
+      "Usa troppa memoria",
+      "Inoltra i pacchetti più lentamente del routing dinamico",
+      "Causa sempre loop di routing"
+    ],
+    "corretta": 0,
+    "categoria": "Tipi di Routing"
+  },
+  {
+    "id": 184,
+    "domanda": "Qual è uno svantaggio principale del routing centralizzato?",
+    "risposte": [
+      "Convergenza lenta",
+      "Il nodo centrale è un singolo punto di guasto",
+      "I router non possono scambiare informazioni di topologia",
+      "Non può ottimizzare globalmente i percorsi"
+    ],
+    "corretta": 1,
+    "categoria": "Architetture di Routing"
+  },
+  {
+    "id": 185,
+    "domanda": "Come calcola le rotte il routing Distance Vector?",
+    "risposte": [
+      "I router diffondono la topologia completa a tutti i nodi",
+      "I router inviano vettori di distanza ai vicini con costo e numero di hop",
+      "I router usano un controller centralizzato",
+      "I router scelgono percorsi casuali verso le destinazioni"
+    ],
+    "corretta": 1,
+    "categoria": "Distance Vector"
+  },
+  {
+    "id": 186,
+    "domanda": "Quale tecnica previene i loop di routing evitando di pubblicare rotte indietro verso la sorgente in Distance Vector?",
+    "risposte": [
+      "Split Horizon",
+      "Poison Reverse",
+      "Hold Down Timer",
+      "Flooding"
+    ],
+    "corretta": 0,
+    "categoria": "Distance Vector"
+  },
+  {
+    "id": 187,
+    "domanda": "Perché il routing Link State converge più velocemente del Distance Vector?",
+    "risposte": [
+      "Diffonde rapidamente la topologia completa e calcola localmente i percorsi minimi",
+      "Aggiorna solo informazioni sul next hop",
+      "Usa routing casuale",
+      "Si basa su rotte statiche"
+    ],
+    "corretta": 0,
+    "categoria": "Link State"
+  },
+  {
+    "id": 188,
+    "domanda": "Perché in Link State ogni nodo costruisce un albero di routing con sé stesso come radice?",
+    "risposte": [
+      "Per calcolare i percorsi ottimali da sé a tutte le destinazioni",
+      "Per semplificare il flooding",
+      "Per evitare loop condividendo l'albero",
+      "Per centralizzare le decisioni di routing"
+    ],
+    "corretta": 0,
+    "categoria": "Link State"
+  },
+  {
+    "id": 189,
+    "domanda": "Qual è un rischio principale del flooding delle informazioni Link State e come si mitiga?",
+    "risposte": [
+      "Loop di routing; mitigati da timer",
+      "Perdita di pacchetti; mitigata da ritrasmissione",
+      "Traffico eccessivo che causa congestione; mitigato da flooding selettivo",
+      "Attacchi di sicurezza; mitigati da crittografia"
+    ],
+    "corretta": 2,
+    "categoria": "Link State"
+  },
+  {
+    "id": 190,
+    "domanda": "Quale protocollo viene tipicamente usato per il routing intra-AS?",
+    "risposte": ["BGP", "RIP o OSPF", "EIGRP", "MPLS"],
+    "corretta": 1,
+    "categoria": "Protocolli di Routing"
+  },
+  {
+    "id": 191,
+    "domanda": "Qual è il ruolo di un Area Border Router (ABR) in OSPF?",
+    "risposte": [
+      "Collegare un'area OSPF al backbone",
+      "Instradare pacchetti tra AS diversi",
+      "Gestire lo switching delle etichette in MPLS",
+      "Agire come controller centrale di routing"
+    ],
+    "corretta": 0,
+    "categoria": "OSPF"
+  },
+  {
+    "id": 192,
+    "domanda": "Come migliorano scalabilità e prestazioni le aree in OSPF?",
+    "risposte": [
+      "Limitando la conoscenza della topologia a ciascuna area",
+      "Aumentando la frequenza degli aggiornamenti di routing",
+      "Usando rotte statiche",
+      "Disabilitando il flooding"
+    ],
+    "corretta": 0,
+    "categoria": "OSPF"
+  },
+  {
+    "id": 193,
+    "domanda": "Quale criterio ha la massima priorità nella selezione del percorso in BGP?",
+    "risposte": [
+      "Lunghezza AS-PATH",
+      "Prossimità del NEXT-HOP",
+      "Local preference",
+      "MED (Multi-Exit Discriminator)"
+    ],
+    "corretta": 2,
+    "categoria": "BGP"
+  },
+  {
+    "id": 194,
+    "domanda": "Cosa significa 'hot potato routing' in BGP?",
+    "risposte": [
+      "Instradare il traffico lungo il percorso più lungo",
+      "Instradare solo all'interno di un AS",
+      "Instradare il traffico verso il punto di uscita più vicino il prima possibile",
+      "Instradare in base alla dimensione del pacchetto"
+    ],
+    "corretta": 2,
+    "categoria": "BGP"
+  },
+  {
+    "id": 195,
+    "domanda": "Come influenzano le politiche di routing la selezione dei percorsi?",
+    "risposte": [
+      "Filtrano e manipolano le rotte pubblicizzate secondo regole amministrative",
+      "Sostituiscono gli indirizzi IP con etichette",
+      "Disabilitano i protocolli di routing",
+      "Forzano il routing sul percorso più breve"
+    ],
+    "corretta": 0,
+    "categoria": "Politiche di Routing"
+  },
+  {
+    "id": 196,
+    "domanda": "Qual è una differenza fondamentale tra Distance Vector e Link State in termini di informazioni scambiate?",
+    "risposte": [
+      "Distance Vector scambia la topologia completa, Link State solo informazioni di distanza",
+      "Distance Vector usa Bellman-Ford, Link State usa Dijkstra",
+      "Distance Vector richiede più memoria di Link State",
+      "Link State non rileva cambiamenti topologici"
+    ],
+    "corretta": 1,
+    "categoria": "Algoritmi di Routing"
+  },
+  {
+    "id": 197,
+    "domanda": "Come implementa OSPF la sicurezza nei messaggi di routing?",
+    "risposte": [
+      "Crittografia di tutti i pacchetti",
+      "Uso di indirizzi IP privati solo",
+      "Filtraggio delle rotte per AS number",
+      "Autenticazione dei messaggi per impedire aggiornamenti non autorizzati"
+    ],
+    "corretta": 0,
+    "categoria": "OSPF"
+  },
+  {
+    "id": 198,
+    "domanda": "Cos'è un Label Switched Path (LSP) in MPLS?",
+    "risposte": [
+      "Un percorso unidirezionale predefinito nella rete MPLS definito da etichette",
+      "Un percorso scelto casualmente per ogni pacchetto",
+      "La tabella di routing IP",
+      "Un albero multicast"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 199,
+    "domanda": "Perché IS-IS è spesso preferito a OSPF nelle grandi reti ISP?",
+    "risposte": [
+      "Perché IS-IS usa meno memoria di OSPF",
+      "Perché IS-IS funziona direttamente su Layer 2 ed è più scalabile",
+      "Perché IS-IS usa Distance Vector",
+      "Perché IS-IS non supporta IPv6"
+    ],
+    "corretta": 0,
+    "categoria": "Protocolli di Routing"
+  },
+  {
+    "id": 200,
+    "domanda": "L'importanza di MPLS (multi-protocol label switching) nelle reti informatiche odierne e future deriva dalla possibilità di",
+    "risposte": [
+      "Bilanciare il traffico su un server farm",
+      "Realizzare dispositivi che possono operare senza necessità di configurazione",
+      "Avere un unico piano di controllo per diverse tecnologie di switching",
+      "Realizzare switch con supporto specifico per garantire qualità del servizio"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 201,
+    "domanda": "Uno dei protocolli usati in MPLS per la distribuzione delle label è:",
+    "risposte": ["OSPF", "BGP", "L2TP", "IS-IS"],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 202,
+    "domanda": "Nell'architettura MPLS, gli LSP (label switched paths)",
+    "risposte": [
+      "Consistono nel percorso più corto verso una data destinazione",
+      "Rappresentano percorsi alternativi per inoltrare pacchetti verso una destinazione mantenuti da un router nella sua tabella di routing",
+      "Sono stabiliti dai nodi di rete che concordano le label da usare per pacchetti appartenenti a una specifica classe di forwarding (FEC)",
+      "Sono scambiati tra router per creare una mappa della rete"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 203,
+    "domanda": "Le operazioni che un router MPLS può effettuare sulle label sono:",
+    "risposte": [
+      "Le label non possono essere modificate dai router",
+      "Aggiungere una label nella posizione più esterna dell’header MPLS (PUSH), rimuovere una label dalla posizione più esterna (POP), cambiare il contenuto della label esterna (SWAP)",
+      "Aggiungere una label solo se non ci sono altre label nell’header MPLS (una sola label permessa) (PUSH), rimuovere l’unica label all’uscita dalla rete MPLS (POP), cambiare il contenuto della label (SWAP)",
+      "Aggiungere, rimuovere o cambiare label in qualsiasi posizione dell’header MPLS"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 204,
+    "domanda": "Il protocollo IGMP",
+    "risposte": [
+      "È una nuova versione del protocollo ICMP",
+      "Permette a un router IPv4 di scoprire quali gruppi multicast sono presenti in una rete direttamente connessa",
+      "Permette a un router IPv4 di scoprire quali gruppi multicast sono attivi nella rete Internet in un dato istante",
+      "Permette a un host IPv4 di creare un nuovo gruppo multicast"
+    ],
+    "corretta": 1,
+    "categoria": "Multicast"
+  },
+  {
+    "id": 205,
+    "domanda": "In una rete IPv4",
+    "risposte": [
+      "Un host consegna sempre all’applicazione tutti i pacchetti multicast ricevuti",
+      "Un host può ricevere un pacchetto multicast relativo a un gruppo specifico anche se non si è unito a quel gruppo prima",
+      "Un host riceve un pacchetto multicast relativo a un gruppo specifico solo se si è unito a quel gruppo, indipendentemente dalla tecnologia di livello 2 usata",
+      "Un host non può interpretare un pacchetto multicast IPv4"
+    ],
+    "corretta": 2,
+    "categoria": "Multicast"
+  },
+  {
+    "id": 206,
+    "domanda": "La procedura Neighbor Discovery in IPv6",
+    "risposte": [
+      "Si basa su pacchetti multicast ICMPv6",
+      "Si basa su ARPv6",
+      "Richiede che la rete supporti IPv4",
+      "Si basa su pacchetti broadcast ICMPv6"
+    ],
+    "corretta": 0,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 207,
+    "domanda": "Il pacchetto ICMPv6 Router Advertisement",
+    "risposte": [
+      "Viene inviato periodicamente da un router a tutti gli altri router di Internet",
+      "È un pacchetto broadcast",
+      "Viene inviato in risposta a un pacchetto ICMPv6 Neighbor Solicitation",
+      "Permette l’autoconfigurazione del dispositivo senza intervento di DHCP"
+    ],
+    "corretta": 0,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 208,
+    "domanda": "Gli indirizzi IPv6 privati",
+    "risposte": [
+      "Sono usati solo sui router",
+      "Sono definiti per essere globalmente unici con alta probabilità, ma non possono essere usati a livello globale",
+      "Servono a interconnettere reti private tramite una rete pubblica",
+      "Sono usati solo per comunicazioni on-link"
+    ],
+    "corretta": 1,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 209,
+    "domanda": "Gli indirizzi IPv6 Site Local",
+    "risposte": [
+      "Sono configurati automaticamente dai dispositivi IPv6 per comunicazioni on-link",
+      "Sono deprecati ma possono ancora essere usati nelle reti IPv6",
+      "Sono assegnati da un’autorità centrale che ne garantisce l’unicità globale",
+      "Non esistono"
+    ],
+    "corretta": 1,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 210,
+    "domanda": "L’indirizzo IPv6 FE80::0201:06FF:FEA5:3A4C è",
+    "risposte": [
+      "Un indirizzo non valido in IPv6",
+      "Un indirizzo utilizzabile su un host con MAC 00:01:06:A5:3A:4C per comunicare con un altro host sullo stesso link",
+      "Un indirizzo usabile su un server con MAC 00:01:06:A5:3A:4C per offrire un servizio su Internet pubblico IPv6",
+      "Un indirizzo che può essere usato da più dispositivi sullo stesso link"
+    ],
+    "corretta": 1,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 211,
+    "domanda": "Centralized routing",
+    "risposte": [
+      "Imposta che il traffico attraversi un nodo di rete specifico",
+      "È una soluzione obsoleta che non si usa mai nelle reti moderne",
+      "Implica che i nodi di rete non scambiano informazioni di routing",
+      "Consiste in un nodo di rete che calcola le rotte per altri nodi e fornisce loro le rotte calcolate"
+    ],
+    "corretta": 3,
+    "categoria": "Routing"
+  },
+  {
+    "id": 212,
+    "domanda": "Usando un metodo di autoconfigurazione IPv6 attento alla privacy (RFC-4941: privacy extensions for autoconfiguration), un host IPv6 contiene un indirizzo:",
+    "risposte": [
+      "Con prefisso e ID interfaccia entrambi non tracciabili",
+      "Con un prefisso non tracciabile",
+      "Valido solo all'interno di una VPN che garantisce la privacy dell'utente",
+      "Con un ID interfaccia non tracciabile"
+    ],
+    "corretta": 3,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 213,
+    "domanda": "Due host A e B appartengono alla stessa rete fisica e hanno indirizzi IP rispettivamente 130.192.1.1/25 e 130.192.1.100/24",
+    "risposte": [
+      "B comunica con A ma non viceversa",
+      "A comunica con B solo tramite un router",
+      "A comunica direttamente con B ma non viceversa",
+      "A comunica direttamente con B e viceversa"
+    ],
+    "corretta": 3,
+    "categoria": "Reti"
+  },
+  {
+    "id": 214,
+    "domanda": "Nella soluzione VPN MPLS di livello 3 basata su BGP, i pacchetti che viaggiano nel backbone MPLS hanno due label.",
+    "risposte": [
+      "Entrambe le label sono usate dai router interni (P) per inoltrare pacchetti verso un router PE",
+      "I router Internet (P) non cambiano mai (swap) la label esterna",
+      "La label esterna è usata dai router interni (P) per inoltrare pacchetti verso un router PE",
+      "La label interna è usata dai router interni (P) per inoltrare pacchetti verso un router PE"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 215,
+    "domanda": "Una delle proprietà principali della nuova infrastruttura 5G è",
+    "risposte": [
+      "Il ritorno alla tecnologia circuit switching per garantire qualità del servizio, fondamentale nelle reti mobili di nuova generazione",
+      "L’uso congiunto di tecniche di virtualizzazione e soluzioni flessibili per il controllo della rete, con l’obiettivo di dividere efficientemente e efficacemente le risorse di rete disponibili",
+      "L’uso di tecniche di virtualizzazione sui terminali mobili, per supportare adeguatamente nuove applicazioni",
+      "L’uso di emulatori e simulatori software per il design delle infrastrutture di rete degli operatori mobili, per questo chiamate Software-Defined networks"
+    ],
+    "corretta": 1,
+    "categoria": "5G"
+  },
+  {
+    "id": 216,
+    "domanda": "Il fatto che una VPN supporti l’accesso Internet centralizzato significa che",
+    "risposte": [
+      "La rete aziendale deve usare un unico fornitore di servizi Internet",
+      "I pacchetti destinati a stazioni non facenti parte della rete privata (cioè su Internet) possono seguire un percorso sub-ottimale nella topologia fisica",
+      "Il traffico pubblico (originato o destinato a Internet) usa in modo trascurabile l’infrastruttura di rete aziendale",
+      "Non è necessario installare dispositivi come firewall per proteggere la rete aziendale dagli attacchi provenienti da Internet"
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 217,
+    "domanda": "L’indirizzo MAC di un pacchetto ICMPv6 Neighbor Solicitation è",
+    "risposte": [
+      "Un indirizzo broadcast",
+      "Un indirizzo anycast",
+      "Un indirizzo multicast",
+      "Un indirizzo unicast, quello dell’host da raggiungere"
+    ],
+    "corretta": 2,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 218,
+    "domanda": "Il termine handover nelle reti cellulari si riferisce a",
+    "risposte": [
+      "L’uso di un terminale mobile in una rete di un operatore diverso da quello della SIM installata",
+      "Il movimento di un terminale mobile da una cella all’altra anche senza comunicazioni attive",
+      "L’accensione di un terminale mobile dopo un lungo periodo di inattività",
+      "Il passaggio di un terminale mobile da una cella all’altra senza interrompere una comunicazione attiva (es. una chiamata)"
+    ],
+    "corretta": 3,
+    "categoria": "Reti mobili"
+  },
+  {
+    "id": 219,
+    "domanda": "In una rete cellulare che usa la tecnologia Frequency Division Multiple Access (FDMA)",
+    "risposte": [
+      "Viene usata una sola frequenza per tutta la rete",
+      "Le chiamate vocali non sono possibili; la rete serve solo per traffico dati",
+      "Le frequenze sono scelte casualmente dai terminali mobili che ritrasmettono in caso di collisione",
+      "Le frequenze disponibili sono divise tra gruppi di celle vicine e poi riutilizzate in celle sufficientemente lontane"
+    ],
+    "corretta": 3,
+    "categoria": "Reti mobili"
+  },
+  {
+    "id": 220,
+    "domanda": "Qual è il principale problema che spinge a cambiare l’architettura delle reti tradizionali verso SDN?",
+    "risposte": [
+      "La rete tradizionale non supporta protocolli di routing dinamici",
+      "La rete tradizionale non regge l’aumento di traffico e varietà di servizi come cloud, IoT e mobile",
+      "I dispositivi tradizionali sono troppo costosi",
+      "La rete tradizionale è troppo veloce e quindi difficile da gestire"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 221,
+    "domanda": "Quali sono i tre piani distinti in un dispositivo di rete secondo l’architettura SDN?",
+    "risposte": [
+      "Data plane, routing plane, forwarding plane",
+      "Control plane, forwarding plane, management plane",
+      "Management plane, control plane, data plane",
+      "Physical plane, logical plane, control plane"
+    ],
+    "corretta": 2,
+    "categoria": "SDN"
+  },
+  {
+    "id": 222,
+    "domanda": "Qual è la caratteristica principale dell’architettura SDN rispetto alle reti tradizionali?",
+    "risposte": [
+      "Il data plane è distribuito su tutti i dispositivi",
+      "Il control plane è separato fisicamente dal data plane e gestito da un controller centrale",
+      "Tutti i dispositivi eseguono sia control che data plane",
+      "I protocolli di routing sono integrati negli switch"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 223,
+    "domanda": "Quali sono i quattro pilastri fondamentali di SDN?",
+    "risposte": [
+      "Separazione del control plane dal data plane, data plane semplificato, controllo distribuito, forwarding statico",
+      "Separazione del data plane dal management plane, controllo centralizzato, forwarding dinamico, gestione locale",
+      "Separazione del control plane dal data plane, data plane semplificato, controllo centralizzato, forwarding basato sul contesto",
+      "Forwarding basato su IP, controllo centralizzato, data plane distribuito, gestione remota"
+    ],
+    "corretta": 2,
+    "categoria": "SDN"
+  },
+  {
+    "id": 224,
+    "domanda": "Qual è il ruolo della Southbound Interface in SDN?",
+    "risposte": [
+      "Collegare il controller con le applicazioni esterne",
+      "Collegare il controller al management plane",
+      "Collegare gli switch tra loro",
+      "Collegare il controller agli switch di rete"
+    ],
+    "corretta": 3,
+    "categoria": "SDN"
+  },
+  {
+    "id": 225,
+    "domanda": "Cos’è OpenFlow nel contesto di SDN?",
+    "risposte": [
+      "Un protocollo che collega switch tra loro",
+      "Un protocollo che consente al controller SDN di impostare regole di forwarding sugli switch",
+      "Un software di gestione per dispositivi di rete tradizionali",
+      "Un tipo di switch hardware dedicato a SDN"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 226,
+    "domanda": "Come funziona il forwarding basato sul contesto in SDN?",
+    "risposte": [
+      "Lo switch decide le regole di forwarding senza l’intervento del controller",
+      "Lo switch invia pacchetti senza regola al controller, che li analizza e definisce regole dinamiche",
+      "Il controller configura solo regole statiche e predefinite",
+      "Il forwarding si basa solo sulla topologia di rete"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 227,
+    "domanda": "Qual è la differenza tra configurazione proattiva e reattiva in OpenFlow?",
+    "risposte": [
+      "Proattiva: regole create in risposta al traffico; Reattiva: regole preinstallate",
+      "Proattiva: regole preinstallate; Reattiva: regole create in risposta al traffico",
+      "Proattiva: regole statiche; Reattiva: regole dinamiche basate su intelligenza artificiale",
+      "Proattiva: configurazione manuale; Reattiva: configurazione automatica"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 228,
+    "domanda": "Che cosa rappresenta una flow rule in SDN?",
+    "risposte": [
+      "Una regola statica per instradare pacchetti in base all’indirizzo MAC",
+      "Un protocollo di comunicazione tra controller e switch",
+      "Una coppia <match, action> che definisce un flusso di traffico e le azioni da eseguire",
+      "Un dispositivo di rete virtuale"
+    ],
+    "corretta": 2,
+    "categoria": "SDN"
+  },
+  {
+    "id": 229,
+    "domanda": "Quali vantaggi principali offre un controller SDN?",
+    "risposte": [
+      "Solo gestione di routing OSPF",
+      "Controllo esclusivo di dispositivi di rete hardware proprietari",
+      "Maggiore complessità e controllo distribuito",
+      "Programmazione della rete, supporto multivendor, gestione centralizzata e ottimizzazioni cross-layer"
+    ],
+    "corretta": 3,
+    "categoria": "SDN"
+  },
+  {
+    "id": 230,
+    "domanda": "Qual è l’obiettivo principale dell’approccio SDN in termini di gestione della rete?",
+    "risposte": [
+      "Rendere la rete statica e immutabile",
+      "Rendere la rete adattabile, automatica, manutenibile e gestibile a livello astratto",
+      "Eliminare completamente il control plane",
+      "Usare solo protocolli tradizionali di routing"
+    ],
+    "corretta": 1,
+    "categoria": "SDN"
+  },
+  {
+    "id": 231,
+    "domanda": "Cos’è Network Functions Virtualization (NFV)?",
+    "risposte": [
+      "Un protocollo di rete per SDN",
+      "Un tipo di switch SDN",
+      "Un approccio che esegue funzioni di rete come software su hardware standard invece che su dispositivi dedicati",
+      "Un sistema operativo per router"
+    ],
+    "corretta": 2,
+    "categoria": "NFV"
+  },
+  {
+    "id": 232,
+    "domanda": "Quali sono i vantaggi principali di NFV?",
+    "risposte": [
+      "Provisioning lento e dipendenza da hardware proprietario",
+      "Provisioning veloce, multitenancy, riduzione costi, maggiore flessibilità e mobilità",
+      "Uso esclusivo di dispositivi fisici dedicati",
+      "Maggior complessità nella gestione"
+    ],
+    "corretta": 1,
+    "categoria": "NFV"
+  },
+  {
+    "id": 233,
+    "domanda": "Che cos’è una Service Function Chain (SFC) in SDN/NFV?",
+    "risposte": [
+      "Una catena di switch fisici in una rete tradizionale",
+      "Un tipo di protocollo di routing",
+      "Un software di monitoraggio della rete",
+      "Una sequenza di funzioni di rete da applicare a un flusso di traffico, realizzabile con SDN o NFV"
+    ],
+    "corretta": 3,
+    "categoria": "SDN/NFV"
+  },
+  {
+    "id": 234,
+    "domanda": "Quali problemi risolvono le SFC implementate con SDN rispetto a quelle tradizionali?",
+    "risposte": [
+      "Richiedono cablaggi fisici fissi e non modificabili",
+      "Non permettono personalizzazione per tenant",
+      "Consentono provisioning agile, manutenzione semplificata e personalizzazione per tenant senza cambiare cablaggi fisici",
+      "Non sono compatibili con NFV"
+    ],
+    "corretta": 2,
+    "categoria": "SDN/NFV"
+  },
+  {
+    "id": 235,
+    "domanda": "Cos'è MPLS e quale vantaggio principale offre rispetto al routing IP tradizionale?",
+    "risposte": [
+      "Un protocollo di routing a livello 3 che sostituisce IP",
+      "Una tecnica che usa etichette (label) al posto degli indirizzi IP per instradare pacchetti più velocemente",
+      "Un sistema di crittografia per reti VPN",
+      "Un protocollo per il trasporto multicast"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 236,
+    "domanda": "Qual è il ruolo del Label Edge Router (LER) in una rete MPLS?",
+    "risposte": [
+      "Scambia label con altri router all'interno della rete MPLS",
+      "Effettua il forwarding dei pacchetti senza modificare le label",
+      "Gestisce solo i pacchetti IP non etichettati",
+      "Assegna o rimuove le etichette (label) ai pacchetti ai bordi della rete MPLS"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 237,
+    "domanda": "Cosa rappresenta una FEC (Forwarding Equivalence Class) in MPLS?",
+    "risposte": [
+      "Un tipo di protocollo di routing usato da MPLS",
+      "Un’etichetta assegnata dinamicamente ai router",
+      "Una tecnologia per la crittografia dei pacchetti",
+      "Un gruppo di pacchetti che ricevono lo stesso trattamento e seguono lo stesso Label Switched Path"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 238,
+    "domanda": "Quali protocolli possono essere usati per la distribuzione delle label in MPLS?",
+    "risposte": [
+      "LDP, RSVP-TE, BGP con estensioni MPLS",
+      "OSPF, RIP, BGP senza estensioni",
+      "FTP, HTTP, SMTP",
+      "TCP, UDP, ICMP"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 239,
+    "domanda": "Che differenza c’è tra Static Label Binding e Dynamic Label Binding in MPLS?",
+    "risposte": [
+      "Static: assegnazione manuale delle label; Dynamic: assegnazione automatica basata sulle FEC",
+      "Static: usa solo label fisse; Dynamic: usa solo label casuali",
+      "Static: funziona solo con OSPF; Dynamic: funziona solo con BGP",
+      "Non c’è differenza significativa"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 240,
+    "domanda": "Qual è il vantaggio principale del Traffic Engineering (TE) con MPLS rispetto al routing IP tradizionale?",
+    "risposte": [
+      "È meno flessibile e usa sempre il percorso più corto",
+      "Ignora la qualità del servizio (QoS)",
+      "Permette di definire percorsi espliciti basati sul carico e vincoli di rete, migliorando prestazioni e bilanciamento",
+      "Rende il routing più lento"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 241,
+    "domanda": "Cosa si intende per Penultimate Hop Popping (PHP) in MPLS?",
+    "risposte": [
+      "L’ultimo router rimuove la label prima di inoltrare al destinatario finale",
+      "Il penultimo router rimuove la label, alleggerendo il carico sull’ultimo router",
+      "Un tipo di crittografia usata in MPLS",
+      "Una procedura di backup in caso di guasto"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 242,
+    "domanda": "Qual è la funzione principale di un Label Switch Router (LSR) in una rete MPLS?",
+    "risposte": [
+      "Inserire o rimuovere label all’ingresso o uscita della rete",
+      "Eseguire routing IP tradizionale senza label",
+      "Creare VPN IPsec",
+      "Sostituire (swap) le label dei pacchetti in transito e inoltrarli al prossimo hop"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 243,
+    "domanda": "Quale delle seguenti affermazioni su MPLS VPN è corretta?",
+    "risposte": [
+      "Le VPN MPLS richiedono crittografia forte per garantire sicurezza",
+      "Le VPN MPLS separano logicamente il traffico cliente senza necessità di crittografia IPsec",
+      "Le VPN MPLS non sono scalabili",
+      "Le VPN MPLS sono limitate a reti aziendali piccole"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 244,
+    "domanda": "Quali informazioni sono contenute nell’header MPLS?",
+    "risposte": [
+      "Solo indirizzo IP di destinazione",
+      "Tipo di protocollo e checksum",
+      "Label (20 bit), Exp (QoS), S (bottom of stack), TTL",
+      "Indirizzi MAC sorgente e destinazione"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 245,
+    "domanda": "Qual è la differenza principale tra VPN Layer 2 e VPN Layer 3?",
+    "risposte": [
+      "Layer 2 incapsula pacchetti IP, Layer 3 incapsula frame Ethernet",
+      "Layer 2 gestisce routing IP, Layer 3 si limita al forwarding",
+      "Layer 2 incapsula frame Ethernet, Layer 3 incapsula pacchetti IP",
+      "Non c’è differenza"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 246,
+    "domanda": "In una VPN MPLS Layer 3, cosa fa un router PE (Provider Edge)?",
+    "risposte": [
+      "Gestisce il routing IP tradizionale senza label",
+      "Assegna e rimuove label MPLS e mantiene VRF per ogni cliente",
+      "Scambia label senza sapere a quale cliente appartengono",
+      "Svolge solo funzione di switch Ethernet"
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 247,
+    "domanda": "Quale delle seguenti affermazioni su VPN MPLS Layer 3 è corretta?",
+    "risposte": [
+      "Garantisce la sicurezza tramite crittografia end-to-end",
+      "Non supporta Quality of Service (QoS)",
+      "Garantisce sicurezza tramite separazione logica del traffico senza crittografia",
+      "È usata solo per reti aziendali molto piccole"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 248,
+    "domanda": "Qual è lo scopo di una Virtual Routing and Forwarding (VRF) in VPN MPLS?",
+    "risposte": [
+      "Separare fisicamente le reti dei clienti",
+      "Gestire solo il traffico multicast",
+      "Effettuare crittografia dei dati",
+      "Isolare logicamente le tabelle di routing per ogni cliente sul router PE"
+    ],
+    "corretta": 3,
+    "categoria": "VPN"
+  },
+  {
+    "id": 249,
+    "domanda": "Qual è il ruolo del router CE (Customer Edge) in una VPN MPLS?",
+    "risposte": [
+      "Collegare la rete del cliente al PE del provider e inviare pacchetti verso la VPN",
+      "Gestire la rete MPLS interna del provider",
+      "Gestire le tabelle di routing globali del provider",
+      "Svolgere solo funzioni di switch"
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 250,
+    "domanda": "Qual è la differenza principale tra VPN MPLS e VPN IPsec?",
+    "risposte": [
+      "VPN MPLS usa crittografia forte, IPsec separazione logica",
+      "VPN MPLS è semplice da implementare, IPsec è complesso",
+      "VPN MPLS usa separazione logica senza crittografia, IPsec usa crittografia",
+      "VPN MPLS è usata solo per lavoratori remoti"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 251,
+    "domanda": "Quale topologia VPN è caratterizzata da un nodo centrale a cui tutti gli altri nodi si collegano e che gestisce il routing?",
+    "risposte": ["Mesh", "Hub & Spoke", "Peer-to-peer", "Overlay"],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 252,
+    "domanda": "Quale tra le seguenti non è una caratteristica di una VPN Site-to-Site (S2S)?",
+    "risposte": [
+      "Collega singoli dispositivi remoti tra loro",
+      "Collega reti aziendali remote tra loro",
+      "È un tunnel tra gateway di due reti",
+      "Tutto il traffico tra le sedi passa nel tunnel"
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 253,
+    "domanda": "Cosa fa il protocollo GRE (Generic Routing Encapsulation) in contesto VPN?",
+    "risposte": [
+      "Cripta i dati con algoritmi AES",
+      "Incapsula qualsiasi protocollo in pacchetti IP per creare tunnel tra dispositivi",
+      "Sostituisce IPsec nelle reti aziendali",
+      "Gestisce le chiavi di crittografia"
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 254,
+    "domanda": "Quale delle seguenti è una limitazione di PPTP (Point-to-Point Tunneling Protocol)?",
+    "risposte": [
+      "È un protocollo molto recente e complesso",
+      "Usa una crittografia debole (MPPE) e un’autenticazione proprietaria (MS-CHAP)",
+      "Supporta solo reti Layer 2",
+      "Non utilizza tunneling"
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 255,
+    "domanda": "Quali sono gli obiettivi principali di IPsec in VPN?",
+    "risposte": [
+      "Autenticazione, integrità, confidenzialità, incapsulamento sicuro del traffico IP",
+      "Solo crittografia dei dati",
+      "Sostituire MPLS nelle reti provider",
+      "Gestire routing dinamico"
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 256,
+    "domanda": "Qual è la differenza tra AH (Authentication Header) ed ESP (Encapsulating Security Payload) in IPsec?",
+    "risposte": [
+      "AH cifra i dati, ESP non li cifra",
+      "AH è usato solo per VPN Layer 2, ESP per Layer 3",
+      "AH fornisce solo autenticazione e integrità, ESP fornisce anche cifratura e autenticazione",
+      "Non ci sono differenze"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 257,
+    "domanda": "Qual è la differenza tra modalità Transport e Tunnel in IPsec?",
+    "risposte": [
+      "Tunnel protegge solo il payload IP, Transport protegge tutto il pacchetto",
+      "Non c’è differenza",
+      "Transport è usato solo in reti locali",
+      "Transport protegge solo il payload IP, Tunnel protegge tutto il pacchetto IP incluso header"
+    ],
+    "corretta": 3,
+    "categoria": "VPN"
+  },
+  {
+    "id": 258,
+    "domanda": "Cosa si intende per VPN Remote Access?",
+    "risposte": [
+      "Collegamento tra sedi aziendali remote",
+      "Collegamento tra due gateway provider",
+      "Collegamento di un singolo utente remoto alla rete aziendale",
+      "Collegamento esclusivamente via MPLS"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 259,
+    "domanda": "Quali dispositivi sono coinvolti nel modello Provider Provisioned VPN?",
+    "risposte": [
+      "I router CE del cliente terminano il tunnel VPN",
+      "I firewall del cliente gestiscono la VPN",
+      "Solo gli switch",
+      "I router PE del provider terminano il tunnel VPN"
+    ],
+    "corretta": 3,
+    "categoria": "VPN"
+  },
+  {
+    "id": 260,
+    "domanda": "Qual è lo svantaggio principale delle VPN Overlay rispetto a quelle Peer?",
+    "risposte": [
+      "Il routing VPN è gestito dal core pubblico, rendendo la rete più complessa",
+      "La rete pubblica non conosce i dettagli della VPN, quindi può mancare ottimizzazione nel routing",
+      "Sono incompatibili con MPLS",
+      "Non supportano traffico IP"
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 261,
+    "domanda": "Quale tra queste affermazioni descrive meglio la VPN Extranet?",
+    "risposte": [
+      "Fornisce accesso sicuro a partner, fornitori e clienti esterni",
+      "Connette solo uffici interni di un’azienda",
+      "È sempre crittografata con IPsec",
+      "Non richiede firewall o controlli di traffico"
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 262,
+    "domanda": "Qual è il vantaggio principale dell’uso di VPN Layer 2 come VPLS?",
+    "risposte": [
+      "Cripta il traffico in modo nativo",
+      "Sostituisce MPLS in tutte le reti provider",
+      "Non supporta traffico IP",
+      "Permette l’estensione di una LAN su rete pubblica con trasporto di frame Ethernet"
+    ],
+    "corretta": 3,
+    "categoria": "VPN"
+  },
+  {
+    "id": 263,
+    "domanda": "Quale affermazione è corretta riguardo la gestione del traffico in una VPN MPLS L3?",
+    "risposte": [
+      "Il traffico è instradato esclusivamente tramite routing IP classico senza label",
+      "Non è possibile isolare il traffico di clienti diversi",
+      "Il traffico viene incapsulato con etichette MPLS che permettono Quality of Service e gestione delle priorità",
+      "Il traffico multicast non è supportato"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 264,
+    "domanda": "Quali sono le principali funzioni di un VPN Gateway?",
+    "risposte": [
+      "Stabilire e terminare tunnel VPN, autenticare endpoint, incapsulare e decapsulare traffico",
+      "Solo instradare pacchetti IP",
+      "Eseguire crittografia senza autenticazione",
+      "Gestire solo la VLAN di rete"
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 265,
+    "domanda": "Quali sono le implicazioni del jitter sulle applicazioni real-time e come può essere mitigato?",
+    "risposte": [
+      "Riduce la larghezza di banda richiesta",
+      "Aumenta la priorità dei pacchetti",
+      "Elimina la necessità di shaping",
+      "Causa instabilità nella riproduzione, si mitiga con jitter buffer"
+    ],
+    "corretta": 3,
+    "categoria": "QoS"
+  },
+  {
+    "id": 266,
+    "domanda": "Confronta FIFO, WFQ e Deadline Queueing: quale offre garanzie temporali per il traffico sensibile al ritardo?",
+    "risposte": ["FIFO", "WFQ", "Deadline Queueing", "Round Robin"],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 267,
+    "domanda": "Come influenza la classificazione dei pacchetti basata su 5-tuple la scalabilità dei router?",
+    "risposte": [
+      "Aumenta la scalabilità riducendo la complessità",
+      "Riduce la scalabilità a causa del carico computazionale",
+      "Elimina la necessità di code multiple",
+      "Impedisce l’uso di algoritmi di scheduling"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 268,
+    "domanda": "Cosa distingue shaping da policing nel controllo del traffico?",
+    "risposte": [
+      "Shaping ritarda i pacchetti in eccesso, policing può scartarli",
+      "Shaping modifica i pacchetti, policing li accoda",
+      "Policing aumenta la larghezza di banda, shaping la riduce",
+      "Policing è usato solo su reti wireless"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 269,
+    "domanda": "Perché l’output queuing nei router è limitante?",
+    "risposte": [
+      "Richiede code FIFO",
+      "Non permette la classificazione dei pacchetti",
+      "Limita la capacità di switching rispetto all’input",
+      "Aumenta il jitter in reti multicast"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 270,
+    "domanda": "Perché il ritardo è considerato il problema principale nelle applicazioni multimediali?",
+    "risposte": [
+      "Compromette l'interattività e la qualità",
+      "Non può essere compensato da buffering",
+      "È sempre costante",
+      "Non influenza applicazioni in tempo reale"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 271,
+    "domanda": "Come funziona RSVP per la QoS e qual è il suo principale limite?",
+    "risposte": [
+      "Configura VLAN, ma non riserva risorse",
+      "Usa multicasting per QoS dinamica",
+      "Riserva risorse per flusso ma scala male",
+      "Funziona solo con UDP"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 272,
+    "domanda": "Quali vincoli di rete impone il Tactile Internet?",
+    "risposte": [
+      "Supporto solo IPv6",
+      "Latenza inferiore a 1 ms",
+      "Latenza superiore a 150 ms",
+      "Bassa velocità di trasmissione"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 273,
+    "domanda": "Cosa distingue CBQ da Priority Queuing?",
+    "risposte": [
+      "PQ supporta solo traffico best-effort",
+      "CBQ è FIFO, PQ è round robin",
+      "CBQ assegna classi con pesi, PQ solo priorità assolute",
+      "PQ rispetta i vincoli di tempo, CBQ no"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 274,
+    "domanda": "Qual è la differenza principale tra IntServ e DiffServ?",
+    "risposte": [
+      "IntServ non usa RSVP, DiffServ sì",
+      "DiffServ richiede meno hardware",
+      "IntServ mantiene stato per flusso, DiffServ per classe",
+      "DiffServ è meno scalabile"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 275,
+    "domanda": "Quali sono le sfide del routing con QoS garantita in reti senza connessione?",
+    "risposte": [
+      "Routing più semplice e stabile",
+      "Riduzione della latenza di propagazione",
+      "Eliminazione della necessità di segnalazione",
+      "Difficoltà nel mantenere stato e risorse lungo il percorso"
+    ],
+    "corretta": 3,
+    "categoria": "QoS"
+  },
+  {
+    "id": 276,
+    "domanda": "Come si gestisce il traffico non conforme con il policing?",
+    "risposte": [
+      "Viene sempre scartato",
+      "Viene accodato in code FIFO",
+      "Può essere ritardato, scartato o degradato di priorità",
+      "Viene trasmesso come best-effort"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 277,
+    "domanda": "Qual è il ruolo dell’ingegneria del traffico nel garantire QoS?",
+    "risposte": [
+      "Crittografia dei pacchetti in rete",
+      "Controllo accessi utenti",
+      "Pianificazione e gestione delle risorse per ottimizzare prestazioni",
+      "Bilanciamento statico dei carichi"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 278,
+    "domanda": "Che vantaggi offre il multiplexing statistico rispetto a quello deterministico?",
+    "risposte": [
+      "Prestazioni più prevedibili",
+      "Minor ritardo massimo",
+      "Utilizzo fisso della banda",
+      "Migliore utilizzo medio delle risorse"
+    ],
+    "corretta": 3,
+    "categoria": "QoS"
+  },
+  {
+    "id": 279,
+    "domanda": "Quali sono le conseguenze di una rete sovradimensionata?",
+    "risposte": [
+      "Maggiore efficienza delle risorse",
+      "Prestazioni peggiori rispetto a reti bilanciate",
+      "Instabilità nei protocolli di routing",
+      "Costi elevati e bassa efficienza"
+    ],
+    "corretta": 3,
+    "categoria": "QoS"
+  },
+  {
+    "id": 280,
+    "domanda": "Perché il Call Admission Control è essenziale per la QoS?",
+    "risposte": [
+      "Permette di allocare più banda al traffico best-effort",
+      "Blocca traffico multicast",
+      "Garantisce risorse sufficienti prima di accettare nuovi flussi",
+      "Gestisce la priorità di routing nei router"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 281,
+    "domanda": "Come operano i protocolli di routing QoS-aware?",
+    "risposte": [
+      "Basano le decisioni solo sulla topologia",
+      "Aggiornano in tempo reale disponibilità risorse",
+      "Ignorano lo stato della rete",
+      "Utilizzano solo metriche di hop-count"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 282,
+    "domanda": "Perché si usano ASIC e CAM nella classificazione dei pacchetti?",
+    "risposte": [
+      "Per classificare rapidamente grandi volumi di pacchetti",
+      "Per aumentare la latenza",
+      "Per migliorare il bilanciamento di carico",
+      "Per supportare la crittografia"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 283,
+    "domanda": "Come si ottimizza l'uso delle risorse in una rete tramite ingegneria del traffico?",
+    "risposte": [
+      "Configurando solo code FIFO",
+      "Limitando l'accesso ai router",
+      "Monitorando e distribuendo dinamicamente il traffico",
+      "Usando solo reti ATM"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 284,
+    "domanda": "Qual è la differenza principale tra QoS garantita (IntServ) e best-effort (DiffServ)?",
+    "risposte": [
+      "DiffServ offre garanzie più forti",
+      "IntServ riserva risorse per flusso, DiffServ no",
+      "DiffServ è più complesso da implementare",
+      "IntServ non richiede segnalazione"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 285,
+    "domanda": "Qual è il ruolo del router PE in una MPLS Layer 3 VPN?",
+    "risposte": [
+      "Gestisce la tabella VRF per isolare le VPN e aggiunge le label MPLS",
+      "Scambia pacchetti solo tra router CE",
+      "Si occupa esclusivamente del routing interno MPLS",
+      "Genera le etichette PWE3 per tunnel GRE"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 286,
+    "domanda": "Come funziona l'incapsulamento in MPLS Layer 2 VPN (PWE3)?",
+    "risposte": [
+      "Utilizza una singola label per tutto il traffico",
+      "Usa tunneling IPsec con una label univoca",
+      "Non richiede label, ma solo GRE",
+      "Usa due label: una per il core MPLS e una per identificare il servizio utente"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 287,
+    "domanda": "Perché il Route Distinguisher è fondamentale nelle MPLS/BGP VPN?",
+    "risposte": [
+      "Serve per criptare il traffico tra PE",
+      "Evita la duplicazione dei pacchetti all’interno del backbone",
+      "Permette la coesistenza di indirizzi IP uguali in VPN differenti",
+      "Assicura la priorità dei pacchetti in base alla QoS"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 288,
+    "domanda": "Quale protocollo si utilizza per la distribuzione automatica delle label in MPLS VPN?",
+    "risposte": ["OSPF", "RSVP", "LDP", "GRE"],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 289,
+    "domanda": "Cosa distingue una VPN Layer 3 MPLS da una VPN Layer 2 MPLS?",
+    "risposte": [
+      "La Layer 3 MPLS opera a livello Ethernet, la Layer 2 a livello IP",
+      "La Layer 3 è gestita completamente dal cliente",
+      "La Layer 3 isola il routing per ogni VPN tramite VRF, la Layer 2 trasporta il traffico come pseudowire",
+      "Non vi è alcuna differenza tecnica"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 290,
+    "domanda": "In che modo MPLS VPN supporta la QoS?",
+    "risposte": [
+      "Usa tunneling IPsec con marcature DSCP",
+      "Blocca il traffico a bassa priorità",
+      "Prioritizza solo il traffico TCP",
+      "Permette l’uso di label per identificare classi di servizio e trattamenti differenziati"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 291,
+    "domanda": "Cosa caratterizza una VPN Peer-to-Peer su IP rispetto a una VPN MPLS?",
+    "risposte": [
+      "Gestione cliente delle rotte, usa IPsec o GRE su backbone pubblico",
+      "Uso esclusivo di protocolli BGP",
+      "Routing solo statico tra siti",
+      "Uso di Frame Relay per la sicurezza"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 292,
+    "domanda": "In una configurazione MPLS VPN, cosa fa il router P?",
+    "risposte": [
+      "Si occupa della cifratura IPsec",
+      "Gestisce le VRF per ogni cliente",
+      "Instrada pacchetti tra router PE basandosi sulle label MPLS",
+      "Genera label per LDP e RSVP"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 293,
+    "domanda": "Qual è la funzione delle tabelle VRF nei router PE in MPLS VPN?",
+    "risposte": [
+      "Separano le sessioni SSH tra clienti",
+      "Forniscono un routing dedicato per ogni VPN",
+      "Contengono solo regole ACL",
+      "Gestiscono le etichette per il traffic policing"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 294,
+    "domanda": "Perché le VPN MPLS possono essere considerate sicure come Frame Relay o ATM?",
+    "risposte": [
+      "Perché utilizzano algoritmi di cifratura avanzati",
+      "Perché si basano su tunneling L2TP",
+      "Perché usano tabelle NAT dedicate",
+      "Perché isolano il traffico tramite meccanismi di etichettamento e VRF, senza necessità di cifratura"
+    ],
+    "corretta": 3,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 295,
+    "domanda": "Qual è la principale differenza tra proxy cache e Content Delivery Network (CDN)?",
+    "risposte": [
+      "Le cache riducono latenza per il provider, le CDN per l'ISP",
+      "Le cache sono proattive, le CDN reattive",
+      "Le CDN offrono controllo al provider, le cache no",
+      "Le CDN memorizzano solo contenuti dinamici"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 296,
+    "domanda": "Perché le CDN usano DNS per la selezione del server?",
+    "risposte": [
+      "Perché permette caching e riduce RTT",
+      "Perché DNS garantisce indirizzamento URL-specifico",
+      "Perché evita la terminazione TCP",
+      "Perché elimina la necessità di replica dei contenuti"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 297,
+    "domanda": "Qual è uno svantaggio dell’HTTP redirect nelle CDN?",
+    "risposte": [
+      "Non permette selezione geografica",
+      "Non funziona con contenuti dinamici",
+      "Richiede supporto IPv6",
+      "Aumenta il carico sui server e la latenza"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 298,
+    "domanda": "Come funziona il caching HTTP lato client?",
+    "risposte": [
+      "Memorizza i contenuti e li aggiorna sempre ad ogni richiesta",
+      "Usa solo il campo Content-Type per decidere il caching",
+      "Verifica la validità tramite header come Expires ed E-tag",
+      "Memorizza solo pagine HTML"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 299,
+    "domanda": "Cosa rappresenta una sfida nel replicare contenuti nelle CDN?",
+    "risposte": [
+      "Trovare contenuti cacheabili",
+      "Garantire solo contenuti statici",
+      "Usare un solo dominio per tutti i clienti",
+      "Stabilire dove e come replicare e come indirizzare gli utenti"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 300,
+    "domanda": "Perché IP anycast è usato nelle CDN, e quali limiti ha?",
+    "risposte": [
+      "Permette controllo preciso e semplice routing, ma non supporta IPv4",
+      "È trasparente ma con poco controllo e difficoltà di scalabilità",
+      "Funziona solo con DNS dinamico",
+      "Richiede terminazione TCP lato client"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 301,
+    "domanda": "In che modo le CDN migliorano la disponibilità del contenuto?",
+    "risposte": [
+      "Utilizzando solo caching locale nei browser",
+      "Aumentando la potenza di calcolo dei server principali",
+      "Rimuovendo i bilanciatori di carico",
+      "Replicando i contenuti su server vicini agli utenti"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 302,
+    "domanda": "Come selezionano le CDN il server a cui indirizzare una richiesta?",
+    "risposte": [
+      "Solo tramite bilanciamento IP round-robin",
+      "Analizzando l'header User-Agent",
+      "In base a criteri come RTT, carico, posizione e fault tolerance",
+      "Tramite hashing sul nome del file"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 303,
+    "domanda": "Qual è il limite principale delle CDN basate su DNS?",
+    "risposte": [
+      "Non funzionano con HTTP/3",
+      "Non possono gestire contenuti dinamici",
+      "Il DNS lavora a livello hostname, non su URL",
+      "Richiedono proxy manuale"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 304,
+    "domanda": "Come gestisce Akamai l’instradamento differenziato dei contenuti?",
+    "risposte": [
+      "Utilizzando una singola URL pubblica per tutti i contenuti",
+      "Modificando le URL per puntare a domini specifici del cliente",
+      "Applicando NAT sulle connessioni CDN",
+      "Utilizzando IP dedicati a ciascun utente finale"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 305,
+    "domanda": "Perché le CDN sono considerate proattive rispetto ai caching proxy?",
+    "risposte": [
+      "Perché memorizzano contenuti solo su richiesta",
+      "Perché replicano i contenuti prima che vengano richiesti dagli utenti",
+      "Perché rispondono con contenuti precompressi",
+      "Perché dipendono dal browser dell'utente"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 306,
+    "domanda": "Qual è un problema comune nel conteggio accessi con l'uso di cache o CDN?",
+    "risposte": [
+      "L'accesso viene conteggiato due volte",
+      "Le cache non supportano HTTPS",
+      "Le CDN non supportano contenuti statici",
+      "Il server origin non vede le richieste servite dalle cache"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 307,
+    "domanda": "In cosa consiste il problema del 'content peering' per le CDN?",
+    "risposte": [
+      "Scambio inefficiente di contenuti tra provider CDN diversi",
+      "Utilizzo eccessivo di protocolli dinamici",
+      "Conflitti DNS tra provider",
+      "Difficoltà a gestire IP dinamici"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 308,
+    "domanda": "Perché i contenuti dinamici rappresentano una sfida per le CDN?",
+    "risposte": [
+      "Non possono essere instradati su HTTPS",
+      "Non sono cacheabili e cambiano frequentemente",
+      "Richiedono server specializzati in IPv6",
+      "Devono essere trasmessi solo via proxy"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 309,
+    "domanda": "Come può una CDN distinguere tra contenuti statici e dinamici?",
+    "risposte": [
+      "Utilizzando il tipo MIME",
+      "Usando il campo TTL del DNS",
+      "Basandosi su estensioni file e regole definite dal provider",
+      "Attraverso il numero di richieste HTTP ricevute"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 310,
+    "domanda": "Quale vantaggio offre la collocazione dei server CDN vicino agli utenti?",
+    "risposte": [
+      "Elimina la necessità di caching",
+      "Riduce RTT e migliora l'affidabilità",
+      "Permette load balancing automatico via browser",
+      "Supporta multicast nativo"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 311,
+    "domanda": "Perché le CDN usano domini personalizzati per ogni cliente?",
+    "risposte": [
+      "Per separare il traffico per granularità e instradamento differenti",
+      "Per poter configurare il NAT dinamico",
+      "Per facilitare la gestione dei certificati SSL",
+      "Per ridurre la latenza di risoluzione DNS"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 312,
+    "domanda": "Come funziona la CDN URL-based e quali sono i suoi limiti?",
+    "risposte": [
+      "Usa DNS dinamico ma non supporta IPv6",
+      "Si basa su anycast e soffre di routing instabile",
+      "Dipende dal client HTTP, quindi è incompatibile con i proxy",
+      "Instrada in base all'URL completo, ma introduce terminazione TCP e ritardi"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 313,
+    "domanda": "Perché i proxy trasparenti moderni non funzionano bene con HTTPS?",
+    "risposte": [
+      "Perché non supportano IPv4",
+      "Perché richiedono autenticazione lato client",
+      "Perché disabilitano l'uso di cache DNS",
+      "Perché HTTPS impedisce ispezione e caching dei contenuti cifrati"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 314,
+    "domanda": "Quale meccanismo HTTP consente al client di evitare download non necessari di risorse già in cache?",
+    "risposte": [
+      "200 OK",
+      "301 Moved Permanently",
+      "403 Forbidden",
+      "304 Not Modified"
+    ],
+    "corretta": 3,
+    "categoria": "CDN"
+  },
+  {
+    "id": 315,
+    "domanda": "Una extranet è",
+    "risposte": [
+      "Una rete che è utilizzata quando serve capacità trasmissiva extra per collegare due siti aziendali",
+      "Una parte di una rete privata che è accessibile pubblicamente da internet, a cui sono normalmente collegati server aziendali pubblici, come server web, server mail, server DNS",
+      "Una rete privata che include reti di organizzazioni indipendenti, come per esempio diverse reti aziendali",
+      "Una rete privata utilizzata per collegare server aggiuntivi come server disco o server di database da utilizzare in caso di bisogno"
+    ],
+    "corretta": 2,
+    "categoria": "Reti"
+  },
+  {
+    "id": 316,
+    "domanda": "Qual è la funzione principale del Global Traffic Management (GTM) in una rete CDN come Akamai?",
+    "risposte": [
+      "Controllare la crittografia TLS tra i nodi",
+      "Distribuire contenuti dinamici direttamente dal browser",
+      "Instradare il traffico utente verso il nodo più efficiente in base a geolocalizzazione e stato dei server",
+      "Bloccare l'accesso a contenuti non autorizzati tramite firewall"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
   }
 ]
