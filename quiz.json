@@ -2948,5 +2948,595 @@
     ],
     "corretta": 0,
     "categoria": "VPN"
+  },
+  {
+    "id": 265,
+    "domanda": "Quali sono le implicazioni del jitter sulle applicazioni real-time e come può essere mitigato?",
+    "risposte": [
+      "Causa instabilità nella riproduzione, si mitiga con jitter buffer",
+      "Riduce la larghezza di banda richiesta",
+      "Aumenta la priorità dei pacchetti",
+      "Elimina la necessità di shaping"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 266,
+    "domanda": "Confronta FIFO, WFQ e Deadline Queueing: quale offre garanzie temporali per il traffico sensibile al ritardo?",
+    "risposte": ["FIFO", "WFQ", "Deadline Queueing", "Round Robin"],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 267,
+    "domanda": "Come influenza la classificazione dei pacchetti basata su 5-tuple la scalabilità dei router?",
+    "risposte": [
+      "Aumenta la scalabilità riducendo la complessità",
+      "Riduce la scalabilità a causa del carico computazionale",
+      "Elimina la necessità di code multiple",
+      "Impedisce l’uso di algoritmi di scheduling"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 268,
+    "domanda": "Cosa distingue shaping da policing nel controllo del traffico?",
+    "risposte": [
+      "Shaping modifica i pacchetti, policing li accoda",
+      "Shaping ritarda i pacchetti in eccesso, policing può scartarli",
+      "Policing aumenta la larghezza di banda, shaping la riduce",
+      "Policing è usato solo su reti wireless"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 269,
+    "domanda": "Perché l’output queuing nei router è limitante?",
+    "risposte": [
+      "Richiede code FIFO",
+      "Non permette la classificazione dei pacchetti",
+      "Limita la capacità di switching rispetto all’input",
+      "Aumenta il jitter in reti multicast"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 270,
+    "domanda": "Perché il ritardo è considerato il problema principale nelle applicazioni multimediali?",
+    "risposte": [
+      "Non può essere compensato da buffering",
+      "Compromette l'interattività e la qualità",
+      "È sempre costante",
+      "Non influenza applicazioni in tempo reale"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 271,
+    "domanda": "Come funziona RSVP per la QoS e qual è il suo principale limite?",
+    "risposte": [
+      "Configura VLAN, ma non riserva risorse",
+      "Usa multicasting per QoS dinamica",
+      "Riserva risorse per flusso ma scala male",
+      "Funziona solo con UDP"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 272,
+    "domanda": "Quali vincoli di rete impone il Tactile Internet?",
+    "risposte": [
+      "Latenza inferiore a 1 ms",
+      "Supporto solo IPv6",
+      "Latenza superiore a 150 ms",
+      "Bassa velocità di trasmissione"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 273,
+    "domanda": "Cosa distingue CBQ da Priority Queuing?",
+    "risposte": [
+      "CBQ assegna classi con pesi, PQ solo priorità assolute",
+      "PQ supporta solo traffico best-effort",
+      "CBQ è FIFO, PQ è round robin",
+      "PQ rispetta i vincoli di tempo, CBQ no"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 274,
+    "domanda": "Qual è la differenza principale tra IntServ e DiffServ?",
+    "risposte": [
+      "IntServ non usa RSVP, DiffServ sì",
+      "IntServ mantiene stato per flusso, DiffServ per classe",
+      "DiffServ richiede meno hardware",
+      "DiffServ è meno scalabile"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 275,
+    "domanda": "Quali sono le sfide del routing con QoS garantita in reti senza connessione?",
+    "risposte": [
+      "Routing più semplice e stabile",
+      "Difficoltà nel mantenere stato e risorse lungo il percorso",
+      "Riduzione della latenza di propagazione",
+      "Eliminazione della necessità di segnalazione"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 276,
+    "domanda": "Come si gestisce il traffico non conforme con il policing?",
+    "risposte": [
+      "Viene sempre scartato",
+      "Può essere ritardato, scartato o degradato di priorità",
+      "Viene accodato in code FIFO",
+      "Viene trasmesso come best-effort"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 277,
+    "domanda": "Qual è il ruolo dell’ingegneria del traffico nel garantire QoS?",
+    "risposte": [
+      "Crittografia dei pacchetti in rete",
+      "Controllo accessi utenti",
+      "Pianificazione e gestione delle risorse per ottimizzare prestazioni",
+      "Bilanciamento statico dei carichi"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 278,
+    "domanda": "Che vantaggi offre il multiplexing statistico rispetto a quello deterministico?",
+    "risposte": [
+      "Migliore utilizzo medio delle risorse",
+      "Prestazioni più prevedibili",
+      "Minor ritardo massimo",
+      "Utilizzo fisso della banda"
+    ],
+    "corretta": 0,
+    "categoria": "QoS"
+  },
+  {
+    "id": 279,
+    "domanda": "Quali sono le conseguenze di una rete sovradimensionata?",
+    "risposte": [
+      "Maggiore efficienza delle risorse",
+      "Costi elevati e bassa efficienza",
+      "Prestazioni peggiori rispetto a reti bilanciate",
+      "Instabilità nei protocolli di routing"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 280,
+    "domanda": "Perché il Call Admission Control è essenziale per la QoS?",
+    "risposte": [
+      "Permette di allocare più banda al traffico best-effort",
+      "Blocca traffico multicast",
+      "Garantisce risorse sufficienti prima di accettare nuovi flussi",
+      "Gestisce la priorità di routing nei router"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 281,
+    "domanda": "Come operano i protocolli di routing QoS-aware?",
+    "risposte": [
+      "Basano le decisioni solo sulla topologia",
+      "Aggiornano in tempo reale disponibilità risorse",
+      "Ignorano lo stato della rete",
+      "Utilizzano solo metriche di hop-count"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 282,
+    "domanda": "Perché si usano ASIC e CAM nella classificazione dei pacchetti?",
+    "risposte": [
+      "Per aumentare la latenza",
+      "Per migliorare il bilanciamento di carico",
+      "Per classificare rapidamente grandi volumi di pacchetti",
+      "Per supportare la crittografia"
+    ],
+    "corretta": 2,
+    "categoria": "QoS"
+  },
+  {
+    "id": 283,
+    "domanda": "Come si ottimizza l'uso delle risorse in una rete tramite ingegneria del traffico?",
+    "risposte": [
+      "Configurando solo code FIFO",
+      "Monitorando e distribuendo dinamicamente il traffico",
+      "Limitando l'accesso ai router",
+      "Usando solo reti ATM"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 284,
+    "domanda": "Qual è la differenza principale tra QoS garantita (IntServ) e best-effort (DiffServ)?",
+    "risposte": [
+      "DiffServ offre garanzie più forti",
+      "IntServ riserva risorse per flusso, DiffServ no",
+      "DiffServ è più complesso da implementare",
+      "IntServ non richiede segnalazione"
+    ],
+    "corretta": 1,
+    "categoria": "QoS"
+  },
+  {
+    "id": 285,
+    "domanda": "Qual è il ruolo del router PE in una MPLS Layer 3 VPN?",
+    "risposte": [
+      "Scambia pacchetti solo tra router CE",
+      "Gestisce la tabella VRF per isolare le VPN e aggiunge le label MPLS",
+      "Si occupa esclusivamente del routing interno MPLS",
+      "Genera le etichette PWE3 per tunnel GRE"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 286,
+    "domanda": "Come funziona l'incapsulamento in MPLS Layer 2 VPN (PWE3)?",
+    "risposte": [
+      "Utilizza una singola label per tutto il traffico",
+      "Usa due label: una per il core MPLS e una per identificare il servizio utente",
+      "Usa tunneling IPsec con una label univoca",
+      "Non richiede label, ma solo GRE"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 287,
+    "domanda": "Perché il Route Distinguisher è fondamentale nelle MPLS/BGP VPN?",
+    "risposte": [
+      "Serve per criptare il traffico tra PE",
+      "Evita la duplicazione dei pacchetti all’interno del backbone",
+      "Permette la coesistenza di indirizzi IP uguali in VPN differenti",
+      "Assicura la priorità dei pacchetti in base alla QoS"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 288,
+    "domanda": "Quale protocollo si utilizza per la distribuzione automatica delle label in MPLS VPN?",
+    "risposte": ["OSPF", "RSVP", "LDP", "GRE"],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 289,
+    "domanda": "Cosa distingue una VPN Layer 3 MPLS da una VPN Layer 2 MPLS?",
+    "risposte": [
+      "La Layer 3 MPLS opera a livello Ethernet, la Layer 2 a livello IP",
+      "La Layer 3 è gestita completamente dal cliente",
+      "La Layer 3 isola il routing per ogni VPN tramite VRF, la Layer 2 trasporta il traffico come pseudowire",
+      "Non vi è alcuna differenza tecnica"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 290,
+    "domanda": "In che modo MPLS VPN supporta la QoS?",
+    "risposte": [
+      "Usa tunneling IPsec con marcature DSCP",
+      "Permette l’uso di label per identificare classi di servizio e trattamenti differenziati",
+      "Blocca il traffico a bassa priorità",
+      "Prioritizza solo il traffico TCP"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 291,
+    "domanda": "Cosa caratterizza una VPN Peer-to-Peer su IP rispetto a una VPN MPLS?",
+    "risposte": [
+      "Gestione cliente delle rotte, usa IPsec o GRE su backbone pubblico",
+      "Uso esclusivo di protocolli BGP",
+      "Routing solo statico tra siti",
+      "Uso di Frame Relay per la sicurezza"
+    ],
+    "corretta": 0,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 292,
+    "domanda": "In una configurazione MPLS VPN, cosa fa il router P?",
+    "risposte": [
+      "Si occupa della cifratura IPsec",
+      "Gestisce le VRF per ogni cliente",
+      "Instrada pacchetti tra router PE basandosi sulle label MPLS",
+      "Genera label per LDP e RSVP"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 293,
+    "domanda": "Qual è la funzione delle tabelle VRF nei router PE in MPLS VPN?",
+    "risposte": [
+      "Separano le sessioni SSH tra clienti",
+      "Forniscono un routing dedicato per ogni VPN",
+      "Contengono solo regole ACL",
+      "Gestiscono le etichette per il traffic policing"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 294,
+    "domanda": "Perché le VPN MPLS possono essere considerate sicure come Frame Relay o ATM?",
+    "risposte": [
+      "Perché utilizzano algoritmi di cifratura avanzati",
+      "Perché isolano il traffico tramite meccanismi di etichettamento e VRF, senza necessità di cifratura",
+      "Perché si basano su tunneling L2TP",
+      "Perché usano tabelle NAT dedicate"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS VPN"
+  },
+  {
+    "id": 295,
+    "domanda": "Qual è la principale differenza tra proxy cache e Content Delivery Network (CDN)?",
+    "risposte": [
+      "Le cache riducono latenza per il provider, le CDN per l'ISP",
+      "Le cache sono proattive, le CDN reattive",
+      "Le CDN offrono controllo al provider, le cache no",
+      "Le CDN memorizzano solo contenuti dinamici"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 296,
+    "domanda": "Perché le CDN usano DNS per la selezione del server?",
+    "risposte": [
+      "Perché DNS garantisce indirizzamento URL-specifico",
+      "Perché permette caching e riduce RTT",
+      "Perché evita la terminazione TCP",
+      "Perché elimina la necessità di replica dei contenuti"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 297,
+    "domanda": "Qual è uno svantaggio dell’HTTP redirect nelle CDN?",
+    "risposte": [
+      "Non permette selezione geografica",
+      "Aumenta il carico sui server e la latenza",
+      "Non funziona con contenuti dinamici",
+      "Richiede supporto IPv6"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 298,
+    "domanda": "Come funziona il caching HTTP lato client?",
+    "risposte": [
+      "Memorizza i contenuti e li aggiorna sempre ad ogni richiesta",
+      "Verifica la validità tramite header come Expires ed E-tag",
+      "Usa solo il campo Content-Type per decidere il caching",
+      "Memorizza solo pagine HTML"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 299,
+    "domanda": "Cosa rappresenta una sfida nel replicare contenuti nelle CDN?",
+    "risposte": [
+      "Trovare contenuti cacheabili",
+      "Stabilire dove e come replicare e come indirizzare gli utenti",
+      "Garantire solo contenuti statici",
+      "Usare un solo dominio per tutti i clienti"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 300,
+    "domanda": "Perché IP anycast è usato nelle CDN, e quali limiti ha?",
+    "risposte": [
+      "Permette controllo preciso e semplice routing, ma non supporta IPv4",
+      "È trasparente ma con poco controllo e difficoltà di scalabilità",
+      "Funziona solo con DNS dinamico",
+      "Richiede terminazione TCP lato client"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 301,
+    "domanda": "In che modo le CDN migliorano la disponibilità del contenuto?",
+    "risposte": [
+      "Replicando i contenuti su server vicini agli utenti",
+      "Utilizzando solo caching locale nei browser",
+      "Aumentando la potenza di calcolo dei server principali",
+      "Rimuovendo i bilanciatori di carico"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 302,
+    "domanda": "Come selezionano le CDN il server a cui indirizzare una richiesta?",
+    "risposte": [
+      "Solo tramite bilanciamento IP round-robin",
+      "Analizzando l'header User-Agent",
+      "In base a criteri come RTT, carico, posizione e fault tolerance",
+      "Tramite hashing sul nome del file"
+    ],
+    "corretta": 2,
+    "categoria": "CDN"
+  },
+  {
+    "id": 303,
+    "domanda": "Qual è il limite principale delle CDN basate su DNS?",
+    "risposte": [
+      "Non funzionano con HTTP/3",
+      "Il DNS lavora a livello hostname, non su URL",
+      "Non possono gestire contenuti dinamici",
+      "Richiedono proxy manuale"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 304,
+    "domanda": "Come gestisce Akamai l’instradamento differenziato dei contenuti?",
+    "risposte": [
+      "Utilizzando una singola URL pubblica per tutti i contenuti",
+      "Modificando le URL per puntare a domini specifici del cliente",
+      "Applicando NAT sulle connessioni CDN",
+      "Utilizzando IP dedicati a ciascun utente finale"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 305,
+    "domanda": "Perché le CDN sono considerate proattive rispetto ai caching proxy?",
+    "risposte": [
+      "Perché memorizzano contenuti solo su richiesta",
+      "Perché replicano i contenuti prima che vengano richiesti dagli utenti",
+      "Perché rispondono con contenuti precompressi",
+      "Perché dipendono dal browser dell'utente"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 306,
+    "domanda": "Qual è un problema comune nel conteggio accessi con l'uso di cache o CDN?",
+    "risposte": [
+      "L'accesso viene conteggiato due volte",
+      "Il server origin non vede le richieste servite dalle cache",
+      "Le cache non supportano HTTPS",
+      "Le CDN non supportano contenuti statici"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 307,
+    "domanda": "In cosa consiste il problema del 'content peering' per le CDN?",
+    "risposte": [
+      "Scambio inefficiente di contenuti tra provider CDN diversi",
+      "Utilizzo eccessivo di protocolli dinamici",
+      "Conflitti DNS tra provider",
+      "Difficoltà a gestire IP dinamici"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 308,
+    "domanda": "Perché i contenuti dinamici rappresentano una sfida per le CDN?",
+    "risposte": [
+      "Non possono essere instradati su HTTPS",
+      "Non sono cacheabili e cambiano frequentemente",
+      "Richiedono server specializzati in IPv6",
+      "Devono essere trasmessi solo via proxy"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 309,
+    "domanda": "Come può una CDN distinguere tra contenuti statici e dinamici?",
+    "risposte": [
+      "Utilizzando il tipo MIME",
+      "Basandosi su estensioni file e regole definite dal provider",
+      "Usando il campo TTL del DNS",
+      "Attraverso il numero di richieste HTTP ricevute"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 310,
+    "domanda": "Quale vantaggio offre la collocazione dei server CDN vicino agli utenti?",
+    "risposte": [
+      "Elimina la necessità di caching",
+      "Riduce RTT e migliora l'affidabilità",
+      "Permette load balancing automatico via browser",
+      "Supporta multicast nativo"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 311,
+    "domanda": "Perché le CDN usano domini personalizzati per ogni cliente?",
+    "risposte": [
+      "Per poter configurare il NAT dinamico",
+      "Per separare il traffico per granularità e instradamento differenti",
+      "Per facilitare la gestione dei certificati SSL",
+      "Per ridurre la latenza di risoluzione DNS"
+    ],
+    "corretta": 1,
+    "categoria": "CDN"
+  },
+  {
+    "id": 312,
+    "domanda": "Come funziona la CDN URL-based e quali sono i suoi limiti?",
+    "risposte": [
+      "Instrada in base all'URL completo, ma introduce terminazione TCP e ritardi",
+      "Usa DNS dinamico ma non supporta IPv6",
+      "Si basa su anycast e soffre di routing instabile",
+      "Dipende dal client HTTP, quindi è incompatibile con i proxy"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 313,
+    "domanda": "Perché i proxy trasparenti moderni non funzionano bene con HTTPS?",
+    "risposte": [
+      "Perché HTTPS impedisce ispezione e caching dei contenuti cifrati",
+      "Perché non supportano IPv4",
+      "Perché richiedono autenticazione lato client",
+      "Perché disabilitano l'uso di cache DNS"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
+  },
+  {
+    "id": 314,
+    "domanda": "Quale meccanismo HTTP consente al client di evitare download non necessari di risorse già in cache?",
+    "risposte": [
+      "304 Not Modified",
+      "200 OK",
+      "301 Moved Permanently",
+      "403 Forbidden"
+    ],
+    "corretta": 0,
+    "categoria": "CDN"
   }
 ]
