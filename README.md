@@ -1,4 +1,4 @@
-# RetiQUIZ v0.4
+# RetiQUIZ v0.5
 
 This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete**.
 
@@ -19,12 +19,12 @@ Features include:
 
 ## 🚧 Future Developments  
 Planned features:  
-- Graphical user interface  
+- Graphical user interface (coming soon)
 - Advanced statistics  
 - Explanation for answers  
 
 ## 🤝 Contribute  
 If you have ideas or want to improve the project, **feel free to open a Pull Request**.  
-Accepted contributions will be **credited here in the README!**
+Accepted contributions will be **credited here in the README** :)
 
 Thanks for your support and happy studying!
