@@ -162,9 +162,489 @@
     "contenuto": "I proxy trasparenti intercettano il traffico senza configurazioni lato client. Tuttavia, con HTTPS, non possono ispezionare i dati perché tutto è cifrato. Per farlo, usano tecniche di SSL interception: si installa un certificato CA sul client e il proxy decifra e ricifra il traffico. Questo approccio permette il filtraggio ma comporta rischi di sicurezza, violazioni della privacy e incompatibilità con tecnologie moderne come TLS 1.3 con ESNI."
   },
   {
-    "id": 303,
+    "id": 28,
     "titolo": "CDN URL-Based Routing",
     "categoria": "CDN",
     "contenuto": "L'URL-based routing nelle CDN è una tecnica che permette di instradare il traffico in base a parti specifiche dell'URL, come path, estensione o query string. In base all'analisi dell'URL, la CDN può decidere quale cache usare, se inoltrare la richiesta all'origine, o applicare politiche differenti per contenuti statici e dinamici. Questo approccio consente ottimizzazione delle prestazioni, controllo granulare e personalizzazione della distribuzione dei contenuti."
+  },
+  {
+    "id": 29,
+    "titolo": "Ethernet: Panoramica Generale",
+    "categoria": "Ethernet",
+    "contenuto": "Ethernet è una tecnologia di rete LAN che utilizza frame per trasmettere dati. Lavora tipicamente a livello 2 (data link) del modello OSI e utilizza indirizzamento MAC per identificare i dispositivi sulla rete."
+  },
+  {
+    "id": 30,
+    "titolo": "Frame Ethernet",
+    "categoria": "Ethernet",
+    "contenuto": "Il frame Ethernet standard include preambolo, indirizzi MAC sorgente/destinazione, tipo/length, dati e FCS. La lunghezza massima di un frame è 1518 byte (senza tag VLAN)."
+  },
+  {
+    "id": 31,
+    "titolo": "Switching Ethernet",
+    "categoria": "Ethernet",
+    "contenuto": "Gli switch Ethernet operano al livello 2 e usano MAC address learning e switching table per inoltrare i frame. Supportano tecniche come store-and-forward e cut-through switching."
+  },
+  {
+    "id": 33,
+    "titolo": "Protocolli di Ethernet",
+    "categoria": "Ethernet",
+    "contenuto": "Ethernet si basa principalmente su IEEE 802.3. I protocolli correlati includono ARP (per mappare IP a MAC), STP/RSTP/MSTP per prevenire loop, e LLDP per la discovery di dispositivi."
+  },
+  {
+    "id": 34,
+    "titolo": "Ethernet e VLAN",
+    "categoria": "Ethernet",
+    "contenuto": "Le VLAN (IEEE 802.1Q) permettono di segmentare reti Ethernet logiche su una singola infrastruttura fisica. Ogni frame include un VLAN tag a 4 byte per identificare la VLAN di appartenenza."
+  },
+  {
+    "id": 35,
+    "titolo": "VLAN Trunking",
+    "categoria": "Ethernet",
+    "contenuto": "Il trunking consente a più VLAN di condividere un singolo link fisico tra switch o router. Ogni frame Ethernet viene marcato con un VLAN tag (IEEE 802.1Q) che include un VLAN ID (VID) a 12 bit. Quando un frame attraversa un trunk, lo switch inserisce il tag 802.1Q tra l'intestazione MAC e il campo EtherType. Le porte trunk trasportano frame tagged di più VLAN, mentre le porte access trasportano solo frame untagged per una singola VLAN. I dispositivi finali non vedono i tag: lo switch li inserisce e li rimuove in ingresso/uscita. Un trunk permette l’estensione di più VLAN tra dispositivi mantenendo l’isolamento logico del traffico."
+  },
+  {
+    "id": 36,
+    "titolo": "Ethernet: Autonegotiation e Duplex",
+    "categoria": "Ethernet",
+    "contenuto": "L'autonegotiation consente ai dispositivi Ethernet di selezionare automaticamente la velocità e la modalità duplex (half/full). Full duplex elimina le collisioni e consente la trasmissione bidirezionale simultanea."
+  },
+  {
+    "id": 37,
+    "titolo": "Collision Domain e Broadcast Domain",
+    "categoria": "Ethernet",
+    "contenuto": "Ogni porta di uno switch rappresenta un collision domain separato. Tutte le porte, salvo configurazioni VLAN, fanno parte dello stesso broadcast domain."
+  },
+  {
+    "id": 38,
+    "titolo": "Protocollo CSMA/CD",
+    "categoria": "Ethernet",
+    "contenuto": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection) è un protocollo usato in Ethernet half-duplex per gestire l'accesso al mezzo condiviso. Il dispositivo ascolta il canale (carrier sense); se libero, trasmette. Se due dispositivi trasmettono contemporaneamente, avviene una collisione. Entrambi rilevano l'errore (collision detection), interrompono la trasmissione, inviano un jamming signal, e attendono un intervallo casuale (backoff) prima di ritentare. L'efficienza cala con l'aumentare del traffico. Non è utilizzato in Ethernet full-duplex o in reti switchate moderne."
+  },
+  {
+    "id": 39,
+    "titolo": "Spanning Tree Protocol (STP)",
+    "categoria": "Ethernet",
+    "contenuto": "STP (IEEE 802.1D) previene loop nei domini broadcast. Gli switch eleggono un Root Bridge e disabilitano i percorsi ridondanti secondo l'algoritmo spanning tree (BPDU, costi di path, port roles/states)."
+  },
+  {
+    "id": 40,
+    "titolo": "Rapid Spanning Tree Protocol (RSTP)",
+    "categoria": "Ethernet",
+    "contenuto": "RSTP (IEEE 802.1w) è un'evoluzione di STP che consente tempi di convergenza inferiori a 1 secondo. Utilizza BPDU attivi e meccanismi di handshake (proposal/agree) per abilitare porte più velocemente. I ruoli delle porte includono: Root Port (RP), Designated Port (DP), Alternate Port (backup della RP) e Backup Port (backup su stesso segmento della DP). Gli stati delle porte sono ridotti a: Discarding, Learning, e Forwarding. È retrocompatibile con STP, quindi si adatta automaticamente se rileva dispositivi non RSTP sulla rete."
+  },
+  {
+    "id": 41,
+    "titolo": "IEEE 802.3ad – Link Aggregation (LACP)",
+    "categoria": "Ethernet",
+    "contenuto": "Consente di aggregare più link fisici in un'unica interfaccia logica. LACP (Link Aggregation Control Protocol) gestisce la negoziazione automatica dei link. Fornisce load balancing e fault tolerance."
+  },
+  {
+    "id": 42,
+    "titolo": "ARP – Address Resolution Protocol",
+    "categoria": "Ethernet",
+    "contenuto": "Protocollo a livello 2, usato per risolvere indirizzi IPv4 in indirizzi MAC. I pacchetti ARP sono encapsulati in frame Ethernet con EtherType 0x0806. Include ARP Request e ARP Reply."
+  },
+  {
+    "id": 43,
+    "titolo": "Port-Based VLAN vs MAC-Based VLAN",
+    "categoria": "Ethernet",
+    "contenuto": "Le VLAN basate su porta assegnano la VLAN in base alla porta fisica. Le VLAN basate su MAC assegnano i frame a VLAN diverse in base all'indirizzo MAC sorgente, indipendentemente dalla porta."
+  },
+  {
+    "id": 44,
+    "titolo": "Ethernet Flow Control (IEEE 802.3x)",
+    "categoria": "Ethernet",
+    "contenuto": "Utilizza frame PAUSE per rallentare il flusso di dati tra dispositivi full-duplex. Consente di prevenire la perdita di frame in condizioni di congestione buffer nei dispositivi riceventi."
+  },
+  {
+    "id": 45,
+    "titolo": "Tagged vs Untagged VLAN Frames",
+    "categoria": "Ethernet",
+    "contenuto": "I frame tagged includono un header 802.1Q con ID VLAN. I frame untagged sono frame Ethernet standard. Le porte possono essere access (untagged), trunk (tagged), o hybrid (entrambi)."
+  },
+  {
+    "id": 46,
+    "titolo": "IPv6 Privacy Extensions (RFC 4941)",
+    "categoria": "IPv6",
+    "contenuto": "L'RFC 4941 introduce un meccanismo di autoconfigurazione IPv6 che protegge la privacy generando indirizzi temporanei. Ogni indirizzo è composto da un prefisso, fornito dal router tramite Router Advertisement, e da un ID di interfaccia. A differenza del metodo standard che usa l’indirizzo MAC per creare l’ID (EUI-64), RFC 4941 impone la generazione di un ID casuale. L'host può quindi creare indirizzi temporanei che cambiano nel tempo, impedendo il tracciamento dell’utente. Il prefisso resta fisso, perché rappresenta la rete, mentre solo l'ID di interfaccia è non tracciabile."
+  },
+  {
+    "id": 47,
+    "titolo": "Struttura di un indirizzo IPv4",
+    "categoria": "IPv4",
+    "contenuto": "Un indirizzo IPv4 è composto da 32 bit, divisi in quattro ottetti in notazione decimale puntata. La parte rete identifica la subnet, mentre la parte host identifica il singolo dispositivo."
+  },
+  {
+    "id": 48,
+    "titolo": "Indirizzi speciali IPv4",
+    "categoria": "IPv4",
+    "contenuto": "Alcuni indirizzi IPv4 hanno significato riservato: 127.0.0.1 (loopback), 255.255.255.255 (broadcast limitato), x.x.x.0 (network ID), x.x.x.255 (broadcast diretto)."
+  },
+  {
+    "id": 49,
+    "titolo": "Network ID e Broadcast",
+    "categoria": "IPv4",
+    "contenuto": "Ogni subnet IPv4 riserva il primo indirizzo per il network ID (host bits = 0) e l'ultimo per il broadcast (host bits = 1), non assegnabili a host."
+  },
+  {
+    "id": 50,
+    "titolo": "Classi IP storiche",
+    "categoria": "IPv4",
+    "contenuto": "Gli indirizzi IPv4 erano divisi in classi: A (0–127), B (128–191), C (192–223). Ogni classe ha capacità diverse in termini di host e subnet."
+  },
+  {
+    "id": 51,
+    "titolo": "Limiti del sistema a classi",
+    "categoria": "IPv4",
+    "contenuto": "Il sistema a classi IP spreca indirizzi, non è flessibile e non permette subnetting efficiente, motivo per cui è stato superato da CIDR."
+  },
+  {
+    "id": 52,
+    "titolo": "Notazione CIDR",
+    "categoria": "IPv4",
+    "contenuto": "CIDR usa notazione IP/prefisso (es. 192.168.0.0/24) per rappresentare la dimensione della rete. Sostituisce le classi rigide con subnet flessibili."
+  },
+  {
+    "id": 53,
+    "titolo": "Netmask valida",
+    "categoria": "IPv4",
+    "contenuto": "Una netmask valida è una sequenza di 1 seguiti da 0 (es. 255.255.255.0). Non può contenere 1 dopo uno 0."
+  },
+  {
+    "id": 54,
+    "titolo": "CIDR: host disponibili",
+    "categoria": "IPv4",
+    "contenuto": "In CIDR, gli host disponibili si calcolano come 2^(32 - prefix) - 2. Ad esempio: /24 → 254 host utilizzabili."
+  },
+  {
+    "id": 55,
+    "titolo": "Subnetting IPv4",
+    "categoria": "IPv4",
+    "contenuto": "Il subnetting suddivide una rete IP in più sottoreti. Ogni subnet ha un suo network ID, broadcast e host validi."
+  },
+  {
+    "id": 56,
+    "titolo": "Subnet /24, /26, /30",
+    "categoria": "IPv4",
+    "contenuto": "Esempi: /24 = 254 host, /26 = 62 host, /30 = 2 host. Usati per reti grandi, medie, punto-punto."
+  },
+  {
+    "id": 57,
+    "titolo": "VLSM – Variable Length Subnet Masking",
+    "categoria": "IPv4",
+    "contenuto": "Il VLSM consente subnet di dimensioni diverse all’interno della stessa rete, ottimizzando l’uso degli indirizzi."
+  },
+  {
+    "id": 58,
+    "titolo": "Aggregazione IP",
+    "categoria": "IPv4",
+    "contenuto": "Due subnet sono aggregabili se condividono lo stesso prefisso iniziale e differiscono solo per un bit nel resto."
+  },
+  {
+    "id": 59,
+    "titolo": "Aggregazione di rotte statiche e dinamiche vs dirette",
+    "categoria": "IPv4",
+    "contenuto": "Le rotte statiche e dinamiche possono essere aggregate se sono contigue e condividono lo stesso prefisso iniziale. Ad esempio, le rotte 192.168.0.0/24 e 192.168.1.0/24 possono essere aggregate in un'unica rotta 192.168.0.0/23. Questo riduce la dimensione della tabella di routing. Le rotte dirette invece non possono essere aggregate perché sono associate a interfacce fisiche specifiche. Ogni interfaccia di rete genera una rotta diretta autonoma, legata alla topologia fisica, e non può essere combinata con altre, anche se le reti sono contigue."
+  },
+  {
+    "id": 60,
+    "titolo": "Esempio di aggregazione",
+    "categoria": "IPv4",
+    "contenuto": "192.168.0.0/24 e 192.168.1.0/24 possono essere aggregate in 192.168.0.0/23."
+  },
+  {
+    "id": 61,
+    "titolo": "Funzionamento ARP",
+    "categoria": "IPv4",
+    "contenuto": "ARP traduce un indirizzo IP in MAC. L’host invia un ARP Request in broadcast, e riceve un ARP Reply in unicast con il MAC associato."
+  },
+  {
+    "id": 62,
+    "titolo": "ARP nel ping",
+    "categoria": "IPv4",
+    "contenuto": "Quando un host pinga un altro sulla stessa subnet, prima invia ARP per scoprire il MAC del destinatario, poi invia ICMP Echo."
+  },
+  {
+    "id": 63,
+    "titolo": "ARP table",
+    "categoria": "IPv4",
+    "contenuto": "Gli host memorizzano le corrispondenze IP↔MAC in una ARP table temporanea, per evitare richieste ripetute."
+  },
+  {
+    "id": 64,
+    "titolo": "NAT – Network Address Translation",
+    "categoria": "IPv4",
+    "contenuto": "NAT traduce indirizzi IP privati in uno o più IP pubblici. Usato per far accedere host privati a Internet."
+  },
+  {
+    "id": 65,
+    "titolo": "PAT – Port Address Translation",
+    "categoria": "IPv4",
+    "contenuto": "Il PAT consente a molti host privati di condividere un solo IP pubblico, usando porte TCP/UDP differenti."
+  },
+  {
+    "id": 66,
+    "titolo": "Motivazione uso NAT/PAT",
+    "categoria": "IPv4",
+    "contenuto": "NAT/PAT affrontano il problema della scarsità di IPv4 pubblici, migliorano la sicurezza e l’isolamento delle reti locali."
+  },
+  {
+    "id": 67,
+    "titolo": "Funzione del DHCP",
+    "categoria": "IPv4",
+    "contenuto": "Il DHCP assegna automaticamente IP, netmask, gateway e DNS a un host al momento della connessione. Il client sceglie una delle offerte e invia un messaggio broadcast per richiedere formalmente l’IP scelte"
+  },
+  {
+    "id": 68,
+    "titolo": "Fasi del DHCP",
+    "categoria": "IPv4",
+    "contenuto": "Il processo DHCP include: Discover → Offer → Request → Ack. È usato per l’autoconfigurazione client."
+  },
+  {
+    "id": 69,
+    "titolo": "Vantaggi del DHCP",
+    "categoria": "IPv4",
+    "contenuto": "Riduce configurazioni manuali, previene errori e supporta il riassegnamento dinamico degli IP disponibili."
+  },
+  {
+    "id": 70,
+    "titolo": "Routing diretto e indiretto",
+    "categoria": "IPv4",
+    "contenuto": "Se l’host di destinazione è nella stessa subnet, l’invio è diretto. Altrimenti, si invia al router (default gateway)."
+  },
+  {
+    "id": 71,
+    "titolo": "Next Hop",
+    "categoria": "IPv4",
+    "contenuto": "Il next hop è l'indirizzo del router a cui inoltrare un pacchetto se la rete di destinazione non è direttamente connessa."
+  },
+  {
+    "id": 72,
+    "titolo": "Longest Prefix Match",
+    "categoria": "IPv4",
+    "contenuto": "Quando più rotte sono compatibili, il router sceglie quella con il prefisso più lungo (più specifica) nella tabella di routing."
+  },
+  {
+    "id": 73,
+    "titolo": "Struttura dell'indirizzo IPv6",
+    "categoria": "IPv6",
+    "contenuto": "Un indirizzo IPv6 è lungo 128 bit, rappresentato in 8 gruppi esadecimali separati da due punti. La struttura tipica è composta da un prefisso di rete e un ID di interfaccia. La notazione può essere abbreviata omettendo zeri iniziali e gruppi consecutivi di zeri (::)."
+  },
+  {
+    "id": 74,
+    "titolo": "Tipi di indirizzi IPv6",
+    "categoria": "IPv6",
+    "contenuto": "IPv6 definisce diversi tipi di indirizzi: Unicast (comunicazione uno-a-uno), Multicast (uno-a-molti), Anycast (uno-a-il più vicino). Inoltre, esistono indirizzi speciali come Link-local (FE80::/10), Unique Local Addresses (FD00::/8), Loopback (::1) e Unspecified (::)."
+  },
+  {
+    "id": 75,
+    "titolo": "Indirizzi Multicast IPv6",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi multicast IPv6 iniziano con il prefisso FF00::/8 e sono utilizzati per inviare pacchetti a più destinatari. Questi indirizzi sono mappati su indirizzi MAC con prefisso 33:33, seguiti dagli ultimi 32 bit dell'indirizzo IPv6."
+  },
+  {
+    "id": 76,
+    "titolo": "Solicited-Node Multicast Address",
+    "categoria": "IPv6",
+    "contenuto": "Ogni dispositivo IPv6 calcola un indirizzo multicast specifico, chiamato Solicited-Node Multicast Address, utilizzato dal Neighbor Discovery Protocol per la risoluzione degli indirizzi. Questo indirizzo ha il prefisso FF02::1:FF00:0/104 combinato con gli ultimi 24 bit dell'indirizzo IPv6 del nodo."
+  },
+  {
+    "id": 77,
+    "titolo": "Neighbor Discovery Protocol (NDP)",
+    "categoria": "IPv6",
+    "contenuto": "Il Neighbor Discovery Protocol (NDP) è il meccanismo base di IPv6 per scoprire nodi e router nella rete locale. Sostituisce ARP e altri protocolli IPv4 usando messaggi ICMPv6. Le sue funzioni includono: risoluzione MAC (NS/NA), scoperta router (RS/RA), rilevamento di indirizzi duplicati (DAD) e verifica della raggiungibilità dei vicini. È più efficiente di ARP perché usa multicast anziché broadcast."
+  },
+  {
+    "id": 78,
+    "titolo": "ICMPv6: Tipi di messaggi",
+    "categoria": "IPv6",
+    "contenuto": "ICMPv6 gestisce messaggi di errore (tipi 1-4), messaggi informativi come Echo Request/Reply (128-129) e messaggi per il Neighbor Discovery Protocol (tipi 133-137)."
+  },
+  {
+    "id": 79,
+    "titolo": "IPv6 Extension Headers",
+    "categoria": "IPv6",
+    "contenuto": "Gli Extension Headers in IPv6 forniscono funzionalità opzionali come la frammentazione, la sicurezza e il routing. Alcuni esempi includono Hop-by-Hop Options, Routing Header, Fragment Header e Authentication Header."
+  },
+  {
+    "id": 80,
+    "titolo": "Configurazione degli indirizzi IPv6",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi IPv6 possono essere configurati manualmente, tramite SLAAC (Stateless Address Autoconfiguration) o DHCPv6. SLAAC consente ai dispositivi di autoconfigurarsi utilizzando le informazioni fornite dai Router Advertisement."
+  },
+  {
+    "id": 81,
+    "titolo": "Routing in IPv6",
+    "categoria": "IPv6",
+    "contenuto": "IPv6 supporta protocolli di routing come OSPFv3, RIPng e BGP. Le strategie di coesistenza con IPv4 includono il dual stack (gestione simultanea di IPv4 e IPv6) e l'uso di tunneling per la transizione."
+  },
+  {
+    "id": 82,
+    "titolo": "Convivenza IPv4-IPv6",
+    "categoria": "IPv6",
+    "contenuto": "IPv6 può coesistere con IPv4 tramite strategie come dual stack (IPv4+IPv6 simultanei), tunneling (traffico IPv6 incapsulato in IPv4), e NAT64/DNS64 per traduzione tra protocolli. Questi metodi garantiscono transizione graduale e compatibilità."
+  },
+  {
+    "id": 83,
+    "titolo": "Unique Local Addresses (ULA)",
+    "categoria": "IPv6",
+    "contenuto": "I Unique Local Addresses (ULA) sono indirizzi IPv6 privati, simili agli indirizzi IPv4 non pubblici. Appartengono al prefisso FD00::/8 e non sono instradabili su Internet. Sono usati per reti locali o interconnessioni private tra sedi, garantendo un uso interno sicuro e non conflittuale."
+  },
+  {
+    "id": 84,
+    "titolo": "Link-Local Addresses (IPv6)",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi link-local (FE80::/10) sono usati per comunicazioni locali tra dispositivi sulla stessa rete fisica. Sono generati automaticamente e necessari per protocolli come Neighbor Discovery e OSPFv3. Non possono attraversare router né essere instradati su reti diverse."
+  },
+  {
+    "id": 85,
+    "titolo": "RIB e FIB",
+    "categoria": "Concetti Base",
+    "contenuto": "La RIB (Routing Information Base) è generata dai protocolli di routing nel control plane. La FIB (Forwarding Information Base) è derivata dalla RIB ma ottimizzata per il data plane: è più veloce e usata direttamente per l'inoltro dei pacchetti."
+  },
+  {
+    "id": 86,
+    "titolo": "Control Plane vs Data Plane",
+    "categoria": "Concetti Base",
+    "contenuto": "Il control plane gestisce l'apprendimento e la scelta dei percorsi (routing). Il data plane esegue l'inoltro dei pacchetti in tempo reale (forwarding). I due piani sono separati per motivi di efficienza e sicurezza."
+  },
+  {
+    "id": 87,
+    "titolo": "Cos'è RIP",
+    "categoria": "Protocollo di Routing",
+    "contenuto": "RIP è un protocollo di routing dinamico basato su Distance Vector. Usa il numero di hop come metrica e ha un limite massimo di 15 hop, rendendolo inadatto a reti grandi. I pacchetti vengono aggiornati ogni 30 secondi."
+  },
+  {
+    "id": 88,
+    "titolo": "Funzionamento di RIP",
+    "categoria": "Protocollo di Routing",
+    "contenuto": "Ogni router RIP invia la sua routing table ai vicini a intervalli regolari. I router aggiornano la propria tabella sommando +1 agli hop ricevuti. Il next hop con hop minori viene selezionato per ogni destinazione."
+  },
+  {
+    "id": 89,
+    "titolo": "Limiti e problemi di RIP",
+    "categoria": "Protocollo di Routing",
+    "contenuto": "RIP soffre di lentezza nella convergenza, loop di routing, count-to-infinity e uso inefficiente della banda. Non supporta VLSM (nella versione 1) né sicurezza avanzata."
+  },
+  {
+    "id": 90,
+    "titolo": "RIP vs OSPF",
+    "categoria": "Confronto Protocolli",
+    "contenuto": "OSPF è superiore in tutto: supporta grandi reti, convergenza rapida, VLSM, aree gerarchiche e metriche flessibili. RIP è usato solo in reti legacy o semplici."
+  },
+  {
+    "id": 91,
+    "titolo": "Cos'è la FIB",
+    "categoria": "Data Plane",
+    "contenuto": "La FIB è una tabella usata nel piano dati dai router per determinare il next hop dei pacchetti in arrivo. È ottimizzata per velocità e contiene solo le informazioni necessarie per l'inoltro rapido."
+  },
+  {
+    "id": 92,
+    "titolo": "Come viene costruita la FIB",
+    "categoria": "Data Plane",
+    "contenuto": "La FIB è derivata dalla RIB (che contiene tutte le rotte conosciute). Il sistema operativo del router seleziona le rotte migliori e le inserisce nella FIB per l’inoltro efficiente. La sincronizzazione avviene in tempo reale."
+  },
+  {
+    "id": 93,
+    "titolo": "Ottimizzazioni della FIB",
+    "categoria": "Data Plane",
+    "contenuto": "La FIB è spesso implementata con strutture dati ad alte prestazioni (come trie compressi o hash tables). Permette look-up IP in pochi microsecondi, riducendo la latenza dell’instradamento."
+  },
+  {
+    "id": 94,
+    "titolo": "Differenze tra FIB e RIB",
+    "categoria": "Confronto Tabelle",
+    "contenuto": "La RIB è costruita dal control plane e contiene tutte le rotte (inclusi backup e policy). La FIB contiene solo le rotte attive e migliori, pronte per l’inoltro. La FIB è veloce, la RIB è completa."
+  },
+  {
+    "id": 95,
+    "titolo": "Label Switching (MPLS)",
+    "categoria": "Tecniche",
+    "contenuto": "In MPLS, ogni pacchetto ha una label che viene scambiata (label swapping) lungo il percorso. Non si guarda all’IP, il che velocizza il forwarding e permette l’ingegneria del traffico (Traffic Engineering)."
+  },
+  {
+    "id": 96,
+    "titolo": "Source Routing",
+    "categoria": "Tecniche",
+    "contenuto": "Nel source routing, il pacchetto contiene l’intero percorso scelto dalla sorgente. È raro perché richiede visibilità completa della topologia ed è vulnerabile a problemi di sicurezza e scalabilità."
+  },
+  {
+    "id": 97,
+    "titolo": "Reti Wireless e Mobili",
+    "categoria": "Fondamenti",
+    "contenuto": "Le reti wireless usano collegamenti radio; la mobilità implica la gestione del cambio di punto di accesso. Le reti 4G/5G usano IP e supportano SDN."
+  },
+  {
+    "id": 98,
+    "titolo": "Componenti di Rete Wireless",
+    "categoria": "Architettura",
+    "contenuto": "Include host wireless (mobili o fissi), stazioni base (AP, torri), e collegamenti radio. Modalità: infrastrutturata (via AP) o ad hoc (peer-to-peer)."
+  },
+  {
+    "id": 99,
+    "titolo": "Wi-Fi: Architettura IEEE 802.11",
+    "categoria": "Wireless LAN",
+    "contenuto": "Ogni Basic Service Set (BSS) comprende host e AP. In modalità ad hoc, la comunicazione avviene direttamente tra host."
+  },
+  {
+    "id": 100,
+    "titolo": "Wi-Fi: Associazione e Scansione",
+    "categoria": "Wireless LAN",
+     "contenuto": "Per connettersi a una rete Wi-Fi, un host deve prima trovare un Access Point (AP). Esistono due modalità di scansione: \n- Scansione passiva: l’AP trasmette periodicamente beacon con informazioni come SSID e MAC address; l’host ascolta questi beacon e sceglie a quale AP associarsi.\n- Scansione attiva: l’host invia una richiesta (probe request) su vari canali; ogni AP che la riceve risponde (probe response) con i propri dettagli.\nDopo aver scelto un AP, l’host invia una richiesta di associazione. Una volta accettata, avviene l’autenticazione e l’assegnazione dinamica dell’indirizzo IP tramite DHCP."
+  },
+  {
+    "id": 101,
+    "titolo": "CSMA/CA e RTS/CTS",
+    "categoria": "MAC Protocols",
+     "contenuto": "Il protocollo 802.11 utilizza CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) per evitare le collisioni nel mezzo condiviso. Poiché in Wi-Fi un dispositivo non può rilevare direttamente una collisione mentre trasmette, CSMA/CA tenta di prevenirle ascoltando il canale prima di trasmettere. Se il canale è libero, attende un breve tempo (DIFS), poi trasmette. In caso contrario, avvia un backoff casuale. Il meccanismo opzionale RTS/CTS (Request to Send / Clear to Send) viene usato per ridurre le collisioni causate dai nodi nascosti: il mittente invia un RTS e riceve un CTS dall’AP; tutti i nodi che sentono il CTS rimangono in silenzio, evitando interferenze durante la trasmissione."
+  },
+  {
+    "id": 102,
+    "titolo": "IEEE 802.11: Frame e Indirizzamento",
+    "categoria": "MAC Protocols",
+    "contenuto": "I frame del protocollo IEEE 802.11 (Wi-Fi) possono contenere fino a 4 indirizzi MAC per gestire diverse modalità di comunicazione. Questo consente flessibilità nel routing del frame, sia in reti infrastrutturate (con Access Point) sia in reti ad hoc (peer-to-peer). I 4 indirizzi servono a specificare: (1) il destinatario, (2) il mittente, (3) l’Access Point o router coinvolto nel forwarding, e (4) eventualmente un ulteriore nodo nelle reti ad hoc. Questa struttura consente di distinguere chiaramente tra chi ha generato il frame, chi lo deve ricevere e chi lo sta inoltrando nella rete."
+  },
+  {
+    "id": 103,
+    "titolo": "Reti Cellulari: Concetti Base",
+    "categoria": "Cellulari",
+    "contenuto": "Le celle coprono aree geografiche. I terminali si muovono tra celle tramite handover - la connessione resta attiva-, collegandosi a quella con miglior segnale."
+  },
+  {
+    "id": 104,
+    "titolo": "Tecniche di Accesso Multiplo",
+    "categoria": "Cellulari",
+    "contenuto": "FDMA, TDMA, CDMA, SDMA: permettono a più utenti di condividere le risorse radio in modo efficiente."
+  },
+  {
+    "id": 105,
+    "titolo": "Gestione della Mobilità",
+    "categoria": "Mobilità",
+    "contenuto": "Include location update, paging, handover (soft/hard, intra/inter-cell, MT/BS-initiated)."
+  },
+  {
+    "id": 106,
+    "titolo": "GSM: Architettura",
+    "categoria": "2G",
+    "contenuto": "Composta da MS, SIM, BSS (BTS+BSC), NSS (MSC, HLR, VLR, AUC). Fornisce servizi voce, SMS e gestione mobilità."
+  },
+  {
+    "id": 107,
+    "titolo": "LTE: Architettura e Bearers",
+    "categoria": "4G",
+    "contenuto": "E-UTRAN con eNodeB e EPC (MME, SGW, PGW, HSS). Usa bearer (default e dedicati) per trasporto dati IP con QoS."
+  },
+  {
+    "id": 108,
+    "titolo": "5G: Architettura e Funzionalità",
+    "categoria": "5G",
+    "contenuto": "Core modulare con SBA, RAN con gNB, slicing, edge computing. NF come AMF, SMF, UPF gestiscono accesso, sessioni, traffico."
+  },
+  {
+    "id": 109,
+    "titolo": "Multiaccess Edge Computing (MEC)",
+    "categoria": "5G",
+    "contenuto": "Server e risorse spostati vicino agli utenti (antenne/router) per ridurre latenza. Supporta applicazioni locali e IoT."
   }
 ]

@@ -3562,5 +3562,53 @@
     ],
     "corretta": 2,
     "categoria": "CDN"
+  },
+  {
+    "id": 317,
+    "domanda": "Cos'è il routing centralizzato?",
+    "risposte": [
+      "Impone che il traffico attraversi un nodo di rete specifico",
+      "È una soluzione obsoleta mai usata nelle reti moderne",
+      "Impone che i nodi di rete non scambino informazioni di routing",
+      "Consiste in un nodo di rete che calcola i percorsi per altri nodi e fornisce loro i percorsi calcolati"
+    ],
+    "corretta": 3,
+    "categoria": "Routing"
+  },
+  {
+    "id": 318,
+    "domanda": "Usando il metodo di autoconfigurazione attento alla privacy (RFC-4941), quale tipo di indirizzo contiene un host IPv6?",
+    "risposte": [
+      "Con prefisso e ID di interfaccia entrambi non tracciabili",
+      "Con un prefisso non tracciabile",
+      "Valido solo all'interno di una VPN che garantisce la privacy dell'utente",
+      "Con un ID di interfaccia non tracciabile"
+    ],
+    "corretta": 3,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 319,
+    "domanda": "Due host A e B appartengono alla stessa rete fisica con indirizzi IP 130.192.1.1/25 e 130.192.1.100/24. Cosa accade?",
+    "risposte": [
+      "B comunica con A ma non viceversa",
+      "A comunica con B solo tramite un router",
+      "A comunica direttamente con B ma non viceversa",
+      "A comunica direttamente con B e viceversa"
+    ],
+    "corretta": 2,
+    "categoria": "Subnetting"
+  },
+  {
+    "id": 320,
+    "domanda": "In una VPN MPLS di livello 3 basata su BGP, i pacchetti in viaggio nel backbone MPLS hanno due etichette. Cosa vale?",
+    "risposte": [
+      "Entrambe le etichette sono usate dai router interni (P) per inoltrare i pacchetti verso un router PE",
+      "I router interni (P) non cambiano mai l'etichetta esterna",
+      "L'etichetta esterna è usata dai router interni (P) per inoltrare i pacchetti verso un router PE",
+      "L'etichetta interna è usata dai router interni (P) per inoltrare i pacchetti verso un router PE"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS VPN"
   }
 ]

@@ -1,6 +1,0 @@
-{"timestamp": "2025-05-13 15:12:08", "punteggio": "1/1", "sbagliate": []}
-{"timestamp": "2025-05-21 16:47:44", "punteggio": "8/10", "sbagliate": [138, 134]}
-{"timestamp": "2025-05-21 17:14:48", "punteggio": "0.00/1", "sbagliate": [], "skippate": [100]}
-{"timestamp": "2025-05-21 17:18:18", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
-{"timestamp": "2025-05-21 17:22:57", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
-{"timestamp": "2025-05-21 17:24:28", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
