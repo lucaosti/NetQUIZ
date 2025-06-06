@@ -7,23 +7,23 @@ from datetime import datetime
 # File paths
 QUIZ_FILE = 'quiz.json'
 RESULTS_FILE = 'results.txt'
-ARGOMENTI_FILE = 'topics.json'
+TOPICS_FILE = 'topics.json'
 
 # Load topics from file
-def load_argomenti():
-    if not os.path.exists(ARGOMENTI_FILE):
+def load_topics():
+    if not os.path.exists(TOPICS_FILE):
         return []
-    with open(ARGOMENTI_FILE, 'r', encoding='utf-8') as f:
+    with open(TOPICS_FILE, 'r', encoding='utf-8') as f:
         return json.load(f)
     
 
-def ripassa_teoria():
-    argomenti = load_argomenti()
-    if not argomenti:
+def study_theory():
+    topics = load_topics()
+    if not topics:
         print("⚠️ Nessun argomento disponibile.")
         return
 
-    categorie = sorted(set(a['categoria'] for a in argomenti))
+    categorie = sorted(set(a['categoria'] for a in topics))
     print("\nCategorie disponibili:")
     for i, c in enumerate(categorie, start=1):
         print(f"{i}. {c}")
@@ -37,7 +37,7 @@ def ripassa_teoria():
         print("❌ Inserisci un numero valido.")
         return
 
-    arg_cat = [a for a in argomenti if a['categoria'] == cat_sel]
+    arg_cat = [a for a in topics if a['categoria'] == cat_sel]
     if not arg_cat:
         print("⚠️ Nessun argomento per questa categoria.")
         return
@@ -200,7 +200,7 @@ def run_quiz(subset=None):
 
 
 # Function to display quiz by category
-def quiz_per_argomento():
+def quiz_by_topic():
     quiz = load_quiz()
     if not quiz:
         print("⚠️ No questions available.")
@@ -254,9 +254,9 @@ def menu():
         elif choice == "3":
             recovery_quiz()
         elif choice == "4":
-            quiz_per_argomento()
+            quiz_by_topic()
         elif choice == "5":
-            ripassa_teoria()
+            study_theory()
         elif choice == "6":
             break
         else:
@@ -268,32 +268,25 @@ def ensure_quiz_file():
     if not os.path.exists(QUIZ_FILE):
         with open(QUIZ_FILE, 'w', encoding='utf-8') as f:
             json.dump([], f, indent=4, ensure_ascii=False)
-    ensure_quiz_file()
-    # Ensure the results file exists
+
+
+# Ensure the results file exists
 def ensure_results_file():
     if not os.path.exists(RESULTS_FILE):
         with open(RESULTS_FILE, 'w', encoding='utf-8') as f:
             pass
-    ensure_results_file()
-# Ensure the arguments file exists
-def ensure_argomenti_file():
-    if not os.path.exists(ARGOMENTI_FILE):
-        with open(ARGOMENTI_FILE, 'w', encoding='utf-8') as f:
+
+
+# Ensure the topics file exists
+def ensure_topics_file():
+    if not os.path.exists(TOPICS_FILE):
+        with open(TOPICS_FILE, 'w', encoding='utf-8') as f:
             json.dump([], f, indent=4, ensure_ascii=False)
-    ensure_argomenti_file()
-    # Ensure the arguments file exists
-def ensure_argomenti_file():
-    if not os.path.exists(ARGOMENTI_FILE):
-        with open(ARGOMENTI_FILE, 'w', encoding='utf-8') as f:
-            json.dump([], f, indent=4, ensure_ascii=False)
-    ensure_argomenti_file()
 
 
 # Run the menu
 if __name__ == "__main__":
-    if not os.path.exists(QUIZ_FILE):
-        save_quiz([])
-    if not os.path.exists(RESULTS_FILE):
-        with open(RESULTS_FILE, 'w', encoding='utf-8') as f:
-            pass
+    ensure_quiz_file()
+    ensure_results_file()
+    ensure_topics_file()
     menu()
