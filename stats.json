@@ -1,0 +1,12 @@
+{
+    "quiz_totali": 1,
+    "domande_corrette": 1,
+    "domande_sbagliate": 0,
+    "domande_skippate": 0,
+    "per_categoria": {
+        "Reti Cellulari": {
+            "corrette": 1,
+            "sbagliate": 0
+        }
+    }
+}

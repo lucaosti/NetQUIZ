@@ -1,0 +1,9 @@
+{"timestamp": "2025-06-07 08:05:36", "punteggio": "26.35/33", "sbagliate": [30, 213, 110, 184, 131], "skippate": []}
+{"timestamp": "2025-06-07 08:06:00", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 08:15:27", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 09:21:57", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 09:24:18", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 09:32:30", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 09:36:08", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 10:10:34", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}
+{"timestamp": "2025-06-07 10:12:40", "punteggio": "1.00/1", "sbagliate": [], "skippate": []}

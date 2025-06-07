@@ -591,13 +591,13 @@
     "id": 100,
     "titolo": "Wi-Fi: Associazione e Scansione",
     "categoria": "Wireless LAN",
-     "contenuto": "Per connettersi a una rete Wi-Fi, un host deve prima trovare un Access Point (AP). Esistono due modalità di scansione: \n- Scansione passiva: l’AP trasmette periodicamente beacon con informazioni come SSID e MAC address; l’host ascolta questi beacon e sceglie a quale AP associarsi.\n- Scansione attiva: l’host invia una richiesta (probe request) su vari canali; ogni AP che la riceve risponde (probe response) con i propri dettagli.\nDopo aver scelto un AP, l’host invia una richiesta di associazione. Una volta accettata, avviene l’autenticazione e l’assegnazione dinamica dell’indirizzo IP tramite DHCP."
+    "contenuto": "Per connettersi a una rete Wi-Fi, un host deve prima trovare un Access Point (AP). Esistono due modalità di scansione: \n- Scansione passiva: l’AP trasmette periodicamente beacon con informazioni come SSID e MAC address; l’host ascolta questi beacon e sceglie a quale AP associarsi.\n- Scansione attiva: l’host invia una richiesta (probe request) su vari canali; ogni AP che la riceve risponde (probe response) con i propri dettagli.\nDopo aver scelto un AP, l’host invia una richiesta di associazione. Una volta accettata, avviene l’autenticazione e l’assegnazione dinamica dell’indirizzo IP tramite DHCP."
   },
   {
     "id": 101,
     "titolo": "CSMA/CA e RTS/CTS",
     "categoria": "MAC Protocols",
-     "contenuto": "Il protocollo 802.11 utilizza CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) per evitare le collisioni nel mezzo condiviso. Poiché in Wi-Fi un dispositivo non può rilevare direttamente una collisione mentre trasmette, CSMA/CA tenta di prevenirle ascoltando il canale prima di trasmettere. Se il canale è libero, attende un breve tempo (DIFS), poi trasmette. In caso contrario, avvia un backoff casuale. Il meccanismo opzionale RTS/CTS (Request to Send / Clear to Send) viene usato per ridurre le collisioni causate dai nodi nascosti: il mittente invia un RTS e riceve un CTS dall’AP; tutti i nodi che sentono il CTS rimangono in silenzio, evitando interferenze durante la trasmissione."
+    "contenuto": "Il protocollo 802.11 utilizza CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) per evitare le collisioni nel mezzo condiviso. Poiché in Wi-Fi un dispositivo non può rilevare direttamente una collisione mentre trasmette, CSMA/CA tenta di prevenirle ascoltando il canale prima di trasmettere. Se il canale è libero, attende un breve tempo (DIFS), poi trasmette. In caso contrario, avvia un backoff casuale. Il meccanismo opzionale RTS/CTS (Request to Send / Clear to Send) viene usato per ridurre le collisioni causate dai nodi nascosti: il mittente invia un RTS e riceve un CTS dall’AP; tutti i nodi che sentono il CTS rimangono in silenzio, evitando interferenze durante la trasmissione."
   },
   {
     "id": 102,
@@ -646,5 +646,611 @@
     "titolo": "Multiaccess Edge Computing (MEC)",
     "categoria": "5G",
     "contenuto": "Server e risorse spostati vicino agli utenti (antenne/router) per ridurre latenza. Supporta applicazioni locali e IoT."
+  },
+  {
+    "id": 110,
+    "titolo": "Indirizzi fondamentali IPv6",
+    "categoria": "IPv6",
+    "contenuto": "IPv6 usa indirizzi Link-local (FE80::/10), Global Unicast (2000::/3), Unique Local (FD00::/8), Multicast (FF00::/8), Anycast (senza prefisso dedicato), Loopback (::1) e Unspecified (::). Nessun broadcast: sostituito da multicast e anycast."
+  },
+  {
+    "id": 111,
+    "titolo": "Funzionamento di IPsec",
+    "categoria": "Sicurezza",
+    "contenuto": "IPsec protegge i dati a livello IP tramite due protocolli: AH (Authentication Header) e ESP (Encapsulating Security Payload). Opera in modalità transport (solo payload cifrato) o tunnel (intero pacchetto IP cifrato). Utilizza IKE per lo scambio delle chiavi. Ha problemi con NAT perché modifica gli header IP e i checksum, rompendo l'integrità dei pacchetti verificata da IPsec, specialmente con AH che protegge anche gli header IP."
+  },
+  {
+    "id": 112,
+    "titolo": "Standard UMTS",
+    "categoria": "Reti Mobili",
+    "contenuto": "UMTS (Universal Mobile Telecommunications System) è uno standard 3G basato su W-CDMA. Supporta servizi voce e dati con velocità maggiori rispetto al 2G. Introdotti concetti come RNC, macro/microdiversity e handover soft."
+  },
+  {
+    "id": 113,
+    "titolo": "Protocollo PPTP",
+    "categoria": "VPN",
+    "contenuto": "PPTP (Point-to-Point Tunneling Protocol) è un protocollo usato per creare VPN di accesso remoto. Usa GRE per incapsulare il traffico PPP. È semplice e supportato nativamente, ma ha problemi di sicurezza noti. Non adatto a VPN moderne."
+  },
+  {
+    "id": 114,
+    "titolo": "Multicast in IPv4",
+    "categoria": "IPv4",
+    "contenuto": "Il multicast permette di inviare dati a più destinatari selezionati usando un solo flusso. In IPv4 è possibile, ma richiede protocolli aggiuntivi come IGMP per la gestione dei gruppi e PIM per l'inoltro tra router. Non funziona automaticamente senza questi."
+  },
+  {
+    "id": 115,
+    "titolo": "Cos'è una CDN",
+    "categoria": "CDN",
+    "contenuto": "Una Content Delivery Network (CDN) è una rete distribuita di server vicini agli utenti finali. Ospita copie dei contenuti per ridurre la latenza, migliorare le prestazioni, scaricare i server centrali e ottimizzare i costi."
+  },
+  {
+    "id": 116,
+    "titolo": "Funzionamento delle CDN",
+    "categoria": "CDN",
+    "contenuto": "Le CDN replicano i contenuti su server distribuiti in data center o ISP. Quando un utente fa una richiesta, viene indirizzato alla replica più vicina o meno carica, migliorando velocità e affidabilità."
+  },
+  {
+    "id": 117,
+    "titolo": "Vantaggi delle CDN",
+    "categoria": "CDN",
+    "contenuto": "CDN migliorano velocità (bassa latenza), affidabilità (replica e failover), scalabilità (milioni di utenti), controllo del provider e supportano anche contenuti dinamici, streaming e pubblicità localizzata."
+  },
+  {
+    "id": 118,
+    "titolo": "Confronto CDN vs Proxy Cache",
+    "categoria": "CDN",
+    "contenuto": "Le cache sono reattive, locali e senza controllo del provider. Le CDN sono proattive, distribuite e permettono pieno controllo. Le CDN migliorano la QoS, le cache riducono solo il traffico ISP."
+  },
+  {
+    "id": 119,
+    "titolo": "Replica dei contenuti nelle CDN",
+    "categoria": "CDN",
+    "contenuto": "Il provider aggiorna i contenuti e la CDN li propaga alle repliche. Le sfide principali sono: dove replicare, quanto replicare, come aggiornare e come selezionare la replica ottimale."
+  },
+  {
+    "id": 120,
+    "titolo": "Caso Akamai",
+    "categoria": "CDN",
+    "contenuto": "Akamai usa domini specifici per ogni cliente. I contenuti sono organizzati in gruppi e le URL del provider vengono riscritte per indirizzare le richieste alla rete CDN di Akamai."
+  },
+  {
+    "id": 121,
+    "titolo": "Limiti delle CDN",
+    "categoria": "CDN",
+    "contenuto": "Le CDN introducono latenza se usano HTTP redirect. Le URL-based CDN sono più precise ma richiedono terminazione TCP. Alcuni contenuti (es. aggiornamenti frequenti) sono difficili da replicare."
+  },
+  {
+    "id": 122,
+    "titolo": "Conclusione sulle CDN",
+    "categoria": "CDN",
+    "contenuto": "Le CDN sono essenziali per distribuire contenuti globalmente in modo veloce e affidabile. Utilizzate da grandi piattaforme per siti web, streaming, pubblicità e contenuti dinamici."
+  },
+  {
+    "id": 123,
+    "titolo": "Applicazioni multimediali in rete",
+    "categoria": "QoS",
+    "contenuto": "App real-time come videoconferenze, giochi online e realtà virtuale richiedono flussi continui, interattività elevata, alta banda e comunicazioni uno-a-molti o molti-a-molti."
+  },
+  {
+    "id": 124,
+    "titolo": "Requisiti delle applicazioni multimediali",
+    "categoria": "QoS",
+    "contenuto": "Voce <150ms, Tactile Internet <1ms. Serve bassa latenza, ritardo stabile, alta disponibilità di banda e risorse nei nodi."
+  },
+  {
+    "id": 125,
+    "titolo": "Classificazione e Scheduling dei pacchetti",
+    "categoria": "QoS",
+    "contenuto": "Classificazione su 5-tuple. Code: FIFO, Priority Queue, Round Robin, WFQ, Deadline Queuing. Serve a gestire il traffico e rispettare vincoli di QoS."
+  },
+  {
+    "id": 126,
+    "titolo": "Gestione delle code nello switching",
+    "categoria": "QoS",
+    "contenuto": "Output Queuing è semplice ma limitato. Input Queuing con speed-up migliora le prestazioni. Code virtuali distribuite sono più efficienti ma complesse."
+  },
+  {
+    "id": 127,
+    "titolo": "RSVP – Resource Reservation Protocol",
+    "categoria": "QoS",
+    "contenuto": "RSVP prenota risorse per flussi IP. Usa messaggi PATH e RESV per stabilire QoS. Funziona con IntServ. È poco scalabile, usato solo in reti controllate."
+  },
+  {
+    "id": 128,
+    "titolo": "Controllo del traffico",
+    "categoria": "QoS",
+    "contenuto": "Policing scarta o declassa, shaping ritarda i pacchetti. A livello di flusso si usa CAC. A livello di rete si applica traffic engineering con bilanciamento e monitoraggio."
+  },
+  {
+    "id": 129,
+    "titolo": "QoS Routing",
+    "categoria": "QoS",
+    "contenuto": "Il routing QoS cerca percorsi che rispettano banda, ritardo, perdita. Funziona con reti a segnalazione (es. ATM). Esempi: crankback, PNNI."
+  },
+  {
+    "id": 130,
+    "titolo": "IntServ vs DiffServ",
+    "categoria": "QoS",
+    "contenuto": "IntServ prenota risorse per ogni flusso (RSVP): alta qualità ma poca scalabilità. DiffServ classifica pacchetti per priorità: più semplice, veloce e scalabile."
+  },
+  {
+    "id": 131,
+    "titolo": "Expedited Forwarding (EF)",
+    "categoria": "QoS",
+    "contenuto": "Classe DiffServ ad alta priorità (DSCP 46) per VoIP, videoconferenze, applicazioni critiche. Garantisce bassa latenza e jitter tramite code prioritarie."
+  },
+  {
+    "id": 132,
+    "titolo": "Assured Forwarding (AF)",
+    "categoria": "QoS",
+    "contenuto": "Classe DiffServ con 4 classi e 3 livelli di drop precedence. Fornisce affidabilità media per traffico importante ma non critico. Esempi: AF11, AF43."
+  },
+  {
+    "id": 133,
+    "titolo": "Cos'è una VPN",
+    "categoria": "VPN",
+    "contenuto": "Una VPN (Virtual Private Network) crea un canale sicuro tra dispositivi remoti e una rete privata. Può operare su Layer 2, 3 o 4 e garantire autenticazione, cifratura e integrità del traffico."
+  },
+  {
+    "id": 134,
+    "titolo": "Tipi di VPN",
+    "categoria": "VPN",
+    "contenuto": "Site-to-Site collega sedi aziendali. Remote Access collega un utente singolo. End-to-End collega due dispositivi. Possono essere basate su Layer 2 (Ethernet), Layer 3 (IPsec/MPLS), o Layer 4 (SSL/TLS)."
+  },
+  {
+    "id": 135,
+    "titolo": "VPN Layer 2 vs Layer 3",
+    "categoria": "VPN",
+    "contenuto": "L2 VPN incapsula frame Ethernet e il routing è gestito dal cliente (es. VPLS, VPWS). L3 VPN incapsula pacchetti IP e il routing è gestito dal provider tramite VRF (es. MPLS L3VPN)."
+  },
+  {
+    "id": 136,
+    "titolo": "MPLS VPN Layer 3",
+    "categoria": "MPLS VPN",
+    "contenuto": "Basata su PE/CE, VRF e MP-BGP. I pacchetti sono instradati tramite etichette MPLS. Supporta QoS, è scalabile e separa logicamente i clienti, ma non cifra il traffico."
+  },
+  {
+    "id": 137,
+    "titolo": "Overlay vs Peer VPN",
+    "categoria": "VPN",
+    "contenuto": "Overlay: il cliente gestisce il routing (tipico L2VPN). Peer: client e provider scambiano rotte (es. BGP CE-PE). Peer VPN richiede maggiore cooperazione e configurazione condivisa."
+  },
+  {
+    "id": 138,
+    "titolo": "Modelli VPN: Customer vs Provider Provisioned",
+    "categoria": "VPN",
+    "contenuto": "Customer Provisioned: tunnel gestito dal cliente. Provider Provisioned: gestito dal provider. Il primo è flessibile ma complesso, il secondo è semplice ma centralizzato."
+  },
+  {
+    "id": 139,
+    "titolo": "Tunneling VPN Layer 4",
+    "categoria": "VPN",
+    "contenuto": "Site-to-Site Layer 4: tunnel tra gateway (es. IPsec su UDP). End-to-End Layer 4: tra host, tipico con SSL VPN. Usato per accessi remoti e comunicazioni sicure tra dispositivi."
+  },
+  {
+    "id": 140,
+    "titolo": "GRE – Generic Routing Encapsulation",
+    "categoria": "VPN",
+    "contenuto": "Protocollo di incapsulamento generico usato per trasportare pacchetti IP e non-IP in tunnel IP. Supporta sequenze, ACK, flow control, e viene usato in PPTP e altre VPN."
+  },
+  {
+    "id": 141,
+    "titolo": "PPTP – Point-to-Point Tunneling Protocol",
+    "categoria": "VPN",
+    "contenuto": "VPN obsoleta che incapsula PPP in IP usando GRE e TCP/1723. Facile da configurare ma con crittografia debole (MPPE) e protocolli vulnerabili (MS-CHAP)."
+  },
+  {
+    "id": 142,
+    "titolo": "IPsec – IP Security",
+    "categoria": "Sicurezza",
+    "contenuto": "Protegge traffico IP con AH (autenticazione) o ESP (cifratura + integrità). Usa IKE per negoziare parametri e creare tunnel sicuri. Funziona in transport o tunnel mode."
+  },
+  {
+    "id": 143,
+    "titolo": "Limitazioni IPsec",
+    "categoria": "Sicurezza",
+    "contenuto": "IPsec è potente ma complesso, non funziona bene con NAT a meno di NAT-T, e richiede configurazioni dettagliate tra peer. Adatto a scenari aziendali stabili."
+  },
+  {
+    "id": 144,
+    "titolo": "VPN SSL",
+    "categoria": "VPN",
+    "contenuto": "Usa SSL/TLS su TCP/443. Facile da usare, compatibile con NAT/firewall. Può essere clientless (web) o full tunnel (es. AnyConnect). Offre crittografia, autenticazione e integrità."
+  },
+  {
+    "id": 145,
+    "titolo": "VPN MPLS – Layer 2 e Layer 3",
+    "categoria": "MPLS VPN",
+    "contenuto": "MPLS VPN L2 (VPLS, VPWS) trasporta frame Ethernet. MPLS VPN L3 trasporta pacchetti IP con VRF. Scalabili, isolati logicamente, usati per collegare sedi aziendali tramite rete del provider."
+  },
+  {
+    "id": 146,
+    "titolo": "Architetture VPN MPLS",
+    "categoria": "MPLS VPN",
+    "contenuto": "MPLS/BGP VPN usa MP-BGP e Route Distinguisher per isolamento. Virtual Router VPN isola ogni cliente con router virtuali distinti su PE. Entrambe permettono indirizzi IP duplicati."
+  },
+  {
+    "id": 147,
+    "titolo": "Cos'è MPLS",
+    "categoria": "MPLS",
+    "contenuto": "MPLS (Multiprotocol Label Switching) usa etichette per instradare pacchetti in modo veloce. Lavora tra livello 2 e 3 (Layer 2.5) e supporta QoS, VPN e traffic engineering."
+  },
+  {
+    "id": 148,
+    "titolo": "Label Switch Path (LSP)",
+    "categoria": "MPLS",
+    "contenuto": "Percorso unidirezionale stabilito tra router MPLS. I pacchetti seguono lo stesso LSP sulla base della FEC (Forwarding Equivalence Class)."
+  },
+  {
+    "id": 149,
+    "titolo": "MPLS Header",
+    "categoria": "MPLS",
+    "contenuto": "Include: label (20 bit), class bits (QoS), S-bit (bottom of stack), TTL. È inserito tra layer 2 e 3, evita IP lookup a ogni hop."
+  },
+  {
+    "id": 150,
+    "titolo": "Label Binding e Distribuzione",
+    "categoria": "MPLS",
+    "contenuto": "Label Binding: assegnazione label a una FEC. Static (manuale), Dynamic (automatico), Control-driven (guidato da topologia)."
+  },
+  {
+    "id": 151,
+    "titolo": "Protocolli di distribuzione label",
+    "categoria": "MPLS",
+    "contenuto": "LDP: semplice e automatico. RSVP-TE: supporta vincoli (QoS). BGP: usato in VPN MPLS. I protocolli sono mutuamente esclusivi sulla stessa LSP."
+  },
+  {
+    "id": 152,
+    "titolo": "Routing MPLS",
+    "categoria": "MPLS",
+    "contenuto": "Usa OSPF, IS-IS, BGP per costruire topologia. Supporta routing hop-by-hop o esplicito (con RSVP-TE, Segment Routing)."
+  },
+  {
+    "id": 153,
+    "titolo": "Traffic Engineering in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "Permette gestione intelligente del traffico (QoS, bilanciamento carico). Usa CR-LDP, RSVP-TE, OSPF-TE, IS-IS-TE per percorsi con vincoli."
+  },
+  {
+    "id": 154,
+    "titolo": "QoS e CoS in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "CoS classifica pacchetti, QoS garantisce priorità, banda e latenza. MPLS consente LSP separati con priorità diverse."
+  },
+  {
+    "id": 155,
+    "titolo": "Fast Fault Recovery",
+    "categoria": "MPLS",
+    "contenuto": "MPLS supporta backup LSP e riconfigurazione locale. Ripristino sub-50ms essenziale per traffico sensibile come VoIP."
+  },
+  {
+    "id": 156,
+    "titolo": "Penultimate Hop Popping (PHP)",
+    "categoria": "MPLS",
+    "contenuto": "Il penultimo router rimuove la label MPLS per alleggerire il carico sul router di uscita (egress LER)."
+  },
+  {
+    "id": 157,
+    "titolo": "MPLS VPN e label stack",
+    "categoria": "MPLS VPN",
+    "contenuto": "VPN MPLS usa due label: outer (per instradamento MPLS) e inner (per identificare la VPN). Permette separazione logica tra clienti senza usare crittografia."
+  },
+  {
+    "id": 158,
+    "titolo": "SDN - Software Defined Networking",
+    "categoria": "SDN",
+    "contenuto": "Separazione tra control plane (centralizzato) e data plane (switch semplificati). Controller gestisce dinamicamente le regole di instradamento tramite protocollo OpenFlow."
+  },
+  {
+    "id": 159,
+    "titolo": "OpenFlow",
+    "categoria": "SDN",
+    "contenuto": "Protocollo tra controller e switch SDN. Permette regole di forwarding basate su <match, action>, gestione dei pacchetti e monitoraggio della rete."
+  },
+  {
+    "id": 160,
+    "titolo": "SDN Controller",
+    "categoria": "SDN",
+    "contenuto": "Software centrale che controlla la rete SDN. Fornisce visione globale e interfacce suddivise (southbound, core, northbound). Supporta estendibilità, multivendor e gestione cross-domain."
+  },
+  {
+    "id": 161,
+    "titolo": "Modelli SDN: Proattivo vs Reattivo",
+    "categoria": "SDN",
+    "contenuto": "Proattivo: regole preinstallate. Reattivo: regole create in risposta al traffico. Adatti a scenari diversi."
+  },
+  {
+    "id": 162,
+    "titolo": "NFV - Network Functions Virtualization",
+    "categoria": "NFV",
+    "contenuto": "Virtualizzazione delle funzioni di rete (es. firewall, NAT, IDS) su hardware standard. Riduce costi, aumenta flessibilità e provisioning rapido."
+  },
+  {
+    "id": 163,
+    "titolo": "Componenti NFV",
+    "categoria": "NFV",
+    "contenuto": "VNF (funzione virtualizzata), NFVI (infrastruttura), VIM (gestione risorse), VNF Manager e Orchestrator (gestione ciclo di vita e orchestrazione)."
+  },
+  {
+    "id": 164,
+    "titolo": "Service Function Chaining (SFC)",
+    "categoria": "SFC",
+    "contenuto": "Sequenza di funzioni di rete da applicare a un flusso. Realizzabile con SDN (instradamento flussi) e NFV (funzioni virtualizzate)."
+  },
+  {
+    "id": 165,
+    "titolo": "SDN e SFC",
+    "categoria": "SFC",
+    "contenuto": "SDN consente di instradare dinamicamente i flussi attraverso catene di servizi personalizzate via OpenFlow."
+  },
+  {
+    "id": 166,
+    "titolo": "NFV e SFC",
+    "categoria": "SFC",
+    "contenuto": "Le funzioni della catena sono software virtualizzati su server standard. Gestione più flessibile e scalabile."
+  },
+  {
+    "id": 167,
+    "titolo": "Routing vs Forwarding",
+    "categoria": "Routing",
+    "contenuto": "Routing = scelta del percorso (control plane, RIB). Forwarding = inoltro pacchetti (data plane, FIB)."
+  },
+  {
+    "id": 168,
+    "titolo": "Tipi di Forwarding",
+    "categoria": "Routing",
+    "contenuto": "Per indirizzo (IP), per etichetta (MPLS), o source routing (sorgente definisce percorso)."
+  },
+  {
+    "id": 169,
+    "titolo": "Algoritmi di Routing Statici",
+    "categoria": "Routing",
+    "contenuto": "Percorsi fissi: es. static routing, flooding, random walk. Non reagiscono a cambiamenti."
+  },
+  {
+    "id": 170,
+    "titolo": "Algoritmi di Routing Dinamici",
+    "categoria": "Routing",
+    "contenuto": "Aggiornamento automatico della topologia. Tipi: centralized o distributed (Distance Vector, Link State)."
+  },
+  {
+    "id": 171,
+    "titolo": "Distance Vector",
+    "categoria": "Routing",
+    "contenuto": "Algoritmo Bellman-Ford. Ogni router scambia vettori di distanza. Problemi: loop, count to infinity."
+  },
+  {
+    "id": 172,
+    "titolo": "Link State",
+    "categoria": "Routing",
+    "contenuto": "Ogni router flooda info topologia e calcola mappa con Dijkstra. Convergenza veloce, più complesso."
+  },
+  {
+    "id": 173,
+    "titolo": "Intra-AS vs Inter-AS Routing",
+    "categoria": "Routing",
+    "contenuto": "Intra-AS: es. OSPF, RIP. Inter-AS: BGP. Routing interno vs tra AS diversi, con politiche e autonomia."
+  },
+  {
+    "id": 174,
+    "titolo": "OSPF",
+    "categoria": "IGP",
+    "contenuto": "Protocollo Link State per Intra-AS. Usa Dijkstra, supporta gerarchie, ECMP, autenticazione, multicast."
+  },
+  {
+    "id": 175,
+    "titolo": "BGP",
+    "categoria": "EGP",
+    "contenuto": "Protocollo Path Vector. Usa AS-PATH, NEXT-HOP, policy. Gestisce inter-AS routing su Internet."
+  },
+  {
+    "id": 176,
+    "titolo": "Politiche di Routing",
+    "categoria": "Routing",
+    "contenuto": "Filtraggio, manipolazione path, PBR, preferenze geografiche. Modificano comportamento del routing."
+  },
+  {
+    "id": 177,
+    "titolo": "LSP - Label Switched Path",
+    "categoria": "MPLS",
+    "contenuto": "Percorso unidirezionale MPLS tra ingress ed egress router. Guidato da label, non da IP."
+  },
+  {
+    "id": 178,
+    "titolo": "IS-IS",
+    "categoria": "IGP",
+    "contenuto": "Protocollo link-state per reti grandi. Simile a OSPF, ma usato più spesso in ambienti ISP e MPLS."
+  },
+  {
+    "id": 179,
+    "titolo": "LAN",
+    "categoria": "Networking",
+    "contenuto": "Rete locale che collega dispositivi in un’area geografica limitata. Usa switch, hub, bridge per connettività locale."
+  },
+  {
+    "id": 180,
+    "titolo": "Repeater e Hub",
+    "categoria": "Networking",
+    "contenuto": "Rigenerano il segnale. Hub copia ogni frame su tutte le porte. Nessuna intelligenza o filtraggio."
+  },
+  {
+    "id": 181,
+    "titolo": "Bridge",
+    "categoria": "Networking",
+    "contenuto": "Collega segmenti Ethernet, riduce collisioni filtrando per indirizzo MAC. Crea collision domain separati."
+  },
+  {
+    "id": 182,
+    "titolo": "Collision Domain vs Broadcast Domain",
+    "categoria": "Networking",
+    "contenuto": "Collision domain = area con rischio collisioni. Broadcast domain = area dove si propagano i broadcast, limitato dai router."
+  },
+  {
+    "id": 183,
+    "titolo": "Half-Duplex vs Full-Duplex",
+    "categoria": "Networking",
+    "contenuto": "Half-duplex: trasmissione alternata, causa collisioni. Full-duplex: trasmissione simultanea, nessuna collisione."
+  },
+  {
+    "id": 184,
+    "titolo": "Transparent Bridge / Switch",
+    "categoria": "Networking",
+    "contenuto": "Collega segmenti Ethernet in modo trasparente per gli host. Nessuna configurazione richiesta lato utente."
+  },
+  {
+    "id": 185,
+    "titolo": "Indirizzi MAC e Porta",
+    "categoria": "Networking",
+    "contenuto": "Lo switch apprende quali MAC sono su quali porte tramite backward learning osservando il traffico."
+  },
+  {
+    "id": 186,
+    "titolo": "Smart Forwarding",
+    "categoria": "Networking",
+    "contenuto": "Lo switch inoltra frame solo sulla porta corretta se il MAC è noto, altrimenti fa flooding."
+  },
+  {
+    "id": 187,
+    "titolo": "Filtering Database (FDB)",
+    "categoria": "Networking",
+    "contenuto": "Tabella che associa MAC alle porte. Timeout automatico per rimozione MAC inattivi."
+  },
+  {
+    "id": 188,
+    "titolo": "Backward Learning",
+    "categoria": "Networking",
+    "contenuto": "Lo switch impara gli indirizzi MAC osservando i frame ricevuti, aggiornando dinamicamente la FDB."
+  },
+  {
+    "id": 189,
+    "titolo": "Attacchi MAC Flooding",
+    "categoria": "Networking",
+    "contenuto": "L’attaccante inonda lo switch con MAC falsi, esaurendo la FDB e forzando il flooding del traffico."
+  },
+  {
+    "id": 190,
+    "titolo": "Broadcast Storm",
+    "categoria": "Networking",
+    "contenuto": "Traffico broadcast che cresce senza controllo, causato da loop fisici senza STP. Nessun TTL nei frame Ethernet."
+  },
+  {
+    "id": 191,
+    "titolo": "Spanning Tree Protocol (STP)",
+    "categoria": "Networking",
+    "contenuto": "Disabilita porte per eliminare loop. Topologia ad albero. Standard IEEE 802.1D."
+  },
+  {
+    "id": 192,
+    "titolo": "Router e Broadcast Domain",
+    "categoria": "Networking",
+    "contenuto": "I router separano i broadcast domain. Necessari per isolare traffico, aumentare sicurezza e prestazioni."
+  },
+  {
+    "id": 193,
+    "titolo": "VLAN",
+    "categoria": "Networking",
+    "contenuto": "Segmentazione logica della rete su un’infrastruttura fisica condivisa. Ogni VLAN è un dominio di broadcast isolato."
+  },
+  {
+    "id": 194,
+    "titolo": "VLAN Tagging",
+    "categoria": "Networking",
+    "contenuto": "IEEE 802.1Q aggiunge tag VLAN ai frame Ethernet (4 byte). Necessario per trunking tra switch."
+  },
+  {
+    "id": 195,
+    "titolo": "Access Port vs Trunk Port",
+    "categoria": "Networking",
+    "contenuto": "Access: frame non taggati, una sola VLAN. Trunk: frame taggati, trasporta più VLAN."
+  },
+  {
+    "id": 196,
+    "titolo": "Spanning Tree per VLAN",
+    "categoria": "Networking",
+    "contenuto": "Ogni VLAN può avere un proprio albero STP (Per-VLAN STP). Più flessibile ma più complesso."
+  },
+  {
+    "id": 197,
+    "titolo": "Routing vs Forwarding",
+    "categoria": "Networking",
+    "contenuto": "Routing = calcolo percorso, control plane. Forwarding = inoltro pacchetti, data plane, uso tabella FIB."
+  },
+  {
+    "id": 198,
+    "titolo": "Algoritmi di Routing",
+    "categoria": "Networking",
+    "contenuto": "Statici (fixed, flooding) e dinamici (distance vector, link state). Possono essere centralizzati o distribuiti."
+  },
+  {
+    "id": 199,
+    "titolo": "Reti Wireless e Mobili",
+    "categoria": "Wireless",
+    "contenuto": "Le reti 4G/5G usano stack IP e supportano SDN. Wireless = collegamento radio, Mobilità = cambio di accesso senza interruzioni."
+  },
+  {
+    "id": 200,
+    "titolo": "Elementi rete wireless",
+    "categoria": "Wireless",
+    "contenuto": "Host wireless, base station, collegamento wireless. Modalità infrastrutturata (con AP) o ad hoc (tra dispositivi)."
+  },
+  {
+    "id": 201,
+    "titolo": "Caratteristiche collegamento wireless",
+    "categoria": "Wireless",
+    "contenuto": "Attenuazione, interferenze, propagazione multipercorso. SNR alto = minor BER. Hidden terminal e attenuazione tra nodi distanti."
+  },
+  {
+    "id": 202,
+    "titolo": "IEEE 802.11 Architettura",
+    "categoria": "Wi-Fi",
+    "contenuto": "BSS: host + AP. Canali assegnati manualmente. Associazione tramite beacon e autenticazione via DHCP."
+  },
+  {
+    "id": 203,
+    "titolo": "Scansione Wi-Fi",
+    "categoria": "Wi-Fi",
+    "contenuto": "Passiva: AP invia beacon. Attiva: host invia probe. Passiva è silenziosa, attiva è più veloce ma visibile."
+  },
+  {
+    "id": 204,
+    "titolo": "CSMA/CA e RTS/CTS",
+    "categoria": "Wi-Fi",
+    "contenuto": "Evita collisioni. RTS/CTS opzionale per nodo nascosto. CSMA/CA previene, non rileva collisioni."
+  },
+  {
+    "id": 205,
+    "titolo": "IEEE 802.11 Frame e Mobilità",
+    "categoria": "Wi-Fi",
+    "contenuto": "Frame ha 4 MAC. Handoff tra AP senza cambio IP. QoS, power saving, frame aggregation, MIMO."
+  },
+  {
+    "id": 206,
+    "titolo": "Reti Cellulari e Celle",
+    "categoria": "Cellular",
+    "contenuto": "Celle teoriche esagonali, reali variabili. Macrocell e microcell. Reti supportano handover continuo."
+  },
+  {
+    "id": 207,
+    "titolo": "Multiple Access e Riutilizzo",
+    "categoria": "Cellular",
+    "contenuto": "FDMA, TDMA, CDMA, SDMA. Riutilizzo frequenze controllato da cluster. Tradeoff tra capacità e qualità."
+  },
+  {
+    "id": 208,
+    "titolo": "Tecniche per aumentare capacità",
+    "categoria": "Cellular",
+    "contenuto": "Cell splitting, sectoring, tilting, femtocell. Adattamento copertura con cell shaping e antenne direzionali."
+  },
+  {
+    "id": 209,
+    "titolo": "Tecniche per aumentare capacità",
+    "categoria": "Cellular",
+    "contenuto": "Cell splitting, sectoring, tilting, femtocell. Adattamento copertura con cell shaping e antenne direzionali."
+  },
+  {
+    "id": 210,
+    "titolo": "FDMA (Frequency Division Multiple Access)",
+    "categoria": "Reti Cellulari",
+    "contenuto": "È una tecnica in cui ogni utente ha una propria frequenza per comunicare. Usata nelle prime reti mobili (come la 1G). Ogni chiamata occupa un canale separato, quindi non ci sono interferenze tra utenti, ma si spreca banda perché i canali sono fissi anche se non usati."
   }
 ]

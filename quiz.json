@@ -894,7 +894,7 @@
   },
   {
     "id": 84,
-    "domanda": "A cosa serve il messaggio ICMPv6 di tipo 135 (Neighbor Solicitation)?",
+    "domanda": "A cosa serve il messaggio ICMPv6 di tipo 135?",
     "risposte": [
       "Diagnosticare la connettività Internet",
       "Scoprire i router vicini",
@@ -1690,7 +1690,7 @@
       "Per iniziare una procedura di DAD",
       "Per rispondere a un Neighbor Solicitation"
     ],
-    "corretta": 2,
+    "corretta": 4,
     "categoria": "IPv6"
   },
   {
@@ -2339,7 +2339,7 @@
       "A comunica direttamente con B ma non viceversa",
       "A comunica direttamente con B e viceversa"
     ],
-    "corretta": 3,
+    "corretta": 1,
     "categoria": "Reti"
   },
   {
@@ -3610,5 +3610,190 @@
     ],
     "corretta": 2,
     "categoria": "MPLS VPN"
+  },
+  {
+    "id": 321,
+    "domanda": "Nel meccanismo del secchiello a gettoni si riesce a controllare:",
+    "risposte": [
+      "Il tempo di attraversamento massimo di un router.",
+      "La gestione interna delle code con WFQ.",
+      "La velocità minima di immissione dei dati.",
+      "Il burst size massimo e la velocità media di immissione dei dati."
+    ],
+    "corretta": 3,
+    "categoria": "Traffic Shaping"
+  },
+  {
+    "id": 322,
+    "domanda": "A differenza della versione 4 dell'IP, la versione 6:",
+    "risposte": [
+      "Non ha una versione dell'ICMP associata.",
+      "Non permette di scoprire l'indirizzo MAC di un'altra stazione, conoscendone l'indirizzo IP.",
+      "Non ha indirizzi broadcast.",
+      "Non ha un equivalente del campo TTL (time-to-live)."
+    ],
+    "corretta": 2,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 323,
+    "domanda": "Un protocollo usato in MPLS per la distribuzione delle label è:",
+    "risposte": ["OSPF", "IS-IS", "RIP", "BGP"],
+    "corretta": 3,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 324,
+    "domanda": "IPsec:",
+    "risposte": [
+      "Usato solo per VPN",
+      "Gestisce Key encryption",
+      "Ha problemi con soluzioni che usano il NAT"
+    ],
+    "corretta": 2,
+    "categoria": "Sicurezza"
+  },
+  {
+    "id": 325,
+    "domanda": "Quale tra le seguenti definizioni è una novità dello standard UMTS?",
+    "risposte": [
+      "Microdiversity",
+      "Network Slicing",
+      "Macrodiversity",
+      "Nessuna delle presenti definizioni"
+    ],
+    "corretta": 2,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 326,
+    "domanda": "Aumentando il numero di VLAN:",
+    "risposte": [
+      "Aumentano i domini di collisione",
+      "Diminuiscono i domini di collisione",
+      "Aumentano i domini di broadcast",
+      "Diminuiscono i domini di broadcast"
+    ],
+    "corretta": 3,
+    "categoria": "Reti LAN"
+  },
+  {
+    "id": 327,
+    "domanda": "Handover è il meccanismo che permette di:",
+    "risposte": [
+      "criptare un canale di comunicazione",
+      "gestire lo sgancio da una cella e il riaggancio ad una nuova",
+      "notificare ad un utente una chiamata in arrivo",
+      "richiedere accesso alla rete da parte di un utente"
+    ],
+    "corretta": 1,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 328,
+    "domanda": "Il protocollo PPTP viene utilizzato di solito per:",
+    "risposte": [
+      "Permettere di creare un tunnel in una VPN di accesso.",
+      "Permettere di creare un tunnel in una VPN site-to-site di tipo overlay.",
+      "Permettere di creare un tunnel in una VPN site-to-site di tipo peer.",
+      "Permettere di creare un tunnel in una VPN di livello 4."
+    ],
+    "corretta": 0,
+    "categoria": "VPN"
+  },
+  {
+    "id": 329,
+    "domanda": "Le comunicazioni multicast in una rete IPv4:",
+    "risposte": [
+      "sono possibili solo all'interno di una singola rete LAN, anche con l'utilizzo di protocolli aggiuntivi",
+      "sono sempre possibili, IGMP le rende solo più efficienti",
+      "non sono possibili senza l'utilizzo di protocolli aggiuntivi nella rete",
+      "sono possibili su scala geografica grazie all'utilizzo del solo protocollo IGMP"
+    ],
+    "corretta": 2,
+    "categoria": "IPv4"
+  },
+  {
+    "id": 330,
+    "domanda": "In una rete con 4 router (A-B-C ad anello, C-D punto-punto), con algoritmo flooding, quante copie del pacchetto arrivano a D se A invia un pacchetto?",
+    "risposte": [
+      "1",
+      "2",
+      "3",
+      "È proporzionale al valore del campo Time To Live presente nel pacchetto"
+    ],
+    "corretta": 1,
+    "categoria": "Routing"
+  },
+  {
+    "id": 331,
+    "domanda": "L'importanza di MPLS (multi-protocol label switching) nelle reti odierne e future deriva dalla possibilità di:",
+    "risposte": [
+      "Trasportare efficientemente pacchetti IP sulle reti ATM",
+      "Collegare ad alta velocità i server ai loro dischi",
+      "Realizzare facilmente ed efficacemente ingegnerizzazione del traffico (traffic engineering)",
+      "Realizzare apparati in grado di operare senza bisogno di configurazione"
+    ],
+    "corretta": 2,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 332,
+    "domanda": "La tecnica “Path Vector” impiegata dal BGP:",
+    "risposte": [
+      "Memorizza nei Path Vectors l'elenco degli Autonomous Systems da attraversare per raggiungere una data rete di destinazione",
+      "Memorizza nei Path Vectors l'elenco di routers da attraversare per raggiungere una data rete di destinazione",
+      "Memorizza nei Path Vectors il prossimo Autonomous System da attraversare per raggiungere una data rete di destinazione",
+      "Memorizza nei Path Vectors il prossimo router da attraversare per raggiungere una data rete di destinazione"
+    ],
+    "corretta": 0,
+    "categoria": "BGP"
+  },
+  {
+    "id": 333,
+    "domanda": "Il fatto che una VPN offra accesso ad internet centralizzato implica che:",
+    "risposte": [
+      "la rete aziendale utilizzi un singolo internet service provider",
+      "non è necessario utilizzare dispositivi per la protezione della rete aziendale, quali firewall, da attacchi provenienti da internet",
+      "i pacchetti inviati verso stazioni non appartenenti alla rete privata (cioè stazioni di internet) potrebbero seguire un percorso non ottimale sulla topologia fisica della rete",
+      "l'impatto del traffico pubblico (diretto o proveniente da internet) sulle infrastrutture di rete aziendali viene ridotto"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 334,
+    "domanda": "I concetti di Forwarding e Routing:",
+    "risposte": [
+      "Sono sinonimi; individuano il processo che permette di trovare un percorso valido per un pacchetto, dal mittente al destinatario",
+      "Sono sinonimi; individuano il processo che permette, a fronte di un pacchetto entrante in un nodo di rete, di determinare qual è la migliore porta di uscita verso la destinazione",
+      "Sono concetti differenti; il processo di forwarding mira ad individuare un percorso valido per un pacchetto, dal mittente al destinatario; il processo di routing permette, a fronte di un pacchetto entrante in un nodo di rete, di determinare qual è la migliore porta di uscita verso la destinazione",
+      "Sono concetti differenti; il processo di routing mira ad individuare un percorso valido per un pacchetto, dal mittente al destinatario; il processo di forwarding permette, a fronte di un pacchetto entrante in un nodo di rete, di determinare qual è la migliore porta di uscita verso la destinazione"
+    ],
+    "corretta": 3,
+    "categoria": "Routing"
+  },
+  {
+    "id": 335,
+    "domanda": "Per l'instaurazione di un LSP è indispensabile che:",
+    "risposte": [
+      "tutti i link sul percorso utilizzino lo stesso protocollo di livello due",
+      "i router MPLS sul percorso utilizzino lo stesso protocollo per la distribuzione delle etichette",
+      "le destinazioni finali dei pacchetti che viaggiano sull'LSP supportino MPLS",
+      "i router MPLS sul percorso eseguano un'operazione di mapping"
+    ],
+    "corretta": 1,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 336,
+    "domanda": "Header IPv6:",
+    "risposte": [
+      "L’header è di dimensione fissa e non possono essere aggiunte opzioni",
+      "L’header è di dimensione variabile",
+      "Dimensione dell’header fissa ma con eventuale aggiunta di header aggiuntivi"
+    ],
+    "corretta": 2,
+    "categoria": "IPv6"
   }
 ]
