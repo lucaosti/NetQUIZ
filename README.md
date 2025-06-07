@@ -1,4 +1,4 @@
-# RetiQUIZ v0.5
+# NetQUIZ v0.5
 
 This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete** at PoliTo.
 
