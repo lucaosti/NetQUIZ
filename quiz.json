@@ -3596,7 +3596,7 @@
       "A comunica direttamente con B ma non viceversa",
       "A comunica direttamente con B e viceversa"
     ],
-    "corretta": 2,
+    "corretta": 3,
     "categoria": "Subnetting"
   },
   {

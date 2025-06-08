@@ -2,6 +2,8 @@
 
 # Results
 results.txt
+progress.json
+stats.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

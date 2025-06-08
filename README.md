@@ -1,6 +1,6 @@
-# NetQUIZ v0.5
+# NetQUIZ v0.6
 
-This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete** at PoliTo.
+This is a terminal-based quiz project created by **Luca Visconti**, designed to support studying the university course **Tecnologie e Servizi di Rete** at PoliTO.
 
 ## ✏️ Customizable Content  
 Hundreds of questions with answers are stored in the `quiz.json` file.  
@@ -31,4 +31,4 @@ Planned features:
 If you have ideas or want to improve the project, **feel free to open a PR**.  
 Accepted contributions will be **credited here in the README** :)
 
-Happy studying.
+Thanks to [Luca Ostinelli](https://github.com/lucaosti)
