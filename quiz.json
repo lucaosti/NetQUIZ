@@ -3596,7 +3596,7 @@
       "A comunica direttamente con B ma non viceversa",
       "A comunica direttamente con B e viceversa"
     ],
-    "corretta": 2,
+    "corretta": 3,
     "categoria": "Subnetting"
   },
   {
@@ -3795,5 +3795,58 @@
     ],
     "corretta": 2,
     "categoria": "IPv6"
+  },
+  {
+    "id": 337,
+    "domanda": "Le reti 192.168.1.0/24 e 192.168.2.0/24 sono aggregabili in:",
+    "risposte": [
+      "192.168.0.0/23",
+      "0.0.0.0/0",
+      "192.168.1.0/23",
+      "Non sono aggregabili."
+    ],
+    "corretta": 2,
+    "categoria": "Subnetting"
+  },
+  {
+    "id": 338,
+    "domanda": "L'instaurazione di un LSP (Label Switched Path) in MPLS (Multi-Protocol Label Switching) implica che:",
+    "risposte": [
+      "I router connessi alle estremità di un link condividano quale etichetta deve essere anteposta ai pacchetti appartenenti all'LSP.",
+      "Gli host che inviano e ricevono pacchetti appartenenti all'LSP supportino MPLS.",
+      "I router alle due estremità dell’LSP (Label Edge Routers) scambino direttamente informazioni di routing.",
+      "Il router a monte di un link comunichi al router a valle quale etichetta deve essere anteposta ai pacchetti appartenenti all’LSP."
+    ],
+    "corretta": 3,
+    "categoria": "MPLS"
+  },
+  {
+    "id": 339,
+    "domanda": "Le soluzioni di VPN (virtual private network) di livello 3 basate su MPLS sono caratterizzate da:",
+    "risposte": [
+      "Livelli particolarmente alti di sicurezza grazie all’utilizzo di tecniche crittografiche",
+      "Buon livello di automatizzazione e integrazione tra la dorsale pubblica e le reti private",
+      "Meccanismi di tunneling di livello 3, ovvero all’interno di pacchetti IP."
+    ],
+    "corretta": 1,
+    "categoria": "VPN"
+  },
+  {
+    "id": 340,
+    "domanda": "Le soluzioni di VPN (virtual private network) basate su SSL (Secure Socket Layer) consentono:",
+    "risposte": [
+      "Di distribuire in modo sicuro su diversi server applicazioni basate sul web",
+      "Di creare cluster di server privati",
+      "Ad un’azienda di rendere disponibili in modo sicuro ai propri dipendenti fuori sede specifiche applicazioni aziendali.",
+      "La realizzazione di un backbone sul quale un fornitore di servizi (service provider) può facilmente ed efficientemente fornire servizi di connettività ai suoi clienti"
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 341,
+    "titolo": "Il ruolo del Path Vector nella prevenzione del Count to Infinity",
+    "categoria": "Routing",
+    "contenuto": "Il problema del 'Count to Infinity' nei protocolli distance-vector si verifica quando le informazioni di routing errate si propagano ciclicamente tra router, causando ritardi nella convergenza. I protocolli basati su Path Vector, come BGP, evitano questo problema includendo nel messaggio di routing l'intero percorso (lista degli Autonomous System attraversati). In questo modo, un router può rilevare facilmente i loop di instradamento se il proprio AS compare nel percorso ricevuto e scartare l'informazione. Questo meccanismo rende il protocollo resistente ai loop e previene il count to infinity."
   }
 ]

@@ -1321,7 +1321,7 @@
   {
     "id": 221,
     "titolo": "VPN Gateway",
-    "categoria": "Reti e Sicurezza",
+    "categoria": "VPN",
     "contenuto": "Un VPN Gateway è un dispositivo (fisico o virtuale) che gestisce connessioni VPN tra reti diverse o tra client remoti e una rete aziendale. Si occupa della crittografia, decrittografia e autenticazione del traffico che attraversa il tunnel VPN. Opera tipicamente su protocolli come IPSec, SSL/TLS o L2TP, garantendo comunicazioni sicure su reti non sicure come Internet."
   },
   {
@@ -1329,5 +1329,197 @@
     "titolo": "Rete GSM e Regular Burst",
     "categoria": "Reti Mobili",
     "contenuto": "La rete GSM (Global System for Mobile Communications) è uno standard per reti mobili 2G, usato per la trasmissione di voce e dati tramite tecnologia a commutazione di circuito. Utilizza TDMA per dividere ogni frequenza in slot temporali. Il 'regular burst' è il tipo di trasmissione più comune nei time slot della GSM, utilizzato per inviare campioni vocali oppure, in caso di necessità, alcune informazioni di controllo. Contiene dati utente e parte dell'header, ed è impiegato durante le normali comunicazioni vocali e dati."
+  },
+  {
+    "id": 223,
+    "titolo": "LSA (Link-State Advertisement) in OSPF",
+    "categoria": "OSPF",
+    "contenuto": "In OSPF (Open Shortest Path First), un LSA (Link-State Advertisement) è un messaggio utilizzato dai router per comunicare informazioni sullo stato dei propri link alla rete. Gli LSA vengono scambiati tra router per costruire la topologia di rete condivisa. OSPF utilizza diversi tipi di LSA (es. Type 1 Router LSA, Type 2 Network LSA, ecc.), che vengono propagati all'interno dell'area OSPF per garantire la coerenza delle tabelle di routing."
+  },
+  {
+    "id": 224,
+    "titolo": "Protocollo OSPF (Open Shortest Path First)",
+    "categoria": "Routing",
+    "contenuto": "OSPF è un protocollo di routing interno (IGP) di tipo link-state, usato per calcolare il percorso più breve verso ogni rete in una rete IP. Ogni router costruisce una mappa completa della topologia della rete basandosi sugli LSA (Link-State Advertisements) ricevuti dagli altri router. Utilizza l’algoritmo di Dijkstra per calcolare il percorso più breve. Supporta la divisione in aree per migliorare la scalabilità (es. backbone area 0). OSPF è veloce nel convergere e supporta VLSM, load balancing e autenticazione."
+  },
+  {
+    "id": 225,
+    "titolo": "Multicast Groups in IPv4",
+    "categoria": "IPv4",
+    "contenuto": "La risposta corretta è la **B**. I gruppi multicast in IPv4 sono identificati tramite indirizzi IP speciali nella gamma 224.0.0.0 – 239.255.255.255, che **non possono essere assegnati a singoli host**. Quando un pacchetto è inviato a un indirizzo multicast, tutti i membri del gruppo che hanno aderito a quell'indirizzo lo ricevono. Gli indirizzi IP unicast o le MAC address **non** vengono usati per identificare i gruppi."
+  },
+  {
+    "id": 226,
+    "titolo": "OSPF-TE e IS-IS-TE in MPLS",
+    "categoria": "MPLS / Traffic Engineering",
+    "contenuto": "La risposta **A è corretta**. OSPF-TE e IS-IS-TE sono estensioni dei protocolli di routing OSPF e IS-IS, standardizzate per supportare il **Traffic Engineering (TE)** in ambienti MPLS. Permettono di distribuire informazioni aggiuntive chiamate **constrained data** (es. banda disponibile, delay, attributi di link) necessarie per il **constraint-based routing**, cioè la selezione di percorsi che soddisfano vincoli specifici oltre alla semplice distanza."
+  },
+  {
+    "id": 227,
+    "titolo": "Multicast Communications in IPv4",
+    "categoria": "IPv4",
+    "contenuto": "La frase è **corretta**. Le comunicazioni multicast in una rete IPv4 **non sono possibili** solo con l'uso del protocollo IP base. Richiedono l'implementazione di **protocolli aggiuntivi** come IGMP (Internet Group Management Protocol) per la gestione dell'iscrizione ai gruppi multicast e protocolli di routing multicast come PIM (Protocol Independent Multicast) per la distribuzione dei pacchetti nella rete."
+  },
+  {
+    "id": 228,
+    "titolo": "Distance Vector Routing Algorithm",
+    "categoria": "Routing",
+    "contenuto": "La frase è **corretta**. L'algoritmo di routing Distance Vector viene usato in scenari specifici, in particolare in reti più semplici o di piccole dimensioni, dove la scalabilità e la convergenza rapida non sono requisiti critici. È adottato da protocolli come RIP (Routing Information Protocol). Ogni router condivide periodicamente la propria tabella di routing con i vicini, ma è soggetto a problemi come il count-to-infinity e convergenza lenta, motivo per cui in reti complesse si preferiscono algoritmi più avanzati come il Link-State (OSPF, IS-IS)."
+  },
+  {
+    "id": 229,
+    "titolo": "Distance Vector Routing Algorithm",
+    "categoria": "Routing",
+    "contenuto": "L'algoritmo di routing Distance Vector viene usato in scenari specifici, in particolare in reti più semplici o di piccole dimensioni, dove la scalabilità e la convergenza rapida non sono requisiti critici. È adottato da protocolli come RIP (Routing Information Protocol). Ogni router condivide periodicamente la propria tabella di routing con i vicini, ma è soggetto a problemi come il count-to-infinity e convergenza lenta, motivo per cui in reti complesse si preferiscono algoritmi più avanzati come il Link-State (OSPF, IS-IS)."
+  },
+  {
+    "id": 230,
+    "titolo": "Optical Switch",
+    "categoria": "Reti Ottiche",
+    "contenuto": "Uno switch ottico è un dispositivo in grado di commutare un canale ottico su una determinata lunghezza d’onda da una fibra in ingresso a una fibra in uscita. Viene utilizzato nelle reti WDM (Wavelength Division Multiplexing) per instradare dinamicamente i segnali ottici senza convertirli in segnali elettrici, migliorando efficienza, velocità e trasparenza del trasporto dati."
+  },
+  {
+    "id": 231,
+    "titolo": "GRE (Generic Routing Encapsulation) Protocol",
+    "categoria": "Tunneling",
+    "contenuto": "Il protocollo GRE è utilizzato per incapsulare diversi protocolli di livello rete (come IP, IPv6, o altri) all'interno di pacchetti IP. Serve per creare tunnel tra due nodi, trasportando payload multiprotocollo attraverso reti IP. Il campo 'Protocol Type' nell'intestazione GRE specifica quale protocollo è stato incapsulato, permettendo la corretta identificazione e decapsulazione del pacchetto al ricevente."
+  },
+  {
+    "id": 232,
+    "titolo": "Routing Redistribution",
+    "categoria": "Routing",
+    "contenuto": "La redistribuzione nel routing consiste nel prendere rotte apprese tramite un protocollo di routing (es. OSPF) e pubblicarle in un altro protocollo (es. RIP o BGP). Questo permette l'interoperabilità tra protocolli diversi, ma può causare **perdita di informazioni** come metriche o attributi specifici del protocollo originale, portando a decisioni di instradamento subottimali se non gestita correttamente."
+  },
+  {
+    "id": 233,
+    "titolo": "Topology-Based Control-Driven Label Binding",
+    "categoria": "MPLS",
+    "contenuto": "Nel meccanismo di label binding basato sulla topologia e controllato dal piano di controllo, un LSP (Label Switched Path) viene configurato automaticamente in base alla topologia della rete, quando viene scoperto un percorso verso una destinazione. In pratica, per ogni destinazione raggiungibile, viene creato un LSP, seguendo le rotte calcolate dai protocolli di routing (es. OSPF o IS-IS). Questo approccio è tipico dell'uso di LDP (Label Distribution Protocol) in MPLS."
+  },
+  {
+    "id": 234,
+    "titolo": "DWDM (Dense Wavelength Division Multiplexing)",
+    "categoria": "Reti Ottiche",
+    "contenuto": "La tecnologia DWDM consente di multiplexare e demultiplexare segnali ottici caratterizzati da diverse lunghezze d’onda sulla stessa fibra ottica. Ogni canale usa una lunghezza d’onda distinta, permettendo la trasmissione parallela di decine o centinaia di flussi indipendenti su un singolo collegamento fisico, aumentando enormemente la capacità di trasporto delle reti ottiche."
+  },
+  {
+    "id": 235,
+    "titolo": "IPv6 Stateless Address Autoconfiguration (SLAAC)",
+    "categoria": "IPv6",
+    "contenuto": "Un host IPv6 può autoconfigurare il proprio indirizzo IP utilizzando **SLAAC** (Stateless Address Autoconfiguration). In questo processo, il router invia un **prefisso di rete** tramite messaggi Router Advertisement (RA), mentre l’host genera in modo autonomo l’**interface ID**, che può essere basato su un valore casuale o derivato dall’indirizzo MAC. L'indirizzo completo è ottenuto combinando prefisso e interface ID."
+  },
+  {
+    "id": 236,
+    "titolo": "Modern Ethernet Networks",
+    "categoria": "Ethernet",
+    "contenuto": "Le reti Ethernet moderne sono tipicamente basate su **switch** come dispositivi di interconnessione, che operano a livello 2 (data link) e instradano i frame in base agli indirizzi MAC. La segmentazione della rete non avviene più tramite dispositivi fisici separati, ma è effettuata in modo **virtuale** attraverso le **VLAN (Virtual LANs)**, che isolano il traffico tra gruppi di porte configurate logicamente sullo switch."
+  },
+  {
+    "id": 237,
+    "titolo": "Comunicazione tra host IPv4 e IPv6",
+    "categoria": "Reti IP",
+    "contenuto": "Un host IPv4 non può comunicare direttamente con un host IPv6 perché usano formati di pacchetto incompatibili. Tuttavia, la comunicazione può avvenire utilizzando un nodo intermedio chiamato **gateway di traduzione (es. NAT64)**, che riceve i pacchetti IPv4, li converte in pacchetti IPv6 (modificando l'header e l'indirizzo di destinazione), e li inoltra all'host IPv6, e viceversa. Questo processo è chiamato **translation**."
+  },
+  {
+    "id": 238,
+    "titolo": "Conversione tra IPv4 e IPv6",
+    "categoria": "Reti IP",
+    "contenuto": "IPv4 e IPv6 sono protocolli incompatibili, quindi non esiste una vera 'conversione diretta'. Si usano due approcci:\n\n1. **Traduzione (Translation)**: modifica dell'header del pacchetto da IPv4 a IPv6 e viceversa. Esempi: NAT64 (stateful), SIIT (stateless).\n2. **Tunneling**: incapsulamento dei pacchetti IPv6 dentro pacchetti IPv4 (o viceversa) per attraversare una rete incompatibile. Esempi: 6to4, Teredo, ISATAP.\n\nLa 'conversione' più semplice è rappresentare un IPv4 in formato IPv6: ad esempio `192.0.2.1` diventa `::ffff:192.0.2.1` (IPv4-mapped IPv6 address)."
+  },
+  {
+    "id": 239,
+    "titolo": "Funzionamento sintetico dei protocolli di routing",
+    "categoria": "Reti IP",
+    "contenuto": "RIP: usa hop-count (max 15), invia tutta la tabella ogni 30s, semplice ma lento. OSPF: link-state con algoritmo Dijkstra, supporta gerarchia e convergenza veloce. EIGRP: protocollo ibrido, invia solo variazioni, usa metrica composita, proprietario Cisco. BGP: path-vector tra Autonomous System, scambia rotte via TCP, controllato da policy, usato su Internet."
+  },
+  {
+    "id": 240,
+    "titolo": "Funzionamento sintetico dei protocolli di routing",
+    "categoria": "Reti IP",
+    "contenuto": "RIP: usa hop-count (max 15), invia tutta la tabella ogni 30s, semplice ma lento. OSPF: link-state con algoritmo Dijkstra, supporta gerarchia e convergenza veloce. EIGRP: protocollo ibrido, invia solo variazioni, usa metrica composita, proprietario Cisco. BGP: path-vector tra Autonomous System, scambia rotte via TCP, controllato da policy, usato su Internet."
+  },
+  {
+    "id": 241,
+    "titolo": "Indirizzi IP in una VPN access provider-provisioned",
+    "categoria": "VPN",
+    "contenuto": "In una soluzione VPN di tipo access (provider-provisioned), un host remoto dispone di due indirizzi IP: uno pubblico o di rete locale usato per raggiungere il gateway VPN aziendale e host esterni, e uno assegnato dal gateway VPN per comunicare con host interni alla rete aziendale. Questo permette di separare il traffico interno da quello esterno e garantire sicurezza e routing appropriato."
+  },
+  {
+    "id": 242,
+    "titolo": "Uso del protocollo PPTP",
+    "categoria": "VPN",
+    "contenuto": "Il protocollo PPTP (Point-to-Point Tunneling Protocol) viene solitamente utilizzato per creare un tunnel in una VPN di accesso, cioè tra un host remoto e una rete aziendale. È un protocollo di tipo client-server che incapsula il traffico PPP in pacchetti IP. Pertanto, la risposta corretta è: 0) Permettere di creare un tunnel in una VPN di accesso."
+  },
+  {
+    "id": 243,
+    "titolo": "Flooding e Time To Live (TTL)",
+    "categoria": "Routing",
+    "contenuto": "Il flooding è un algoritmo di routing in cui ogni router inoltra una copia del pacchetto su tutte le interfacce eccetto quella di arrivo. Questo può generare molte copie dello stesso pacchetto nella rete, specialmente in topologie cicliche. Per evitare che i pacchetti circolino all'infinito, si utilizza il campo TTL (Time To Live), che viene decrementato a ogni hop. Quando il TTL raggiunge zero, il pacchetto viene scartato. Pertanto, il numero di copie che raggiungono una destinazione può essere proporzionale al valore iniziale del TTL."
+  },
+  {
+    "id": 244,
+    "titolo": "Instaurazione di un LSP in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "Per instaurare un Label Switched Path (LSP) in una rete MPLS, è indispensabile che ogni router lungo il percorso esegua un'operazione di mapping, ovvero associ una Forwarding Equivalence Class (FEC) a un'etichetta (label). Questo mapping può essere effettuato tramite protocolli come LDP o RSVP-TE, che distribuiscono le label tra router adiacenti. Senza questa associazione tra FEC e label, il forwarding MPLS non può avvenire."
+  },
+  {
+    "id": 245,
+    "titolo": "Operazioni di mapping nei router MPLS",
+    "categoria": "MPLS",
+    "contenuto": "In un LSP (Label Switched Path), ogni router MPLS esegue una singola operazione di mapping locale, associando una FEC (Forwarding Equivalence Class) a una label. Questo mapping viene poi comunicato ai router adiacenti tramite un protocollo di distribuzione delle label, come LDP o RSVP-TE. Se il percorso attraversa N router MPLS, avvengono N operazioni di mapping, una per ciascun nodo."
+  },
+  {
+    "id": 246,
+    "titolo": "Indirizzi IPv6 link-local",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi link-local in IPv6 sono utilizzabili per la comunicazione tra dispositivi sullo stesso link fisico (es. una LAN), anche in assenza di un indirizzo globale o di un server DHCPv6. Ogni interfaccia IPv6 ne possiede almeno uno, con prefisso FE80::/10, e sono essenziali per protocolli come Neighbor Discovery e routing locale."
+  },
+  {
+    "id": 247,
+    "titolo": "Piano di indirizzamento IP basato su aree",
+    "categoria": "Subnetting",
+    "contenuto": "In una rete composta da più reti fisiche interconnesse da router, è possibile ottimizzare il routing definendo un piano di indirizzamento gerarchico. Questo si ottiene suddividendo la rete in aree e assegnando a ciascuna area un sottoinsieme distinto del range di indirizzi IP disponibile. In questo modo si riduce la dimensione delle tabelle di routing e si migliora l'efficienza del processo di inoltro, soprattutto su router centrali o di backbone."
+  },
+  {
+    "id": 248,
+    "titolo": "High Speed Packet Access (HSPA)",
+    "categoria": "Reti Mobili",
+    "contenuto": "L'High Speed Packet Access (HSPA) è una tecnologia di potenziamento delle reti UMTS che utilizza canali condivisi per ottimizzare l'uso delle risorse radio. Invece di allocare un canale dedicato per ciascun utente, HSPA assegna dinamicamente la capacità disponibile in base alla domanda e alle condizioni del canale, riducendo così lo spreco di risorse e aumentando l'efficienza spettrale."
+  },
+  {
+    "id": 249,
+    "titolo": "IPv6 Aggregable Global Unicast",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi IPv6 Aggregable Global Unicast sono univoci a livello globale e instradabili su Internet, analogamente agli indirizzi IPv4 pubblici. Sono progettati per supportare l'aggregazione gerarchica, riducendo la dimensione delle tabelle di routing. Iniziano tipicamente con il prefisso 2000::/3 e sono assegnati dagli ISP o da registri regionali."
+  },
+  {
+    "id": 250,
+    "titolo": "Intestazioni in un tunnel GRE",
+    "categoria": "Tunneling",
+    "contenuto": "In un pacchetto che viaggia all'interno di un tunnel GRE (Generic Routing Encapsulation), sono presenti tipicamente due intestazioni: una intestazione esterna IP che permette il trasporto del pacchetto attraverso la rete, e una intestazione GRE che incapsula il pacchetto originale. Non ci sono particolari limitazioni sul tipo di pacchetto incapsulato, il che rende GRE molto flessibile per il tunneling di protocolli diversi."
+  },
+  {
+    "id": 251,
+    "titolo": "Circuit Switched Networks e Burst",
+    "categoria": "Reti di comunicazione",
+    "contenuto": "Le reti circuit-switched, come quelle telefoniche tradizionali, stabiliscono un circuito fisico dedicato tra mittente e destinatario per tutta la durata della comunicazione, garantendo banda costante ma con spreco se il canale non è pienamente usato. I 'burst' sono sequenze concentrate e rapide di dati trasmesse in un breve intervallo, tipiche delle reti a pacchetto, dove la trasmissione non è continua ma intermittente, ottimizzando l'uso della banda disponibile."
+  },
+  {
+    "id": 252,
+    "titolo": "Token Bucket e Leaky Bucket",
+    "categoria": "Quality of Service (QoS)",
+    "contenuto": "I meccanismi 'Token Bucket' (secchiello e gettone) e 'Leaky Bucket' sono utilizzati per il controllo del traffico nelle reti, in particolare per gestire il burst e garantire QoS. Il Token Bucket permette trasmissioni burst quando ci sono gettoni accumulati, ma limita la velocità media nel tempo. È flessibile e adatto a traffico variabile. Il Leaky Bucket impone una trasmissione a velocità costante, utile per modellare il traffico. Entrambi sono usati in reti IP, router e apparati per policing e shaping del traffico."
+  },
+  {
+    "id": 253,
+    "titolo": "Indirizzo multicast per Neighbor Solicitation",
+    "categoria": "IPv6",
+    "contenuto": "In IPv6, i messaggi di Neighbor Solicitation usano come indirizzo di destinazione un indirizzo multicast del tipo 'solicited-node multicast address'. Questo indirizzo ha il formato ff02::1:ffXX:XXXX, dove gli ultimi 24 bit coincidono con gli ultimi 24 bit dell'indirizzo IPv6 del destinatario. Serve a limitare la diffusione del pacchetto solo ai nodi che potrebbero possedere quell’indirizzo, riducendo il traffico rispetto a un broadcast."
+  },
+  {
+    "id": 254,
+    "titolo": "VPN basate su SSL",
+    "categoria": "VPN",
+    "contenuto": "Le VPN basate su SSL (Secure Sockets Layer) utilizzano protocolli crittografici a livello di trasporto per creare un canale sicuro tra client e server, tipicamente attraverso il browser. A differenza delle VPN IPsec, non richiedono software dedicato né configurazioni complesse sul client. Operano su HTTPS (porta 443), quindi superano facilmente firewall e NAT. Offrono sicurezza, accesso remoto selettivo e facilità di implementazione, ma sono più adatte a scenari di accesso remoto specifico, non a collegamenti site-to-site."
   }
 ]

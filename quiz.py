@@ -13,6 +13,11 @@ ARGOMENTI_FILE = 'topics.json'
 PROGRESS_FILE = 'progress.json'
 STATS_FILE = "stats.json"
 
+for filename in ["stats.json", "progress.json"]:
+    if not os.path.exists(filename):
+        with open(filename, "w") as f:
+            json.dump({}, f)
+
 
 # Load topics from file
 def load_topics():
