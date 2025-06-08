@@ -1252,5 +1252,82 @@
     "titolo": "FDMA (Frequency Division Multiple Access)",
     "categoria": "Reti Cellulari",
     "contenuto": "È una tecnica in cui ogni utente ha una propria frequenza per comunicare. Usata nelle prime reti mobili (come la 1G). Ogni chiamata occupa un canale separato, quindi non ci sono interferenze tra utenti, ma si spreca banda perché i canali sono fissi anche se non usati."
+  },
+  {
+    "id": 211,
+    "titolo": "Count to Infinity",
+    "categoria": "Routing",
+    "contenuto": "Problema tipico dei protocolli distance vector, dove in caso di guasto i router continuano ad aumentare il numero di hop verso una rete irraggiungibile senza mai convergere. Succede perché ogni router crede che un altro abbia ancora una rotta valida. I protocolli esposti al problema sono RIP e IGRP. Protocolli come OSPF, EIGRP, IS-IS e BGP non ne sono affetti."
+  },
+  {
+    "id": 212,
+    "titolo": "Calcolo Range Subnet",
+    "categoria": "Subnetting",
+    "contenuto": "Per calcolare il range di una subnet, fai così:\n1. Calcola i bit liberi: 32 - subnet (es. /22 → 10 bit).\n2. Calcola il numero di IP: 2^(bit liberi).\n3. Somma questo numero all'indirizzo base -1 per trovare il broadcast.\nEsempio: 192.168.0.0/22 ha 10 bit liberi → 1024 IP → range: 192.168.0.0 - 192.168.3.255."
+  },
+  {
+    "id": 213,
+    "titolo": "Regole Aggregazione IP",
+    "categoria": "Subnetting",
+    "contenuto": "Puoi aggregare IP solo se:\n1. Sono contigui nel range binario.\n2. I primi N bit coincidono (dove N è il nuovo prefisso).\n3. L'aggregazione non include reti non richieste.\nEsempio: 192.168.0.0/24 e 192.168.1.0/24 → aggregabili in 192.168.0.0/23. Ma 192.168.0.0/24 e 192.168.2.0/24 no, a meno di includere anche 192.168.1.0/24 (con /22)."
+  },
+  {
+    "id": 214,
+    "titolo": "Funzionamento Link State Routing",
+    "categoria": "Routing",
+    "contenuto": "Nei protocolli Link State (es. OSPF), ogni router riceve informazioni topologiche da tutti gli altri e costruisce localmente un Link State Database. Usa poi l'algoritmo di Dijkstra per calcolare autonomamente i percorsi ottimali verso ogni destinazione. Il risultato di questo calcolo è salvato nella routing table, che viene comunque utilizzata per l'instradamento."
+  },
+  {
+    "id": 215,
+    "titolo": "Inter-VLAN Routing",
+    "categoria": "Reti VLAN",
+    "contenuto": "L'inter-VLAN routing permette a host appartenenti a VLAN diverse di comunicare tra loro. Poiché le VLAN operano a livello 2 (Data Link), il traffico tra VLAN richiede un dispositivo di livello 3 (router o switch Layer 3) che effettui il routing tra le reti logiche associate a ciascuna VLAN."
+  },
+  {
+    "id": 216,
+    "titolo": "Classificazione Protocolli di Routing",
+    "categoria": "Routing",
+    "contenuto": "Distance_vector: [RIP, IGRP]. Link_state: [OSPF, IS-IS]"
+  },
+  {
+    "id": 217,
+    "titolo": "Blocco del transito in un Autonomous System (AS)",
+    "categoria": "Routing",
+    "contenuto": "Un AS può impedire il transito non annunciando a un vicino le route apprese da un altro vicino, tramite politiche di BGP (es. filtraggio o mascheramento delle route). Per rafforzare il controllo, un AS può usare access list per bloccare pacchetti in transito, scartando quelli che provengono da un AS e sono destinati a un altro."
+  },
+  {
+    "id": 218,
+    "titolo": "Protocollo di assegnazione delle Label in MPLS",
+    "categoria": "MPLS",
+    "contenuto": {
+      "label_distribution": [
+        "Il protocollo principale usato per l’assegnazione delle label in MPLS è il LDP (Label Distribution Protocol).",
+        "Altri protocolli come RSVP-TE possono assegnare label nel contesto di traffico ingegnerizzato (Traffic Engineering)."
+      ]
+    }
+  },
+  {
+    "id": 219,
+    "titolo": "Forwarding Equivalence Class (FEC) in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "In MPLS, una Forwarding Equivalence Class (FEC) è un insieme di pacchetti che vengono inoltrati allo stesso modo nella rete. I pacchetti vengono classificati in FEC dai router di ingresso (LER), ai quali viene assegnata una label specifica. I router interni (LSR) usano solo la label per il forwarding, senza analizzare l’header IP. Una FEC può includere pacchetti con stessa destinazione, requisiti QoS simili o appartenenti a una VPN. Questo approccio migliora la scalabilità, velocizza il forwarding e offre maggiore flessibilità nella gestione del traffico."
+  },
+  {
+    "id": 220,
+    "titolo": "Indirizzo Link-Local in IPv6",
+    "categoria": "IPv6",
+    "contenuto": "Un indirizzo link-local in IPv6 è un tipo di indirizzo utilizzabile per permettere la comunicazione tra stazioni su un link locale (come una LAN), anche in assenza di altri indirizzi IPv6 configurati. Viene automaticamente assegnato a ogni interfaccia con prefisso FE80::/10 e non è instradabile al di fuori del link locale. Serve principalmente per funzioni di rete interne come il Neighbor Discovery o il routing locale."
+  },
+  {
+    "id": 221,
+    "titolo": "VPN Gateway",
+    "categoria": "Reti e Sicurezza",
+    "contenuto": "Un VPN Gateway è un dispositivo (fisico o virtuale) che gestisce connessioni VPN tra reti diverse o tra client remoti e una rete aziendale. Si occupa della crittografia, decrittografia e autenticazione del traffico che attraversa il tunnel VPN. Opera tipicamente su protocolli come IPSec, SSL/TLS o L2TP, garantendo comunicazioni sicure su reti non sicure come Internet."
+  },
+  {
+    "id": 222,
+    "titolo": "Rete GSM e Regular Burst",
+    "categoria": "Reti Mobili",
+    "contenuto": "La rete GSM (Global System for Mobile Communications) è uno standard per reti mobili 2G, usato per la trasmissione di voce e dati tramite tecnologia a commutazione di circuito. Utilizza TDMA per dividere ogni frequenza in slot temporali. Il 'regular burst' è il tipo di trasmissione più comune nei time slot della GSM, utilizzato per inviare campioni vocali oppure, in caso di necessità, alcune informazioni di controllo. Contiene dati utente e parte dell'header, ed è impiegato durante le normali comunicazioni vocali e dati."
   }
 ]
