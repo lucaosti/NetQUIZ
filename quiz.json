@@ -3848,5 +3848,60 @@
     "titolo": "Il ruolo del Path Vector nella prevenzione del Count to Infinity",
     "categoria": "Routing",
     "contenuto": "Il problema del 'Count to Infinity' nei protocolli distance-vector si verifica quando le informazioni di routing errate si propagano ciclicamente tra router, causando ritardi nella convergenza. I protocolli basati su Path Vector, come BGP, evitano questo problema includendo nel messaggio di routing l'intero percorso (lista degli Autonomous System attraversati). In questo modo, un router può rilevare facilmente i loop di instradamento se il proprio AS compare nel percorso ricevuto e scartare l'informazione. Questo meccanismo rende il protocollo resistente ai loop e previene il count to infinity."
+  },
+  {
+    "id": 342,
+    "domanda": "Una BSC (Base Station Controller):",
+    "risposte": [
+      "è il punto di accesso per il MT",
+      "Contiene i dati statici dell'utente (come ID, servizi abilitati e parametri di sicurezza)",
+      "è in grado di controllare una singola BTS",
+      "è in grado di controllare un grande numero di BTS"
+    ],
+    "corretta": 3,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 343,
+    "domanda": "L'International Mobile Equipment Identity (IMEI) è:",
+    "risposte": [
+      "Un codice temporaneo assegnato dall'ISP",
+      "Un codice fisso assegnato dal BTS",
+      "Un numero telefonico temporaneo assegnato al terminale in base alla sua posizione",
+      "Identifica il dispositivo, è assegnato dal venditore e non è modificabile"
+    ],
+    "corretta": 3,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 344,
+    "domanda": "Si consideri una semplice topologia di rete in cui sono presenti quattro router (A, B, C, D), collegati tra di loro ad anello (A-B-C-D-A). Se gli host utilizzano un algoritmo di routing di tipo flooding e il router A invia un pacchetto a D, quante copie del medesimo pacchetto saranno recapitate al router D?",
+    "risposte": [
+      "1",
+      "2",
+      "4",
+      "È proporzionale al valore del campo Time To Live presente nel pacchetto"
+    ],
+    "corretta": 1,
+    "categoria": "Routing"
+  },
+  {
+    "id": 345,
+    "domanda": "Quale di queste tecniche non è una soluzione per la transizione IPv4-IPv6?",
+    "risposte": ["6to4", "Teredo", "6over4", "6mix4"],
+    "corretta": 3,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 346,
+    "domanda": "L’indirizzo IPv6 FE80::0201:06FF:FEA5:3A4C è:",
+    "risposte": [
+      "Un indirizzo utilizzabile da un host con MAC address 00:01:06:A5:3A:4C per le comunicazioni con un altro host sullo stesso link",
+      "Un indirizzo utilizzabile da un server con MAC address 00:01:06:A5:3A:4C per offrire un servizio sulla Internet pubblica IPv6",
+      "Un indirizzo utilizzabile da più dispositivi nello stesso link",
+      "Un indirizzo al momento non previsto in IPv6"
+    ],
+    "corretta": 0,
+    "categoria": "IPv6"
   }
 ]

@@ -1059,7 +1059,7 @@
     "id": 178,
     "titolo": "IS-IS",
     "categoria": "IGP",
-    "contenuto": "Protocollo link-state per reti grandi. Simile a OSPF, ma usato più spesso in ambienti ISP e MPLS."
+    "contenuto": "IS-IS (Intermediate System to Intermediate System) è un protocollo di routing di tipo link-state usato principalmente in reti di grandi dimensioni. A differenza di OSPF, funziona direttamente sopra il livello 2 (data link), rendendolo indipendente da IP. Supporta routing gerarchico tramite due livelli: Level 1 (intra-area) e Level 2 (inter-area). È molto usato in ambienti ISP e MPLS per la sua scalabilità, efficienza e capacità di trasportare anche informazioni non IP tramite l’uso di TLV (Type-Length-Value). Utilizza l’algoritmo SPF (Dijkstra) per calcolare i percorsi ottimali."
   },
   {
     "id": 179,
@@ -1161,7 +1161,7 @@
     "id": 195,
     "titolo": "Access Port vs Trunk Port",
     "categoria": "Networking",
-    "contenuto": "Access: frame non taggati, una sola VLAN. Trunk: frame taggati, trasporta più VLAN."
+    "contenuto": "Le porte Access trasportano frame non taggati e appartengono a una sola VLAN. Le porte Trunk trasportano frame taggati e possono veicolare traffico di più VLAN, permettendo la comunicazione tra switch mantenendo la separazione logica delle VLAN."
   },
   {
     "id": 196,
@@ -1521,5 +1521,155 @@
     "titolo": "VPN basate su SSL",
     "categoria": "VPN",
     "contenuto": "Le VPN basate su SSL (Secure Sockets Layer) utilizzano protocolli crittografici a livello di trasporto per creare un canale sicuro tra client e server, tipicamente attraverso il browser. A differenza delle VPN IPsec, non richiedono software dedicato né configurazioni complesse sul client. Operano su HTTPS (porta 443), quindi superano facilmente firewall e NAT. Offrono sicurezza, accesso remoto selettivo e facilità di implementazione, ma sono più adatte a scenari di accesso remoto specifico, non a collegamenti site-to-site."
+  },
+  {
+    "id": 255,
+    "titolo": "Reti Mobili",
+    "categoria": "Reti Mobili",
+    "contenuto": "Le reti mobili sono organizzate in una struttura gerarchica che collega i terminali mobili (MT, Mobile Terminal) alla rete core dell'operatore. Il terminale comunica via radio con una BTS (Base Transceiver Station), che gestisce la trasmissione e ricezione sul canale radio. Più BTS sono gestite da una BSC (Base Station Controller), che coordina risorse radio, handover e accesso. Le BSC si collegano al MSC (Mobile Switching Center), che gestisce la commutazione, la mobilità e l'instradamento verso la rete telefonica (PSTN) o la rete dati. A supporto ci sono HLR/VLR per la gestione dei dati utente, e SGSN/GGSN (in reti 3G) per l'accesso ai servizi dati. Le comunicazioni avvengono via radio nell'accesso, poi via collegamenti cablati o a pacchetto nel backhaul e nel core di rete."
+  },
+  {
+    "id": 256,
+    "titolo": "LTE (Long Term Evolution)",
+    "categoria": "Reti Mobili",
+    "contenuto": "LTE è una tecnologia di rete mobile di quarta generazione (4G) progettata per fornire alta velocità e bassa latenza. L'architettura è semplificata e basata su pacchetto (All-IP). Il terminale (UE, User Equipment) comunica via radio con l'eNodeB (evolved Node B), che unisce le funzioni di BTS e BSC. L'eNodeB gestisce l'accesso radio e si collega direttamente all'EPC (Evolved Packet Core), eliminando elementi come MSC e SGSN. L'EPC include MME (gestione mobilità e sessioni), S-GW (gateway per l'instradamento), e P-GW (gateway per l'accesso a Internet). LTE utilizza OFDMA in downlink e SC-FDMA in uplink, supporta MIMO e garantisce handover rapidi e continui."
+  },
+  {
+    "id": 257,
+    "titolo": "Autonomous Systems (AS)",
+    "categoria": "Routing",
+    "contenuto": "Un Autonomous System (AS) è un insieme di reti IP gestite da un'unica entità amministrativa che applica una politica di instradamento comune. Ogni AS è identificato da un numero univoco chiamato ASN (Autonomous System Number). I router all'interno di un AS utilizzano protocolli di routing interno (IGP), come OSPF o IS-IS. Per comunicare tra AS, si utilizza un protocollo di routing esterno (EGP), tipicamente BGP (Border Gateway Protocol). Gli AS possono essere classificati come stub (connessi a uno solo), multihomed (più connessioni, ma senza transito), o transit (trasportano traffico di altri). La struttura a livelli di AS è fondamentale per il funzionamento scalabile di Internet."
+  },
+  {
+    "id": 258,
+    "titolo": "A cosa serve un backbone di rete",
+    "categoria": "Infrastruttura di rete",
+    "contenuto": "Il backbone è l'infrastruttura principale di una rete, progettata per trasportare grandi volumi di traffico tra diverse reti locali (LAN), aree geografiche o Autonomous Systems. Serve a interconnettere router e switch centrali ad alta capacità, garantendo velocità, affidabilità e scalabilità. In ambito ISP o aziendale, il backbone costituisce il nucleo della rete e gestisce il traffico tra le periferie e altri backbone, nazionali o globali. È essenziale per mantenere bassa la latenza e assicurare la continuità del servizio."
+  },
+  {
+    "id": 259,
+    "titolo": "Routing inter-VLAN",
+    "categoria": "Reti LAN",
+    "contenuto": "Il routing inter-VLAN permette la comunicazione tra dispositivi appartenenti a VLAN diverse. Poiché le VLAN sono domini di broadcast separati a livello 2, per far comunicare host su VLAN differenti è necessario un router o uno switch layer 3. Esistono due metodi principali: il 'router-on-a-stick', dove un router con un'interfaccia trunk gestisce più sottoreti tramite sub-interface; oppure il routing integrato su switch layer 3, che instrada direttamente tra VLAN usando interfacce virtuali (SVI). Questo tipo di routing è essenziale in ambienti LAN segmentati per motivi di sicurezza, prestazioni o organizzazione."
+  },
+  {
+    "id": 260,
+    "titolo": "Optical Networks",
+    "categoria": "Reti di Comunicazione",
+    "contenuto": "Le optical networks sono reti di telecomunicazione che trasportano dati utilizzando segnali luminosi su fibre ottiche. Offrono elevatissima capacità di banda, bassa latenza e lunga distanza senza degrado significativo. Le tecnologie principali includono WDM (Wavelength Division Multiplexing), che consente la trasmissione simultanea di più canali su una singola fibra usando diverse lunghezze d’onda, e OTN (Optical Transport Network) per la gestione e il multiplexing. Le optical networks possono essere statiche (circuit-switched) o dinamiche (es. con switching ottico e provisioning automatico). Sono fondamentali per dorsali Internet, data center e reti di telecomunicazioni ad alte prestazioni."
+  },
+  {
+    "id": 261,
+    "titolo": "Selective Flooding",
+    "categoria": "Routing",
+    "contenuto": "Il selective flooding è una variante del flooding utilizzata per ridurre il numero di copie ridondanti di pacchetti in una rete. Invece di inoltrare un pacchetto su tutte le interfacce eccetto quella di ingresso, il router lo inoltra solo su quelle interfacce che potrebbero ragionevolmente portare verso la destinazione, secondo una stima della topologia. Questo approccio riduce il carico sulla rete mantenendo comunque un buon livello di affidabilità nella consegna dei pacchetti."
+  },
+  {
+    "id": 262,
+    "titolo": "Area Border Router (ABR) in OSPF",
+    "categoria": "Routing",
+    "contenuto": "In OSPF, un Area Border Router (ABR) è un router che connette due o più aree OSPF, inclusa obbligatoriamente l'area backbone (area 0). L'ABR mantiene una copia separata della topologia per ciascuna area a cui è connesso e svolge il ruolo di riassumere e distribuire le rotte tra le aree. Inoltre, propaga le informazioni di routing tramite LSA di tipo 3 (per le reti) e tipo 4 (per identificare gli ASBR). Gli ABR sono fondamentali per il routing gerarchico e per limitare la propagazione degli aggiornamenti di topologia."
+  },
+  {
+    "id": 263,
+    "titolo": "Routing Gerarchico",
+    "categoria": "Routing",
+    "contenuto": "Il routing gerarchico è una tecnica di instradamento in cui la rete è suddivisa in livelli o aree, con l’obiettivo di migliorare la scalabilità e l’efficienza. Ogni router ha visibilità solo sulla topologia della propria area e su un numero ridotto di informazioni sulle altre aree. Questo approccio riduce la dimensione delle tabelle di routing e il carico computazionale. OSPF e IS-IS sono esempi di protocolli che adottano il routing gerarchico, con un'area backbone centrale che connette le aree periferiche. I router di confine, come gli ABR, gestiscono il traffico tra le aree."
+  },
+  {
+    "id": 264,
+    "titolo": "OSPF - Database Description Packet",
+    "categoria": "Routing",
+    "contenuto": "In OSPF, un pacchetto di tipo 'Database Description' (DD) viene utilizzato durante la fase di riallineamento delle adiacenze tra router. Serve per scambiarsi un riassunto delle informazioni contenute nei rispettivi database di stato dei link (LSDB), in modo da identificare eventuali discrepanze. Se un router riceve una descrizione di LSA che non possiede o che ha in versione più vecchia, ne richiederà il dettaglio con un pacchetto di tipo 'LSR' (Link State Request). Questo meccanismo è parte fondamentale del processo di sincronizzazione tra router OSPF adiacenti."
+  },
+  {
+    "id": 265,
+    "titolo": "OSPF - Link State Update",
+    "categoria": "Routing",
+    "contenuto": "In OSPF, il pacchetto di tipo 'Link State Update' (LSU) viene utilizzato per trasportare uno o più LSA (Link State Advertisement) in forma completa. È impiegato durante la fase di sincronizzazione tra router adiacenti, in particolare nella procedura di Exchange, dove avviene lo scambio completo delle informazioni di topologia. Viene anche utilizzato per propagare aggiornamenti successivi alla fase iniziale, quando cambia lo stato della rete. Il LSU è fondamentale per garantire che tutti i router abbiano una copia coerente del database di stato dei link (LSDB)."
+  },
+  {
+    "id": 266,
+    "titolo": "Stack di label in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "In MPLS è possibile avere più label contemporaneamente in un pacchetto grazie al meccanismo dello stack di label. Ogni label è incapsulata sopra il pacchetto IP e può esserci più di una label in pila, con la label più esterna in cima. Questo è utile per scenari come il traffico VPN (dove una label identifica il cliente e un'altra il percorso), o per supportare funzionalità avanzate come il tunneling MPLS o il traffico TE (Traffic Engineering). Lo stack viene elaborato dai router che rimuovono (pop), sostituiscono (swap) o aggiungono (push) le label in base alla logica di instradamento."
+  },
+  {
+    "id": 267,
+    "titolo": "Sicurezza nelle VPN MPLS",
+    "categoria": "VPN",
+    "contenuto": "Le VPN MPLS non richiedono crittografia per garantire l'isolamento del traffico tra clienti. La separazione logica è ottenuta tramite l'uso di label MPLS e routing separato all'interno della rete del provider, che impedisce il mescolamento dei dati tra clienti diversi. Questo approccio è considerato sicuro all'interno dell'infrastruttura del provider, ma non protegge i dati da attacchi esterni come fa una VPN IPsec. Per questo motivo, in scenari ad alta sensibilità, la crittografia può comunque essere aggiunta come ulteriore livello di protezione."
+  },
+  {
+    "id": 268,
+    "titolo": "IGRP (Interior Gateway Routing Protocol)",
+    "categoria": "Routing",
+    "contenuto": "IGRP è un protocollo di routing distance-vector sviluppato da Cisco negli anni '80 per superare le limitazioni di RIP. Utilizza una metrica composta che include banda, ritardo, affidabilità e carico per determinare il miglior percorso. Ha un limite di hop-count di 255 (contro i 15 di RIP) e aggiorna le tabelle ogni 90 secondi. Essendo proprietario e ormai obsoleto, è stato sostituito da EIGRP, che offre migliori prestazioni e convergenza più rapida."
+  },
+  {
+    "id": 270,
+    "titolo": "International Mobile Equipment Identity (IMEI)",
+    "categoria": "Reti Mobili",
+    "contenuto": "L'IMEI (International Mobile Equipment Identity) è un identificativo univoco assegnato a ogni dispositivo mobile. Serve per distinguere il terminale sulla rete, indipendentemente dalla SIM inserita. È utilizzato dagli operatori per bloccare dispositivi rubati o non autorizzati. L'IMEI è assegnato dal produttore, non dal venditore, ed è memorizzato nel dispositivo; in condizioni normali, non è modificabile dall'utente."
+  },
+  {
+    "id": 271,
+    "titolo": "Rappresentazione dei router OSPF su una LAN",
+    "categoria": "Routing",
+    "contenuto": "Nel protocollo OSPF, i router connessi alla stessa rete LAN vengono rappresentati nel grafo della topologia come nodi collegati a un nodo centrale che rappresenta la rete di broadcast (la LAN). Questo nodo centrale è un router logico chiamato Designated Router (DR). In termini logici, le connessioni formano una topologia a stella, con il DR al centro e gli altri router come nodi periferici. Questo approccio evita la costruzione di un grafo completamente connesso, riduce il numero di Link State Advertisement (LSA) e semplifica il calcolo della topologia tramite l'algoritmo SPF."
+  },
+  {
+    "id": 272,
+    "titolo": "Schema di indirizzamento IPv6 su LAN",
+    "categoria": "IPv6",
+    "contenuto": "Nel modello di indirizzamento IPv6, è previsto che i primi 64 bit di un indirizzo rappresentino il prefisso di rete, specialmente nelle reti LAN. I restanti 64 bit sono utilizzati per l'identificatore dell'interfaccia (Interface Identifier), che può essere assegnato manualmente, generato automaticamente o derivato dall'indirizzo MAC tramite EUI-64. Questa divisione è standardizzata per garantire interoperabilità, supporto al Neighbor Discovery e compatibilità con l'autoconfigurazione stateless."
+  },
+  {
+    "id": 273,
+    "titolo": "Assegnazione casuale dell'Interface Identifier in IPv6",
+    "categoria": "IPv6",
+    "contenuto": "L'identificatore di interfaccia (Interface Identifier) in IPv6 può essere assegnato casualmente quando si utilizza l'autoconfigurazione stateless con meccanismi di privacy, come definiti nelle Privacy Extensions (RFC 4941). In questo caso, l'ID non viene derivato dall'indirizzo MAC, ma generato in modo pseudocasuale per proteggere la privacy dell'utente. Questo approccio viene spesso usato nei dispositivi mobili e nei sistemi operativi moderni per evitare il tracciamento persistente dell'hardware attraverso la rete."
+  },
+  {
+    "id": 274,
+    "titolo": "Fase finale del routing Link State",
+    "categoria": "Routing",
+    "contenuto": "Nella fase finale di un algoritmo di routing di tipo Link State, ogni router esegue l'algoritmo di Shortest Path First (SPF), solitamente l'algoritmo di Dijkstra. Come input utilizza il Link State Database (LSDB), che rappresenta una mappa completa e sincronizzata della topologia della rete. Il risultato del calcolo è la tabella di instradamento del router, che indica il percorso più breve verso ogni destinazione raggiungibile nella rete."
+  },
+  {
+    "id": 275,
+    "titolo": "Fase finale del routing Link State",
+    "categoria": "Routing",
+    "contenuto": "Nella fase finale di un algoritmo di routing di tipo Link State, ogni router esegue l'algoritmo di Shortest Path First (SPF), solitamente l'algoritmo di Dijkstra. Come input utilizza il Link State Database (LSDB), che rappresenta una mappa completa e sincronizzata della topologia della rete. Il risultato del calcolo è la tabella di instradamento del router, che indica il percorso più breve verso ogni destinazione raggiungibile nella rete."
+  },
+  {
+    "id": 276,
+    "titolo": "Distribuzione degli indirizzi IPv6 Global Unicast Aggregable",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi IPv6 Global Unicast Aggregable sono univoci a livello globale e vengono assegnati secondo una struttura gerarchica, solitamente basata su criteri geografici o organizzativi. Questo schema permette una migliore aggregazione delle rotte a livello di backbone Internet, riducendo la dimensione delle tabelle di routing e migliorando la scalabilità. La parte iniziale dell’indirizzo identifica il provider o il blocco regionale, mentre la parte successiva può essere suddivisa tra le organizzazioni e le reti locali."
+  },
+  {
+    "id": 277,
+    "titolo": "Operazioni sui label in MPLS",
+    "categoria": "MPLS",
+    "contenuto": "Un router MPLS può eseguire tre operazioni fondamentali sui label MPLS: PUSH, POP e SWAP. L'operazione PUSH consiste nell'aggiungere un label in cima allo stack di label, tipicamente all'ingresso dell’LSP (Label Switched Path). L'operazione POP rimuove il label più esterno, generalmente alla fine del percorso o in prossimità della destinazione. L'operazione SWAP sostituisce il label esterno con un nuovo valore, ed è l'azione più comune nei router intermedi. Queste operazioni permettono l'instradamento efficiente dei pacchetti attraverso una rete MPLS."
+  },
+  {
+    "id": 278,
+    "titolo": "Caratteristica delle VPN overlay",
+    "categoria": "VPN",
+    "contenuto": "Una VPN realizzata secondo uno schema overlay è implementata sopra l'infrastruttura di rete esistente, senza richiedere il coinvolgimento del gestore della rete sottostante. Questo significa che i router e gli switch della rete di transito non sono a conoscenza dell'esistenza della VPN e trattano il traffico come normale traffico IP. La gestione della VPN, compresi tunneling e crittografia, è interamente a carico degli endpoint o di dispositivi dedicati ai bordi della rete."
+  },
+  {
+    "id": 279,
+    "titolo": "LSA di tipo Network Link in OSPF",
+    "categoria": "OSPF",
+    "contenuto": "Nel protocollo OSPF, gli LSA (Link State Advertisement) di tipo Network Link sono generati dal Designated Router (DR) per ogni rete di tipo broadcast o NBMA. Questi LSA descrivono tutte le adiacenze tra il DR e i router adiacenti sulla rete condivisa. Includono quindi l'identificativo della rete (IP + mask) e gli ID OSPF di tutti i router adiacenti al DR su quella rete. Questi LSA permettono di rappresentare nel grafo di topologia le connessioni logiche tra i router attraverso la rete di transito (es. una LAN Ethernet)."
+  },
+  {
+    "id": 280,
+    "titolo": "LAN Ethernet",
+    "categoria": "Reti LAN",
+    "contenuto": "Una LAN Ethernet è una rete locale basata sulla tecnologia Ethernet, ampiamente utilizzata per collegare dispositivi all'interno di un'area geografica limitata (uffici, abitazioni, campus). Utilizza lo standard IEEE 802.3, con trasmissione a frame e identificazione dei dispositivi tramite indirizzi MAC. In una LAN Ethernet moderna, i dispositivi sono collegati a switch che operano in modalità full-duplex, eliminando le collisioni e migliorando le prestazioni rispetto ai vecchi hub. Le LAN Ethernet supportano varie velocità di trasmissione, da 10 Mbps fino a 100 Gbps e oltre."
   }
 ]
