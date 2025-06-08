@@ -1473,5 +1473,53 @@
     "titolo": "Indirizzi IPv6 link-local",
     "categoria": "IPv6",
     "contenuto": "Gli indirizzi link-local in IPv6 sono utilizzabili per la comunicazione tra dispositivi sullo stesso link fisico (es. una LAN), anche in assenza di un indirizzo globale o di un server DHCPv6. Ogni interfaccia IPv6 ne possiede almeno uno, con prefisso FE80::/10, e sono essenziali per protocolli come Neighbor Discovery e routing locale."
+  },
+  {
+    "id": 247,
+    "titolo": "Piano di indirizzamento IP basato su aree",
+    "categoria": "Subnetting",
+    "contenuto": "In una rete composta da più reti fisiche interconnesse da router, è possibile ottimizzare il routing definendo un piano di indirizzamento gerarchico. Questo si ottiene suddividendo la rete in aree e assegnando a ciascuna area un sottoinsieme distinto del range di indirizzi IP disponibile. In questo modo si riduce la dimensione delle tabelle di routing e si migliora l'efficienza del processo di inoltro, soprattutto su router centrali o di backbone."
+  },
+  {
+    "id": 248,
+    "titolo": "High Speed Packet Access (HSPA)",
+    "categoria": "Reti Mobili",
+    "contenuto": "L'High Speed Packet Access (HSPA) è una tecnologia di potenziamento delle reti UMTS che utilizza canali condivisi per ottimizzare l'uso delle risorse radio. Invece di allocare un canale dedicato per ciascun utente, HSPA assegna dinamicamente la capacità disponibile in base alla domanda e alle condizioni del canale, riducendo così lo spreco di risorse e aumentando l'efficienza spettrale."
+  },
+  {
+    "id": 249,
+    "titolo": "IPv6 Aggregable Global Unicast",
+    "categoria": "IPv6",
+    "contenuto": "Gli indirizzi IPv6 Aggregable Global Unicast sono univoci a livello globale e instradabili su Internet, analogamente agli indirizzi IPv4 pubblici. Sono progettati per supportare l'aggregazione gerarchica, riducendo la dimensione delle tabelle di routing. Iniziano tipicamente con il prefisso 2000::/3 e sono assegnati dagli ISP o da registri regionali."
+  },
+  {
+    "id": 250,
+    "titolo": "Intestazioni in un tunnel GRE",
+    "categoria": "Tunneling",
+    "contenuto": "In un pacchetto che viaggia all'interno di un tunnel GRE (Generic Routing Encapsulation), sono presenti tipicamente due intestazioni: una intestazione esterna IP che permette il trasporto del pacchetto attraverso la rete, e una intestazione GRE che incapsula il pacchetto originale. Non ci sono particolari limitazioni sul tipo di pacchetto incapsulato, il che rende GRE molto flessibile per il tunneling di protocolli diversi."
+  },
+  {
+    "id": 251,
+    "titolo": "Circuit Switched Networks e Burst",
+    "categoria": "Reti di comunicazione",
+    "contenuto": "Le reti circuit-switched, come quelle telefoniche tradizionali, stabiliscono un circuito fisico dedicato tra mittente e destinatario per tutta la durata della comunicazione, garantendo banda costante ma con spreco se il canale non è pienamente usato. I 'burst' sono sequenze concentrate e rapide di dati trasmesse in un breve intervallo, tipiche delle reti a pacchetto, dove la trasmissione non è continua ma intermittente, ottimizzando l'uso della banda disponibile."
+  },
+  {
+    "id": 252,
+    "titolo": "Token Bucket e Leaky Bucket",
+    "categoria": "Quality of Service (QoS)",
+    "contenuto": "I meccanismi 'Token Bucket' (secchiello e gettone) e 'Leaky Bucket' sono utilizzati per il controllo del traffico nelle reti, in particolare per gestire il burst e garantire QoS. Il Token Bucket permette trasmissioni burst quando ci sono gettoni accumulati, ma limita la velocità media nel tempo. È flessibile e adatto a traffico variabile. Il Leaky Bucket impone una trasmissione a velocità costante, utile per modellare il traffico. Entrambi sono usati in reti IP, router e apparati per policing e shaping del traffico."
+  },
+  {
+    "id": 253,
+    "titolo": "Indirizzo multicast per Neighbor Solicitation",
+    "categoria": "IPv6",
+    "contenuto": "In IPv6, i messaggi di Neighbor Solicitation usano come indirizzo di destinazione un indirizzo multicast del tipo 'solicited-node multicast address'. Questo indirizzo ha il formato ff02::1:ffXX:XXXX, dove gli ultimi 24 bit coincidono con gli ultimi 24 bit dell'indirizzo IPv6 del destinatario. Serve a limitare la diffusione del pacchetto solo ai nodi che potrebbero possedere quell’indirizzo, riducendo il traffico rispetto a un broadcast."
+  },
+  {
+    "id": 254,
+    "titolo": "VPN basate su SSL",
+    "categoria": "VPN",
+    "contenuto": "Le VPN basate su SSL (Secure Sockets Layer) utilizzano protocolli crittografici a livello di trasporto per creare un canale sicuro tra client e server, tipicamente attraverso il browser. A differenza delle VPN IPsec, non richiedono software dedicato né configurazioni complesse sul client. Operano su HTTPS (porta 443), quindi superano facilmente firewall e NAT. Offrono sicurezza, accesso remoto selettivo e facilità di implementazione, ma sono più adatte a scenari di accesso remoto specifico, non a collegamenti site-to-site."
   }
 ]
