@@ -3903,5 +3903,101 @@
     ],
     "corretta": 0,
     "categoria": "IPv6"
+  },
+  {
+    "id": 347,
+    "domanda": "In OSPF, un pacchetto di “Database Description”:",
+    "risposte": [
+      "Viene utilizzato da due router adiacenti per scambiarsi le rispettive copie del database OSPF",
+      "Viene utilizzato da due router adiacenti per scambiarsi le rispettive copie della routing table",
+      "Permette ad un router che ha rilevato una nuova adiacenza con un altro router OSPF di conoscere gli LSA a lui mancanti",
+      "Permette ad un router appena acceso di conoscere gli LSA a lui mancanti"
+    ],
+    "corretta": 2,
+    "categoria": "OSPF"
+  },
+  {
+    "id": 348,
+    "domanda": "Il pacchetto ICMPv6 Router Advertisement:",
+    "risposte": [
+      "Viene inviato in risposta ad un pacchetto ICMPv6 Neighbor Solicitation",
+      "È un pacchetto broadcast",
+      "Permette l’autoconfigurazione dei dispositivi senza l’utilizzo del protocollo DHCP",
+      "Viene inviato periodicamente da un router a tutti gli altri router della rete internet"
+    ],
+    "corretta": 2,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 349,
+    "domanda": "Lo standard IPsec viene utilizzato nelle VPN (virtual private network) per:",
+    "risposte": [
+      "Verificare le informazioni di autenticazione fornite da utenti remoti tramite uno scambio di informazione con un server di autenticazione.",
+      "Consentire l'invio di informazioni di autenticazione (per esempio username e password o tramite meccanismi di sfida) da parte degli utenti di una VPN di accesso.",
+      "La realizzazione di tunnel attraverso una rete IP pubblica sul tramite i quali sia possibile trasportare pacchetti IP provenienti da o destinati ad una rete privata indipendentemente dal piano di indirizzamento utilizzato su tale rete privata (purché i piani di indirizzamento delle due reti private non siano sovrapposti).",
+      "La creazione automatica di collegamenti cifrati tra le sedi di un'azienda attraverso una rete pubblica, sulla quale la comunicazione è quindi intrinsecamente non sicura."
+    ],
+    "corretta": 2,
+    "categoria": "VPN"
+  },
+  {
+    "id": 350,
+    "domanda": "Nella connessione UMTS:",
+    "risposte": [
+      "Esiste ancora il riuso delle frequenze, con possibili interferenze",
+      "Non esiste più il riuso delle frequenze e non si hanno interferenze grazie all'utilizzo di codici diversi",
+      "Esiste ancora il riuso delle frequenze, ma ottimizzato per evitare interferenze",
+      "Non esiste più il riuso delle frequenze e non si hanno interferenze grazie all'utilizzo di tempi di accesso diversi"
+    ],
+    "corretta": 1,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 351,
+    "domanda": "L'inoltro di pacchetti IPv6 su una LAN:",
+    "risposte": [
+      "Non fa uso di meccanismi di neighbor discovery in quanto esiste una regola per mappare un qualunque indirizzo IPv6 in un indirizzo MAC.",
+      "Non fa uso di meccanismo di neighbor discovery per quanto riguarda l'inoltro di pacchetti IPv6 multicast e broadcast in quanto esiste una regola per mappare questi indirizzi IPv6 in un indirizzo MAC.",
+      "Fa uso di meccanismi di neighbor discovery per tutte le tipologie di indirizzi IPv6.",
+      "Non fa uso di meccanismi di neighbor discovery per quanto riguarda l'inoltro di pacchetti IPv6 multicast in quanto esiste una regola per mappare questi indirizzi IPv6 in un indirizzo MAC."
+    ],
+    "corretta": 3,
+    "categoria": "IPv6"
+  },
+  {
+    "id": 352,
+    "domanda": "Lo stack protocollare dell'interfaccia radio si articola nei seguenti livelli:",
+    "risposte": [
+      "MAC layer, IP layer, TCP/UDP layer",
+      "MAC layer, Manage protocol layer",
+      "MAC layer, RLC layer, RRC layer",
+      "Esiste un singolo livello"
+    ],
+    "corretta": 2,
+    "categoria": "Reti Mobili"
+  },
+  {
+    "id": 353,
+    "domanda": "Il protocollo GRE serve per:",
+    "risposte": [
+      "Incapsulare i pacchetti in altre intestazioni IP, in modo da poterle inviare su un tunnel.",
+      "Garantire la riservatezza delle comunicazioni.",
+      "Garantire l'autenticità dei pacchetti.",
+      "Riservare della banda per la comunicazione."
+    ],
+    "corretta": 0,
+    "categoria": "Tunneling"
+  },
+  {
+    "id": 354,
+    "domanda": "Due reti IP 130.192.0.0/24 e 130.192.2.0/24 sono aggregabili in:",
+    "risposte": [
+      "130.192.0.0/23",
+      "130.192.2.0/23",
+      "Non sono aggregabili",
+      "130.192.0.0/22"
+    ],
+    "corretta": 3,
+    "categoria": "Subnetting"
   }
 ]

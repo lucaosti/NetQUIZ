@@ -1671,5 +1671,11 @@
     "titolo": "LAN Ethernet",
     "categoria": "Reti LAN",
     "contenuto": "Una LAN Ethernet è una rete locale basata sulla tecnologia Ethernet, ampiamente utilizzata per collegare dispositivi all'interno di un'area geografica limitata (uffici, abitazioni, campus). Utilizza lo standard IEEE 802.3, con trasmissione a frame e identificazione dei dispositivi tramite indirizzi MAC. In una LAN Ethernet moderna, i dispositivi sono collegati a switch che operano in modalità full-duplex, eliminando le collisioni e migliorando le prestazioni rispetto ai vecchi hub. Le LAN Ethernet supportano varie velocità di trasmissione, da 10 Mbps fino a 100 Gbps e oltre."
+  },
+  {
+    "id": 281,
+    "titolo": "Stack protocollare dell'interfaccia radio",
+    "categoria": "Reti Mobili",
+    "contenuto": "Nelle reti mobili come UMTS e LTE, lo stack protocollare dell'interfaccia radio si articola in più livelli: MAC (Medium Access Control), RLC (Radio Link Control) e RRC (Radio Resource Control). Il MAC gestisce l'accesso al mezzo fisico e la schedulazione dei dati. Il RLC si occupa del controllo di flusso, segmentazione e riassemblaggio dei pacchetti. Il RRC gestisce il controllo delle risorse radio, la mobilità e lo stato della connessione del terminale. Questi livelli sono essenziali per garantire un trasferimento dati efficiente e affidabile tra il dispositivo mobile e la rete."
   }
 ]
